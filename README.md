@@ -1,2 +1,2 @@
 # hba
-Trying to learn coding.
+Learning programming.
