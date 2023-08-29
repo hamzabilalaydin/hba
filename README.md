@@ -36,3 +36,18 @@ foreach($users as $user) {
     echo " {$user['id']} : {$user['name']}, {$user['email']} <br>";
 }
 ```
+
+# KAYIT EKLEME
+``SQL
+$name  = "Nuri";
+$email = "nuri@hotmail.com";
+
+$sql = "INSERT INTO users (name, email) VALUES (:name, :email)";
+$SORGU = $DB->prepare($sql);
+
+$SORGU->bindParam(':name', $name);
+$SORGU->bindParam(':email', $email);
+
+$SORGU->execute();
+echo "User created";
+```
