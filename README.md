@@ -117,3 +117,7 @@ print_r($cevap3);
 print_r($cevap4);
 
 ```
+
+# Mysql index
+
+### Tabloda satirlara index verirsek aramalar cok daha hizli bir sekilde butun database'i gezmeden kayitlari karsimiza cikartir 
