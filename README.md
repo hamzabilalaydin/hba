@@ -121,3 +121,5 @@ print_r($cevap4);
 # Mysql index
 
 ### Tabloda satirlara index verirsek aramalar cok daha hizli bir sekilde butun database'i gezmeden kayitlari karsimiza cikartir 
+### her satira index koyamayiz  bu bilgiler bilgisayarimizda yer kaplayacagi icin akillica secim yapilmali
+### cok fazla index varken insert veya update yapmaya calismak cok yavaslatir
