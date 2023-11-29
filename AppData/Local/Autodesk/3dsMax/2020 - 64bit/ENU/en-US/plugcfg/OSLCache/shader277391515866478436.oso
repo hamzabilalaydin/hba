@@ -1,0 +1,17 @@
+OpenShadingLanguage 1.00
+# Compiled by oslc 1.10.2
+# options: -IC:/Program Files/Autodesk/3ds Max 2020/OSL/
+shader Example	%meta{string,help,"Example shader with three inputs and two outputs,<br>one summing (Out), one mixing (Mix).  "} %meta{string,URL,"https://github.com/ADN-DevTech/3dsMax-OSL-Shaders"} 
+param	color	Input_A	0.5 0.5 0.5		%meta{string,label,"A"}  %read{0,1} %write{2147483647,-1}
+param	color	Input_B	0.5 0.5 0.5		%meta{string,label,"B"}  %read{0,1} %write{2147483647,-1}
+param	float	Mixer	0.5		%meta{float,min,0} %meta{float,max,1}  %read{1,1} %write{2147483647,-1}
+oparam	color	Out	0 0 0		%read{2147483647,-1} %write{0,0}
+oparam	color	Mix	0 0 0		%read{2147483647,-1} %write{1,1}
+code ___main___
+# <buffer>:19
+# <file not found>
+	add		Out Input_A Input_B 	%filename{"<buffer>"} %line{19} %argrw{"wrr"}
+# <buffer>:20
+# <file not found>
+	mix		Mix Input_A Input_B Mixer 	%line{20} %argrw{"wrrr"}
+	end

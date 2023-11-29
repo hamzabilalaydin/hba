@@ -1,0 +1,35 @@
+******************** Install Summary ******************** 
+
+Bundle: Autodesk DWG TrueView 2023 - English
+
+DWG TrueView 2023 - English (Core - Package)
+Install State: INSTALLED
+	install summary
+		Start time : Sun Dec 11 22:25:19 2022
+		End time   : Sun Dec 11 22:27:54 2022
+		Total time : 2min35sec
+
+ODIS Installer (Core - Package)
+Install State: INSTALLED
+	install summary
+		Start time : Sun Dec 11 22:24:14 2022
+		End time   : Sun Dec 11 22:24:57 2022
+		Total time : 43sec
+
+Microsoft ASP.NET Core 3.1.10 Shared Framework (Core - Package)
+Install State: INSTALLED
+	install summary
+		Start time : Sun Dec 11 22:24:15 2022
+		End time   : Sun Dec 11 22:25:18 2022
+		Total time : 1min3sec
+
+Microsoft .NET Core Runtime 3.1.10 (Core - Package)
+Install State: INSTALLED
+	install summary
+		Start time : Sun Dec 11 22:24:14 2022
+		End time   : Sun Dec 11 22:24:57 2022
+		Total time : 43sec
+
+**************************** End *************************** 
+
+

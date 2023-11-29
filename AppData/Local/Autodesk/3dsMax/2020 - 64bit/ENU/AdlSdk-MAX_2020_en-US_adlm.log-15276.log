@@ -1,0 +1,2 @@
+2020-10-20 20:51:50.872 [O] Created AdlSdk Logger level [error], API version [2.4.3.23]
+2020-10-20 20:51:50.872 [E] Invalid log level was specified by environment variable ADLSDK_LOG_LEVEL[]; fall back to the default [error].

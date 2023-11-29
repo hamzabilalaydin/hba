@@ -1,0 +1,267 @@
+OpenShadingLanguage 1.00
+# Compiled by oslc 1.10.2
+# options: -IC:/Program Files/Autodesk/3ds Max 2020/OSL/
+shader OSLBitmap	%meta{string,help,"Look up a bitmap from passed in UV coordinates<br/>(through OpenImageIO)"} %meta{string,label,"Bitmap Lookup"} 
+param	point	Pos	0 0 0		%meta{string,label,"UV Coordinate"} %meta{string,help,"The 2D coordiante at which the texture is looked up."}  %read{1,1} %write{0,0} %derivs %initexpr
+param	float	Scale	1		%meta{string,help,"A linear scale factor. For more complex UV manipluation, connect the UVWTransform."}  %read{1,1} %write{2147483647,-1} %derivs
+param	string	Filename	"uv-grid.png"		%meta{string,widget,"filename"} %meta{string,label,"File name"} %meta{string,help,"The name of the texture to look up"}  %read{12,70} %write{2147483647,-1}
+param	int	UDIM	0		%meta{string,widget,"checkBox"} %meta{string,label,"UDIM-compatible lookup"} %meta{string,help,"Modifies the UV coordinate so that UDIM's are looked up similar to the max MultiTile map"}  %read{5,5} %write{2147483647,-1}
+param	string	WrapMode	"periodic"		%meta{string,widget,"popup"} %meta{string,options,"default|black|clamp|periodic|mirror"} %meta{string,label,"Wrap Mode"} %meta{string,help,"How the texture wraps: (black, clamp, periodic or mirror)."}  %read{12,17} %write{2147483647,-1}
+param	int	AutoGamma	1		%meta{string,widget,"checkBox"}  %read{41,41} %write{2147483647,-1}
+param	float	ManualGamma	1		%meta{string,label,"Manual Gamma"}  %read{76,78} %write{2147483647,-1}
+oparam	color	Col	0 0 0		%meta{string,label,"Col (RGB)"}  %read{75,82} %write{12,78}
+oparam	float	R	0		%read{83,83} %write{79,79}
+oparam	float	G	0		%read{83,83} %write{80,80}
+oparam	float	B	0		%read{84,84} %write{81,81}
+oparam	float	A	1		%read{2147483647,-1} %write{12,40}
+oparam	float	Luminance	0		%read{2147483647,-1} %write{82,82}
+oparam	float	Average	0		%read{2147483647,-1} %write{85,85}
+global	float	u	%read{0,0} %write{2147483647,-1} %derivs
+global	float	v	%read{0,0} %write{2147483647,-1} %derivs
+local	point	p	%read{2,35} %write{1,1} %derivs
+local	float	ulookup	%read{12,12} %write{2,2} %derivs
+local	float	vlookup	%read{12,12} %write{4,11} %derivs
+local	float	___321_vfloor	%read{9,11} %write{7,7} %derivs
+local	float	___321_vfrac	%read{10,10} %write{9,9} %derivs
+local	int	channels	%read{14,14} %write{13,13}
+const	int	$const1	0		%read{2,79} %write{2147483647,-1}
+const	float	$const2	0		%read{0,40} %write{2147483647,-1}
+const	float	$const3	1		%read{4,76} %write{2147483647,-1}
+const	int	$const4	1		%read{3,80} %write{2147483647,-1}
+temp	float	$tmp1	%read{4,4} %write{3,3} %derivs
+temp	float	$tmp2	%read{7,7} %write{6,6} %derivs
+temp	float	$tmp3	%read{9,9} %write{8,8} %derivs
+temp	float	$tmp4	%read{11,11} %write{10,10} %derivs
+const	string	$const5	"wrap"		%read{12,12} %write{2147483647,-1}
+const	string	$const6	"alpha"		%read{12,12} %write{2147483647,-1}
+temp	int	$tmp5	%read{2147483647,-1} %write{13,13}
+const	string	$const7	"channels"		%read{13,13} %write{2147483647,-1}
+const	int	$const8	4		%read{14,14} %write{2147483647,-1}
+temp	int	$tmp6	%read{15,15} %write{14,14}
+const	string	$const9	"black"		%read{17,17} %write{2147483647,-1}
+temp	int	$tmp7	%read{18,18} %write{17,17}
+temp	float	$tmp8	%read{20,20} %write{19,19}
+temp	int	$tmp9	%read{21,21} %write{20,20}
+temp	int	$tmp10	%read{22,27} %write{21,26}
+temp	float	$tmp11	%read{24,24} %write{23,23}
+temp	int	$tmp12	%read{25,25} %write{24,24}
+temp	int	$tmp13	%read{26,26} %write{25,25}
+temp	int	$tmp14	%read{28,33} %write{27,32}
+temp	float	$tmp15	%read{30,30} %write{29,29}
+temp	int	$tmp16	%read{31,31} %write{30,30}
+temp	int	$tmp17	%read{32,32} %write{31,31}
+temp	int	$tmp18	%read{34,39} %write{33,38}
+temp	float	$tmp19	%read{36,36} %write{35,35}
+temp	int	$tmp20	%read{37,37} %write{36,36}
+temp	int	$tmp21	%read{38,38} %write{37,37}
+temp	int	$tmp22	%read{43,43} %write{42,42}
+const	string	$const10	".exr"		%read{42,42} %write{2147483647,-1}
+temp	int	$tmp23	%read{44,44} %write{43,43}
+temp	int	$tmp24	%read{45,50} %write{44,49}
+temp	int	$tmp25	%read{47,47} %write{46,46}
+const	string	$const11	".EXR"		%read{46,46} %write{2147483647,-1}
+temp	int	$tmp26	%read{48,48} %write{47,47}
+temp	int	$tmp27	%read{49,49} %write{48,48}
+temp	int	$tmp28	%read{51,56} %write{50,55}
+temp	int	$tmp29	%read{53,53} %write{52,52}
+const	string	$const12	".hdr"		%read{52,52} %write{2147483647,-1}
+temp	int	$tmp30	%read{54,54} %write{53,53}
+temp	int	$tmp31	%read{55,55} %write{54,54}
+temp	int	$tmp32	%read{57,62} %write{56,61}
+temp	int	$tmp33	%read{59,59} %write{58,58}
+const	string	$const13	".HDR"		%read{58,58} %write{2147483647,-1}
+temp	int	$tmp34	%read{60,60} %write{59,59}
+temp	int	$tmp35	%read{61,61} %write{60,60}
+temp	int	$tmp36	%read{63,68} %write{62,67}
+temp	int	$tmp37	%read{65,65} %write{64,64}
+const	string	$const14	".tx"		%read{64,64} %write{2147483647,-1}
+temp	int	$tmp38	%read{66,66} %write{65,65}
+temp	int	$tmp39	%read{67,67} %write{66,66}
+temp	int	$tmp40	%read{69,74} %write{68,73}
+temp	int	$tmp41	%read{71,71} %write{70,70}
+const	string	$const15	".TX"		%read{70,70} %write{2147483647,-1}
+temp	int	$tmp42	%read{72,72} %write{71,71}
+temp	int	$tmp43	%read{73,73} %write{72,72}
+const	float	$const16	2.2		%read{75,75} %write{2147483647,-1}
+temp	int	$tmp44	%read{77,77} %write{76,76}
+const	int	$const17	2		%read{81,81} %write{2147483647,-1}
+temp	float	$tmp45	%read{84,84} %write{83,83}
+temp	float	$tmp46	%read{85,85} %write{84,84}
+const	float	$const18	3		%read{85,85} %write{2147483647,-1}
+code Pos
+# OSL\OSLBitmap.osl:12
+#   	[[  string label= "UV Coordinate", 
+	point		Pos u v $const2 	%filename{"OSL\OSLBitmap.osl"} %line{12} %argrw{"wrrr"}
+code ___main___
+# OSL\OSLBitmap.osl:44
+# 
+	div		p Pos Scale 	%filename{"OSL\OSLBitmap.osl"} %line{44} %argrw{"wrr"}
+# OSL\OSLBitmap.osl:47
+# 	float vlookup = 1.0 - p[1];
+	compref		ulookup p $const1 	%line{47} %argrw{"wrr"}
+# OSL\OSLBitmap.osl:48
+# 	
+	compref		$tmp1 p $const4 	%line{48} %argrw{"wrr"}
+	sub		vlookup $const3 $tmp1 	%argrw{"wrr"}
+# OSL\OSLBitmap.osl:52
+# 	{
+	if		UDIM 12 12 	%line{52} %argrw{"r"}
+# OSL\OSLBitmap.osl:54
+# 		float vfrac   = p[1] - vfloor;
+	compref		$tmp2 p $const4 	%line{54} %argrw{"wrr"}
+	floor		___321_vfloor $tmp2 	%argrw{"wr"}
+# OSL\OSLBitmap.osl:55
+# 		vlookup = vfloor + (1.0 - vfrac);
+	compref		$tmp3 p $const4 	%line{55} %argrw{"wrr"}
+	sub		___321_vfrac $tmp3 ___321_vfloor 	%argrw{"wrr"}
+# OSL\OSLBitmap.osl:56
+# 	}
+	sub		$tmp4 $const3 ___321_vfrac 	%line{56} %argrw{"wrr"}
+	add		vlookup ___321_vfloor $tmp4 	%argrw{"wrr"}
+# OSL\OSLBitmap.osl:59
+# 	
+	texture		Col Filename ulookup vlookup $const5 WrapMode $const6 A 	%line{59} %argrw{"wrrrrrrw"} %argderivs{2,3}
+# OSL\OSLBitmap.osl:62
+# 	if (channels < 4) // No alpha? Set it to opaque
+	gettextureinfo	$tmp5 Filename $const7 channels 	%line{62} %argrw{"wrrw"}
+# OSL\OSLBitmap.osl:63
+# 	{
+	lt		$tmp6 channels $const8 	%line{63} %argrw{"wrr"}
+	if		$tmp6 41 41 	%argrw{"r"}
+# OSL\OSLBitmap.osl:65
+# 
+	assign		A $const3 	%line{65} %argrw{"wr"}
+# OSL\OSLBitmap.osl:67
+# 		{
+	eq		$tmp7 WrapMode $const9 	%line{67} %argrw{"wrr"}
+	if		$tmp7 41 41 	%argrw{"r"}
+# OSL\OSLBitmap.osl:69
+# 			    p[1] < 0.0 || p[1] > 1.0)
+	compref		$tmp8 p $const1 	%line{69} %argrw{"wrr"}
+	lt		$tmp9 $tmp8 $const2 	%argrw{"wrr"}
+	neq		$tmp10 $tmp9 $const1 	%argrw{"wrr"}
+	if		$tmp10 23 27 	%argrw{"r"}
+	compref		$tmp11 p $const1 	%argrw{"wrr"}
+	gt		$tmp12 $tmp11 $const3 	%argrw{"wrr"}
+	neq		$tmp13 $tmp12 $const1 	%argrw{"wrr"}
+	assign		$tmp10 $tmp13 	%argrw{"wr"}
+	neq		$tmp14 $tmp10 $const1 	%argrw{"wrr"}
+	if		$tmp14 29 33 	%argrw{"r"}
+# OSL\OSLBitmap.osl:70
+# 			    A = 0.0;
+	compref		$tmp15 p $const4 	%line{70} %argrw{"wrr"}
+	lt		$tmp16 $tmp15 $const2 	%argrw{"wrr"}
+	neq		$tmp17 $tmp16 $const1 	%argrw{"wrr"}
+# OSL\OSLBitmap.osl:69
+# 			    p[1] < 0.0 || p[1] > 1.0)
+	assign		$tmp14 $tmp17 	%line{69} %argrw{"wr"}
+	neq		$tmp18 $tmp14 $const1 	%argrw{"wrr"}
+# OSL\OSLBitmap.osl:70
+# 			    A = 0.0;
+	if		$tmp18 35 39 	%line{70} %argrw{"r"}
+	compref		$tmp19 p $const4 	%argrw{"wrr"}
+	gt		$tmp20 $tmp19 $const3 	%argrw{"wrr"}
+	neq		$tmp21 $tmp20 $const1 	%argrw{"wrr"}
+	assign		$tmp18 $tmp21 	%argrw{"wr"}
+# OSL\OSLBitmap.osl:69
+# 			    p[1] < 0.0 || p[1] > 1.0)
+	if		$tmp18 41 41 	%line{69} %argrw{"r"}
+# OSL\OSLBitmap.osl:71
+# 		}
+	assign		A $const2 	%line{71} %argrw{"wr"}
+# OSL\OSLBitmap.osl:77
+# 	{
+	if		AutoGamma 76 79 	%line{77} %argrw{"r"}
+# OSL\OSLBitmap.osl:79
+# 			!endswith(Filename, ".EXR") &&
+	endswith	$tmp22 Filename $const10 	%line{79} %argrw{"wrr"}
+	eq		$tmp23 $tmp22 $const1 	%argrw{"wrr"}
+	neq		$tmp24 $tmp23 $const1 	%argrw{"wrr"}
+	if		$tmp24 50 50 	%argrw{"r"}
+# OSL\OSLBitmap.osl:80
+# 			!endswith(Filename, ".hdr") &&
+	endswith	$tmp25 Filename $const11 	%line{80} %argrw{"wrr"}
+	eq		$tmp26 $tmp25 $const1 	%argrw{"wrr"}
+	neq		$tmp27 $tmp26 $const1 	%argrw{"wrr"}
+# OSL\OSLBitmap.osl:79
+# 			!endswith(Filename, ".EXR") &&
+	assign		$tmp24 $tmp27 	%line{79} %argrw{"wr"}
+	neq		$tmp28 $tmp24 $const1 	%argrw{"wrr"}
+# OSL\OSLBitmap.osl:80
+# 			!endswith(Filename, ".hdr") &&
+	if		$tmp28 56 56 	%line{80} %argrw{"r"}
+# OSL\OSLBitmap.osl:81
+# 			!endswith(Filename, ".HDR") &&
+	endswith	$tmp29 Filename $const12 	%line{81} %argrw{"wrr"}
+	eq		$tmp30 $tmp29 $const1 	%argrw{"wrr"}
+	neq		$tmp31 $tmp30 $const1 	%argrw{"wrr"}
+# OSL\OSLBitmap.osl:80
+# 			!endswith(Filename, ".hdr") &&
+	assign		$tmp28 $tmp31 	%line{80} %argrw{"wr"}
+	neq		$tmp32 $tmp28 $const1 	%argrw{"wrr"}
+# OSL\OSLBitmap.osl:81
+# 			!endswith(Filename, ".HDR") &&
+	if		$tmp32 62 62 	%line{81} %argrw{"r"}
+# OSL\OSLBitmap.osl:82
+# 			!endswith(Filename, ".tx")  &&
+	endswith	$tmp33 Filename $const13 	%line{82} %argrw{"wrr"}
+	eq		$tmp34 $tmp33 $const1 	%argrw{"wrr"}
+	neq		$tmp35 $tmp34 $const1 	%argrw{"wrr"}
+# OSL\OSLBitmap.osl:81
+# 			!endswith(Filename, ".HDR") &&
+	assign		$tmp32 $tmp35 	%line{81} %argrw{"wr"}
+	neq		$tmp36 $tmp32 $const1 	%argrw{"wrr"}
+# OSL\OSLBitmap.osl:82
+# 			!endswith(Filename, ".tx")  &&
+	if		$tmp36 68 68 	%line{82} %argrw{"r"}
+# OSL\OSLBitmap.osl:83
+# 			!endswith(Filename, ".TX"))
+	endswith	$tmp37 Filename $const14 	%line{83} %argrw{"wrr"}
+	eq		$tmp38 $tmp37 $const1 	%argrw{"wrr"}
+	neq		$tmp39 $tmp38 $const1 	%argrw{"wrr"}
+# OSL\OSLBitmap.osl:82
+# 			!endswith(Filename, ".tx")  &&
+	assign		$tmp36 $tmp39 	%line{82} %argrw{"wr"}
+	neq		$tmp40 $tmp36 $const1 	%argrw{"wrr"}
+# OSL\OSLBitmap.osl:83
+# 			!endswith(Filename, ".TX"))
+	if		$tmp40 74 74 	%line{83} %argrw{"r"}
+# OSL\OSLBitmap.osl:84
+# 		{
+	endswith	$tmp41 Filename $const15 	%line{84} %argrw{"wrr"}
+	eq		$tmp42 $tmp41 $const1 	%argrw{"wrr"}
+	neq		$tmp43 $tmp42 $const1 	%argrw{"wrr"}
+# OSL\OSLBitmap.osl:83
+# 			!endswith(Filename, ".TX"))
+	assign		$tmp40 $tmp43 	%line{83} %argrw{"wr"}
+# OSL\OSLBitmap.osl:79
+# 			!endswith(Filename, ".EXR") &&
+	if		$tmp40 76 76 	%line{79} %argrw{"r"}
+# OSL\OSLBitmap.osl:87
+# 		}
+	pow		Col Col $const16 	%line{87} %argrw{"wrr"}
+# OSL\OSLBitmap.osl:92
+# 			Col = pow(Col, ManualGamma);
+	neq		$tmp44 ManualGamma $const3 	%line{92} %argrw{"wrr"}
+	if		$tmp44 79 79 	%argrw{"r"}
+# OSL\OSLBitmap.osl:93
+# 	}
+	pow		Col Col ManualGamma 	%line{93} %argrw{"wrr"}
+# OSL\OSLBitmap.osl:96
+# 	G = Col[1];
+	compref		R Col $const1 	%line{96} %argrw{"wrr"}
+# OSL\OSLBitmap.osl:97
+# 	B = Col[2];
+	compref		G Col $const4 	%line{97} %argrw{"wrr"}
+# OSL\OSLBitmap.osl:98
+# 	Luminance = luminance(Col);
+	compref		B Col $const17 	%line{98} %argrw{"wrr"}
+# OSL\OSLBitmap.osl:99
+# 	Average   = (R + G + B) / 3.0;
+	luminance	Luminance Col 	%line{99} %argrw{"wr"}
+# OSL\OSLBitmap.osl:100
+# }
+	add		$tmp45 R G 	%line{100} %argrw{"wrr"}
+	add		$tmp46 $tmp45 B 	%argrw{"wrr"}
+	div		Average $tmp46 $const18 	%argrw{"wrr"}
+	end

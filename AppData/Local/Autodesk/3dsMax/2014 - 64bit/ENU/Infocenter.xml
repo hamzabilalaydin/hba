@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ICXmlSourceTree xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SearchLocations />
+  <RssFeeds>
+    <Item DisplayNum="1" Enabled="true" ID="15">
+      <Name xlate="true" UID="1501">The Area :: Blog- MaxStation</Name>
+      <Url xlate="true" UID="1504">http://area.autodesk.com/rss/blogs/maxstation</Url>
+      <Group xlate="true" UID="1503">RSS Feeds</Group>
+      <Description xlate="true" UID="1502">The Area :: Blog- MaxStation</Description>
+    </Item>
+  </RssFeeds>
+</ICXmlSourceTree>

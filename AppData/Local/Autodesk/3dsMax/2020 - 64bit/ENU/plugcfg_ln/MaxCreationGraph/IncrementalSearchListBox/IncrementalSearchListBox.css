@@ -1,0 +1,60 @@
+QScrollBar:vertical 
+{
+	width: 15px;
+}
+
+QScrollBar::up-arrow:vertical
+{
+	width: 8px;
+}
+
+QScrollBar::down-arrow:vertical
+{
+	width: 8px;
+}
+
+IncrementalSearchListBox--SearchLineEdit
+{
+	border: 1px solid gray;
+	border-radius: 4px;
+	min-height: 19px;
+}
+
+IncrementalSearchListBox--SearchLineEdit QLineEdit
+{
+	border: none;
+	padding: 0 0.08em;
+}
+
+IncrementalSearchListBox--SearchLineEdit QPushButton
+{
+	max-width: 0.7em;
+	max-height: 0.7em;
+	min-width: 0.7em;
+	margin-right: 3px;
+	border: none;
+	background: none;
+	image: url(btn_search.png);
+	padding: 0px;
+}
+
+IncrementalSearchListBox--SearchLineEdit[hasText='true'] QPushButton
+{
+	border-radius: 2px;
+	background: gray;
+	image: url(btn_clear_search.png);
+}
+
+
+
+ IncrementalSearchListBox--SearchLineEdit QLabel
+ {
+	padding: 0 0.08em;
+	font: italic;
+	color: gray;
+ }
+
+IncrementalSearchListBox--SearchMenu
+{
+	border: 1px solid black;
+}

@@ -1,0 +1,12 @@
+OpenShadingLanguage 1.00
+# Compiled by oslc 1.10.2
+# options: -IC:/Program Files/Autodesk/3ds Max 2020/OSL/
+shader GetNodeID	%meta{string,help,"Get the NodeHandle as a number. Useful for driving a per-object randomizer."} %meta{string,label,"Node Handle"} %meta{string,category,"Scene"} 
+oparam	int	Index	1		%read{2147483647,-1} %write{0,0}
+temp	int	$tmp1	%read{2147483647,-1} %write{0,0}
+const	string	$const1	"nodeHandle"		%read{0,0} %write{2147483647,-1}
+code ___main___
+# OSL\GetNodeID.osl:16
+# }
+	getattribute	$tmp1 $const1 Index 	%filename{"OSL\GetNodeID.osl"} %line{16} %argrw{"wrw"}
+	end

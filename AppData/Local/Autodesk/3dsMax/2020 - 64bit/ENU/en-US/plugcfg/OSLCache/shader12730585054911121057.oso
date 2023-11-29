@@ -1,0 +1,120 @@
+OpenShadingLanguage 1.00
+# Compiled by oslc 1.10.2
+# options: -IC:/Program Files/Autodesk/3ds Max 2020/OSL/
+shader Color1of10	%meta{string,help,"Pick one of 10 inputs"} %meta{string,label,"1 of 10 (color)"} %meta{string,category,"Switchers"} 
+param	int	Index	0		%meta{string,help,"Pick the index (number) of the input to use. "}  %read{0,0} %write{2147483647,-1}
+param	color	I0	1 0.5 0.40000001		%meta{string,label,"Input 0"}  %read{13,13} %write{2147483647,-1}
+param	color	I1	1 1 0.40000001		%meta{string,label,"Input 1"}  %read{16,16} %write{2147483647,-1}
+param	color	I2	0.5 1 0.40000001		%meta{string,label,"Input 2"}  %read{19,19} %write{2147483647,-1}
+param	color	I3	0.5 1 1		%meta{string,label,"Input 3"}  %read{22,22} %write{2147483647,-1}
+param	color	I4	0 0.5 1		%meta{string,label,"Input 4"}  %read{25,25} %write{2147483647,-1}
+param	color	I5	1 0.5 1		%meta{string,label,"Input 5"}  %read{28,28} %write{2147483647,-1}
+param	color	I6	1 1 1		%meta{string,label,"Input 6"}  %read{31,31} %write{2147483647,-1}
+param	color	I7	0.60000002 0.60000002 0.60000002		%meta{string,label,"Input 7"}  %read{34,34} %write{2147483647,-1}
+param	color	I8	0.2 0.2 0.2		%meta{string,label,"Input 8"}  %read{37,37} %write{2147483647,-1}
+param	color	I9	0.1 0.1 0.1		%meta{string,label,"Input 9"}  %read{40,40} %write{2147483647,-1}
+param	int	StartIdx	0		%meta{string,label,"Start Index"} %meta{string,help,"Offsets the input index so that this number will map to the first input. E.g. if set to 10, the first input (labeled Input 0) will map to index 10, rather than 0. This is used when cascading multiple switchers into each other and allows them to cover different ranges."}  %read{0,0} %write{2147483647,-1}
+param	int	Mod	0		%meta{string,label,"Range: Number of inputs"} %meta{string,help,"If 0, returns all outputs and any outside the range uses the 'Outside Range' input. If a nonzero number, only uses that many inputs, repeated in a rotating fashion."}  %read{1,2} %write{2147483647,-1}
+param	color	Outside	0 0 0		%meta{string,label,"Outside Range"} %meta{string,help,"The value to return when the index falls outside the set of available inputs. This can be used to connect a second switcher to support a larger number of inputs. "}  %read{10,41} %write{2147483647,-1}
+oparam	color	Out	0.1 0.2 0.30000001		%read{2147483647,-1} %write{10,41}
+local	int	idx	%read{2,38} %write{0,2}
+const	int	$const1	0		%read{3,11} %write{2147483647,-1}
+temp	int	$tmp1	%read{4,4} %write{3,3}
+temp	int	$tmp2	%read{5,9} %write{4,8}
+const	int	$const2	9		%read{6,38} %write{2147483647,-1}
+temp	int	$tmp3	%read{7,7} %write{6,6}
+temp	int	$tmp4	%read{8,8} %write{7,7}
+temp	int	$tmp5	%read{12,12} %write{11,11}
+const	int	$const3	1		%read{14,14} %write{2147483647,-1}
+temp	int	$tmp6	%read{15,15} %write{14,14}
+const	int	$const4	2		%read{17,17} %write{2147483647,-1}
+temp	int	$tmp7	%read{18,18} %write{17,17}
+const	int	$const5	3		%read{20,20} %write{2147483647,-1}
+temp	int	$tmp8	%read{21,21} %write{20,20}
+const	int	$const6	4		%read{23,23} %write{2147483647,-1}
+temp	int	$tmp9	%read{24,24} %write{23,23}
+const	int	$const7	5		%read{26,26} %write{2147483647,-1}
+temp	int	$tmp10	%read{27,27} %write{26,26}
+const	int	$const8	6		%read{29,29} %write{2147483647,-1}
+temp	int	$tmp11	%read{30,30} %write{29,29}
+const	int	$const9	7		%read{32,32} %write{2147483647,-1}
+temp	int	$tmp12	%read{33,33} %write{32,32}
+const	int	$const10	8		%read{35,35} %write{2147483647,-1}
+temp	int	$tmp13	%read{36,36} %write{35,35}
+temp	int	$tmp14	%read{39,39} %write{38,38}
+code ___main___
+# OSL\Color1of10.osl:46
+# 	
+	sub		idx Index StartIdx 	%filename{"OSL\Color1of10.osl"} %line{46} %argrw{"wrr"}
+# OSL\Color1of10.osl:48
+# 		idx = idx % Mod;
+	if		Mod 3 3 	%line{48} %argrw{"r"}
+# OSL\Color1of10.osl:49
+# 
+	mod		idx idx Mod 	%line{49} %argrw{"wrr"}
+# OSL\Color1of10.osl:51
+# 	{
+	lt		$tmp1 idx $const1 	%line{51} %argrw{"wrr"}
+	neq		$tmp2 $tmp1 $const1 	%argrw{"wrr"}
+	if		$tmp2 6 9 	%argrw{"r"}
+	gt		$tmp3 idx $const2 	%argrw{"wrr"}
+	neq		$tmp4 $tmp3 $const1 	%argrw{"wrr"}
+	assign		$tmp2 $tmp4 	%argrw{"wr"}
+	if		$tmp2 11 42 	%argrw{"r"}
+# OSL\Color1of10.osl:53
+# 	}
+	assign		Out Outside 	%line{53} %argrw{"wr"}
+# OSL\Color1of10.osl:58
+# 		OUT(1)
+	eq		$tmp5 idx $const1 	%line{58} %argrw{"wrr"}
+	if		$tmp5 14 42 	%argrw{"r"}
+	assign		Out I0 	%argrw{"wr"}
+# OSL\Color1of10.osl:59
+# 		OUT(2)
+	eq		$tmp6 idx $const3 	%line{59} %argrw{"wrr"}
+	if		$tmp6 17 42 	%argrw{"r"}
+	assign		Out I1 	%argrw{"wr"}
+# OSL\Color1of10.osl:60
+# 		OUT(3)
+	eq		$tmp7 idx $const4 	%line{60} %argrw{"wrr"}
+	if		$tmp7 20 42 	%argrw{"r"}
+	assign		Out I2 	%argrw{"wr"}
+# OSL\Color1of10.osl:61
+# 		OUT(4)
+	eq		$tmp8 idx $const5 	%line{61} %argrw{"wrr"}
+	if		$tmp8 23 42 	%argrw{"r"}
+	assign		Out I3 	%argrw{"wr"}
+# OSL\Color1of10.osl:62
+# 		OUT(5)
+	eq		$tmp9 idx $const6 	%line{62} %argrw{"wrr"}
+	if		$tmp9 26 42 	%argrw{"r"}
+	assign		Out I4 	%argrw{"wr"}
+# OSL\Color1of10.osl:63
+# 		OUT(6)
+	eq		$tmp10 idx $const7 	%line{63} %argrw{"wrr"}
+	if		$tmp10 29 42 	%argrw{"r"}
+	assign		Out I5 	%argrw{"wr"}
+# OSL\Color1of10.osl:64
+# 		OUT(7)
+	eq		$tmp11 idx $const8 	%line{64} %argrw{"wrr"}
+	if		$tmp11 32 42 	%argrw{"r"}
+	assign		Out I6 	%argrw{"wr"}
+# OSL\Color1of10.osl:65
+# 		OUT(8)
+	eq		$tmp12 idx $const9 	%line{65} %argrw{"wrr"}
+	if		$tmp12 35 42 	%argrw{"r"}
+	assign		Out I7 	%argrw{"wr"}
+# OSL\Color1of10.osl:66
+# 		OUT(9)
+	eq		$tmp13 idx $const10 	%line{66} %argrw{"wrr"}
+	if		$tmp13 38 42 	%argrw{"r"}
+	assign		Out I8 	%argrw{"wr"}
+# OSL\Color1of10.osl:67
+# 		Out = Outside;
+	eq		$tmp14 idx $const2 	%line{67} %argrw{"wrr"}
+	if		$tmp14 41 42 	%argrw{"r"}
+	assign		Out I9 	%argrw{"wr"}
+# OSL\Color1of10.osl:68
+# #undef OUT
+	assign		Out Outside 	%line{68} %argrw{"wr"}
+	end

@@ -1,0 +1,532 @@
+﻿2021-01-08 15:04:22  Required asset file(s) could not be located:
+D:\konvertierung\baeume\castanea_sativa\max3.0\castanea_sativa_bark.png
+D:\konvertierung\baeume\castanea_sativa\max3.0\castanea_sativa_leaf.png
+
+2021-01-11 13:55:45  Required asset file(s) could not be located:
+design 1.png
+metalbla.png
+suade.png
+
+2021-01-11 14:46:42  Required asset file(s) could not be located:
+design 1.png
+
+2021-01-11 14:54:51  Required asset file(s) could not be located:
+design 1.png
+
+2021-01-11 15:21:48  Render had to be aborted because a bitmap on disk changed and is being reloaded. Continuing the render could cause crash or undefined behavior. Bitmap name is: C:\Users\Hamza\Desktop\538557_zpsb33d21deasda.jpg
+2021-01-11 15:39:58  Required asset file(s) could not be located:
+textures\lantern_Base_Color.jpg
+textures\lantern_Metallic.jpg
+
+2021-01-11 15:40:03  Required asset file(s) could not be located:
+textures\lantern_Base_Color.jpg
+textures\lantern_Metallic.jpg
+
+2021-01-11 15:44:37  Required asset file(s) could not be located:
+textures\lantern_Base_Color.jpg
+textures\lantern_Metallic.jpg
+
+2021-01-11 15:48:53  Required asset file(s) could not be located:
+textures\lantern_Base_Color.jpg
+textures\lantern_Metallic.jpg
+
+2021-01-12 17:02:12  Denoising elements have not been rendered, cannot denoise image. Re-render the image to apply denoising.
+2021-01-13 16:30:01  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 16:30:19  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 16:30:25  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 16:30:49  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 16:31:33  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 16:32:33  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 16:33:02  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 16:35:21  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 16:38:00  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 16:40:10  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 16:45:06  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 16:59:30  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 17:02:47  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 17:02:57  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 17:03:01  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 17:03:05  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 17:03:09  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 17:03:13  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 17:03:17  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 17:03:20  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 17:03:24  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 17:03:30  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 17:03:59  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 17:04:03  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 17:04:06  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 17:04:11  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 17:04:15  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 17:05:11  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 17:05:23  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 17:05:44  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 17:06:12  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 17:06:18  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 17:06:34  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 17:06:46  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 17:16:34  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 17:26:31  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 17:37:12  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 17:38:17  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 17:45:00  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-13 17:45:08  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-14 09:38:31  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-14 09:42:30  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-14 09:48:03  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-14 09:50:04  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #2138625361
+2021-01-25 16:39:33  Using high quality pixel filtering with AI denoising is not supported.
+2021-01-25 16:40:11  Using high quality pixel filtering with AI denoising is not supported.
+2021-01-26 10:57:41  Using high quality pixel filtering with AI denoising is not supported.
+2021-01-26 12:33:38  Using high quality pixel filtering with AI denoising is not supported.
+2021-01-26 12:40:37  Using high quality pixel filtering with AI denoising is not supported.
+2021-01-26 13:39:04  Using high quality pixel filtering with AI denoising is not supported.
+2021-01-26 14:08:18  Using high quality pixel filtering with AI denoising is not supported.
+2021-01-27 14:13:39  Using high quality pixel filtering with AI denoising is not supported.
+2021-01-27 14:13:40  Failed to initialize NVIDIA AI denoiser: Unable to load required DLLs. Please follow the provided link for more information and suggestions on how to fix this issue.
+Missing DLL: optix.51.dll
+2021-02-01 17:53:47  Render had to be aborted because a bitmap on disk changed and is being reloaded. Continuing the render could cause crash or undefined behavior. Bitmap name is: C:\Users\Hamza\Desktop\Elegant-Grey-Limestone.jpg
+2021-02-02 16:09:55  Required asset file(s) could not be located:
+D:\New folder 2\design 1.jpg
+D:\New folder 2\suade.jpg
+D:\New folder 2\òòò\metalbla.jpg
+
+2021-02-02 16:18:13  Required asset file(s) could not be located:
+D:\New folder 2\design 1.jpg
+D:\New folder 2\suade.jpg
+D:\New folder 2\òòò\metalbla.jpg
+
+2021-02-02 17:48:30  Required asset file(s) could not be located:
+D:\New folder 2\design 1.jpg
+D:\New folder 2\suade.jpg
+D:\New folder 2\òòò\metalbla.jpg
+
+2021-02-03 09:53:11  Required asset file(s) could not be located:
+D:\New folder 2\design 1.jpg
+D:\New folder 2\suade.jpg
+D:\New folder 2\òòò\metalbla.jpg
+
+2021-02-03 10:23:30  Required asset file(s) could not be located:
+D:\New folder 2\design 1.jpg
+D:\New folder 2\suade.jpg
+D:\New folder 2\òòò\metalbla.jpg
+
+2021-02-03 10:27:46  Required asset file(s) could not be located:
+D:\New folder 2\design 1.jpg
+D:\New folder 2\suade.jpg
+D:\New folder 2\òòò\metalbla.jpg
+
+2021-02-03 10:35:08  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #3
+2021-02-03 10:38:55  Required asset file(s) could not be located:
+D:\New folder 2\design 1.jpg
+D:\New folder 2\suade.jpg
+D:\New folder 2\òòò\metalbla.jpg
+
+2021-02-03 11:41:55  Required asset file(s) could not be located:
+D:\New folder 2\design 1.jpg
+D:\New folder 2\òòò\metalbla.jpg
+
+2021-02-03 11:52:21  Required asset file(s) could not be located:
+D:\New folder 2\design 1.jpg
+D:\New folder 2\òòò\metalbla.jpg
+
+2021-02-03 12:00:27  Required asset file(s) could not be located:
+D:\New folder 2\design 1.jpg
+D:\New folder 2\òòò\metalbla.jpg
+
+2021-02-03 12:23:29  Required asset file(s) could not be located:
+D:\New folder 2\design 1.jpg
+D:\New folder 2\òòò\metalbla.jpg
+
+2021-02-03 13:28:52  'Shadow / Light' mode of Falloff map is not supported by Corona.
+Offending map: Map #3
+2021-02-03 13:45:39  Required asset file(s) could not be located:
+D:\New folder 2\design 1.jpg
+D:\New folder 2\òòò\metalbla.jpg
+
+2021-02-03 14:26:28  Required asset file(s) could not be located:
+D:\New folder 2\design 1.jpg
+D:\New folder 2\òòò\metalbla.jpg
+
+2021-02-03 17:00:37  Required asset file(s) could not be located:
+D:\New folder 2\design 1.jpg
+D:\New folder 2\òòò\metalbla.jpg
+
+2021-02-03 17:01:17  Required asset file(s) could not be located:
+D:\New folder 2\design 1.jpg
+D:\New folder 2\òòò\metalbla.jpg
+
+2021-02-03 17:24:26  Required asset file(s) could not be located:
+D:\New folder 2\design 1.jpg
+D:\New folder 2\òòò\metalbla.jpg
+
+2021-02-03 17:25:05  Required asset file(s) could not be located:
+D:\New folder 2\design 1.jpg
+D:\New folder 2\òòò\metalbla.jpg
+
+2021-02-03 17:25:57  Required asset file(s) could not be located:
+D:\New folder 2\design 1.jpg
+D:\New folder 2\òòò\metalbla.jpg
+
+2021-02-03 18:04:27  Required asset file(s) could not be located:
+D:\New folder 2\design 1.jpg
+D:\New folder 2\òòò\metalbla.jpg
+
+2021-02-03 18:17:18  Required asset file(s) could not be located:
+D:\New folder 2\design 1.jpg
+D:\New folder 2\òòò\metalbla.jpg
+
+2021-02-03 18:20:16  Required asset file(s) could not be located:
+D:\New folder 2\design 1.jpg
+D:\New folder 2\òòò\metalbla.jpg
+
+2021-02-03 18:25:32  Required asset file(s) could not be located:
+D:\New folder 2\design 1.jpg
+D:\New folder 2\òòò\metalbla.jpg
+
+2021-02-03 18:25:45  Required asset file(s) could not be located:
+D:\New folder 2\design 1.jpg
+D:\New folder 2\òòò\metalbla.jpg
+
+2021-02-03 19:06:29  Required asset file(s) could not be located:
+D:\New folder 2\design 1.jpg
+D:\New folder 2\òòò\metalbla.jpg
+
+2021-02-03 19:11:31  Required asset file(s) could not be located:
+D:\New folder 2\design 1.jpg
+D:\New folder 2\òòò\metalbla.jpg
+
+2021-02-04 00:39:27  Required asset file(s) could not be located:
+D:\New folder 2\design 1.jpg
+D:\New folder 2\òòò\metalbla.jpg
+
+2021-02-05 15:03:33  Required asset file(s) could not be located:
+b_leaf_b.jpg
+b_leaf_d.jpg
+bark_b_b.jpg
+bark_b_d.jpg
+concrete_mask.jpg
+ground.jpg
+ground_bump.jpg
+stone_black.jpg
+
+2021-02-05 15:20:59  Required asset file(s) could not be located:
+b_leaf_b.jpg
+b_leaf_d.jpg
+bark_b_b.jpg
+bark_b_d.jpg
+concrete_mask.jpg
+ground.jpg
+ground_bump.jpg
+stone_black.jpg
+
+2021-02-05 15:40:42  Required asset file(s) could not be located:
+b_leaf_b.jpg
+b_leaf_d.jpg
+bark_b_b.jpg
+bark_b_d.jpg
+concrete_mask.jpg
+ground.jpg
+ground_bump.jpg
+stone_black.jpg
+
+2021-03-17 22:08:35  Using high quality pixel filtering with AI denoising is not supported.
+2021-03-18 00:18:17  Using high quality pixel filtering with AI denoising is not supported.
+2021-03-18 00:26:34  Using high quality pixel filtering with AI denoising is not supported.
+2021-03-18 00:27:44  Using high quality pixel filtering with AI denoising is not supported.
+2021-03-18 10:10:00  Using high quality pixel filtering with AI denoising is not supported.
+2021-03-18 10:10:52  Using high quality pixel filtering with AI denoising is not supported.
+2021-03-27 16:18:42  Required asset file(s) could not be located:
+E:\3D\Blender\ibo\siyah_koltuk\black leather chair\textures\Chair_Basecolor.png
+E:\3D\Blender\ibo\siyah_koltuk\black leather chair\textures\Chair_Normal.png
+E:\3D\Blender\ibo\siyah_koltuk\black leather chair\textures\Chair_Roughness.png
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff(2).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff.jpg
+
+2021-03-27 19:58:04  Required asset file(s) could not be located:
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff(2).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff.jpg
+
+2021-03-27 20:19:44  Required asset file(s) could not be located:
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff(2).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff.jpg
+
+2021-03-27 20:55:42  Required asset file(s) could not be located:
+C:\final\blinnica\Perforated sheets-03 inverted.png
+C:\final\blinnica\panel22.jpg
+C:\final\blinnica\panel23.jpg
+C:\final\blinnica\uvrap_klaw_up.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff(2).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff.jpg
+
+2021-03-27 21:01:43  Required asset file(s) could not be located:
+C:\final\blinnica\Perforated sheets-03 inverted.png
+C:\final\blinnica\panel22.jpg
+C:\final\blinnica\panel23.jpg
+C:\final\blinnica\uvrap_klaw_up.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff(2).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff.jpg
+
+2021-03-27 21:11:25  Required asset file(s) could not be located:
+C:\final\blinnica\Perforated sheets-03 inverted.png
+C:\final\blinnica\panel22.jpg
+C:\final\blinnica\panel23.jpg
+C:\final\blinnica\uvrap_klaw_up.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff(2).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff.jpg
+
+2021-03-27 21:19:05  Required asset file(s) could not be located:
+C:\final\blinnica\Perforated sheets-03 inverted.png
+C:\final\blinnica\panel22.jpg
+C:\final\blinnica\panel23.jpg
+C:\final\blinnica\uvrap_klaw_up.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff(2).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff.jpg
+
+2021-03-27 21:54:58  Using high quality pixel filtering with AI denoising is not supported.
+2021-03-27 21:55:03  Required asset file(s) could not be located:
+C:\final\blinnica\Perforated sheets-03 inverted.png
+C:\final\blinnica\panel22.jpg
+C:\final\blinnica\panel23.jpg
+C:\final\blinnica\uvrap_klaw_up.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff(2).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff.jpg
+
+2021-03-27 21:57:17  Required asset file(s) could not be located:
+C:\final\blinnica\Perforated sheets-03 inverted.png
+C:\final\blinnica\panel22.jpg
+C:\final\blinnica\panel23.jpg
+C:\final\blinnica\uvrap_klaw_up.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff(2).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff.jpg
+
+2021-03-27 21:58:13  Using high quality pixel filtering with AI denoising is not supported.
+2021-03-27 21:58:16  Required asset file(s) could not be located:
+C:\final\blinnica\Perforated sheets-03 inverted.png
+C:\final\blinnica\panel22.jpg
+C:\final\blinnica\panel23.jpg
+C:\final\blinnica\uvrap_klaw_up.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff(2).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff.jpg
+
+2021-03-27 21:59:08  Required asset file(s) could not be located:
+C:\final\blinnica\Perforated sheets-03 inverted.png
+C:\final\blinnica\panel22.jpg
+C:\final\blinnica\panel23.jpg
+C:\final\blinnica\uvrap_klaw_up.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff(2).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff.jpg
+
+2021-03-27 22:01:43  Using high quality pixel filtering with AI denoising is not supported.
+2021-03-27 22:01:46  Required asset file(s) could not be located:
+C:\final\blinnica\Perforated sheets-03 inverted.png
+C:\final\blinnica\panel22.jpg
+C:\final\blinnica\panel23.jpg
+C:\final\blinnica\uvrap_klaw_up.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff(2).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff.jpg
+
+2021-03-27 22:02:03  Required asset file(s) could not be located:
+C:\final\blinnica\Perforated sheets-03 inverted.png
+C:\final\blinnica\panel22.jpg
+C:\final\blinnica\panel23.jpg
+C:\final\blinnica\uvrap_klaw_up.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff(2).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff.jpg
+
+2021-03-27 22:02:43  Required asset file(s) could not be located:
+C:\final\blinnica\Perforated sheets-03 inverted.png
+C:\final\blinnica\panel22.jpg
+C:\final\blinnica\panel23.jpg
+C:\final\blinnica\uvrap_klaw_up.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff(2).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff.jpg
+
+2021-03-27 22:55:15  Required asset file(s) could not be located:
+C:\final\blinnica\Perforated sheets-03 inverted.png
+C:\final\blinnica\panel22.jpg
+C:\final\blinnica\panel23.jpg
+C:\final\blinnica\uvrap_klaw_up.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff(2).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.2. armchairs\odesd2_C2\maps\renamed\dcmap_odesd2_C2_diff.jpg
+
+2021-03-27 23:09:54  Required asset file(s) could not be located:
+C:\final\blinnica\Perforated sheets-03 inverted.png
+C:\final\blinnica\panel22.jpg
+C:\final\blinnica\panel23.jpg
+C:\final\blinnica\uvrap_klaw_up.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff.jpg
+
+2021-03-27 23:14:36  Required asset file(s) could not be located:
+C:\final\blinnica\Perforated sheets-03 inverted.png
+C:\final\blinnica\panel22.jpg
+C:\final\blinnica\panel23.jpg
+C:\final\blinnica\uvrap_klaw_up.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff.jpg
+
+2021-03-27 23:15:09  Required asset file(s) could not be located:
+C:\final\blinnica\Perforated sheets-03 inverted.png
+C:\final\blinnica\panel22.jpg
+C:\final\blinnica\panel23.jpg
+C:\final\blinnica\uvrap_klaw_up.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff.jpg
+
+2021-03-27 23:15:19  Required asset file(s) could not be located:
+C:\final\blinnica\Perforated sheets-03 inverted.png
+C:\final\blinnica\panel22.jpg
+C:\final\blinnica\panel23.jpg
+C:\final\blinnica\uvrap_klaw_up.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff.jpg
+
+2021-03-27 23:46:27  Required asset file(s) could not be located:
+C:\final\blinnica\Perforated sheets-03 inverted.png
+C:\final\blinnica\panel22.jpg
+C:\final\blinnica\panel23.jpg
+C:\final\blinnica\uvrap_klaw_up.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff.jpg
+
+2021-03-28 00:42:43  Required asset file(s) could not be located:
+C:\final\blinnica\Perforated sheets-03 inverted.png
+C:\final\blinnica\panel22.jpg
+C:\final\blinnica\panel23.jpg
+C:\final\blinnica\uvrap_klaw_up.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff.jpg
+
+2021-03-28 00:47:54  Required asset file(s) could not be located:
+C:\final\blinnica\Perforated sheets-03 inverted.png
+C:\final\blinnica\panel22.jpg
+C:\final\blinnica\panel23.jpg
+C:\final\blinnica\uvrap_klaw_up.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff.jpg
+
+2021-03-28 01:01:19  Required asset file(s) could not be located:
+C:\final\blinnica\Perforated sheets-03 inverted.png
+C:\final\blinnica\panel22.jpg
+C:\final\blinnica\panel23.jpg
+C:\final\blinnica\uvrap_klaw_up.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff.jpg
+
+2021-03-28 02:16:20  Required asset file(s) could not be located:
+C:\final\blinnica\Perforated sheets-03 inverted.png
+C:\final\blinnica\panel22.jpg
+C:\final\blinnica\panel23.jpg
+C:\final\blinnica\uvrap_klaw_up.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff.jpg
+
+2021-03-28 04:21:30  Required asset file(s) could not be located:
+C:\final\blinnica\Perforated sheets-03 inverted.png
+C:\final\blinnica\panel22.jpg
+C:\final\blinnica\panel23.jpg
+C:\final\blinnica\uvrap_klaw_up.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff.jpg
+
+2021-03-28 04:21:43  Required asset file(s) could not be located:
+C:\final\blinnica\Perforated sheets-03 inverted.png
+C:\final\blinnica\panel22.jpg
+C:\final\blinnica\panel23.jpg
+C:\final\blinnica\uvrap_klaw_up.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff.jpg
+
+2021-09-06 17:41:58  Using high quality pixel filtering with AI denoising is not supported.
+2021-09-06 17:50:46  Using high quality pixel filtering with AI denoising is not supported.
+2021-09-06 17:52:59  Using high quality pixel filtering with AI denoising is not supported.

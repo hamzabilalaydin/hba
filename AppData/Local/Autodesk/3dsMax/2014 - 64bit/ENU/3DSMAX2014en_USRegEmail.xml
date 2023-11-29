@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE registration [
+<!ELEMENT registration (ver, rtcodepage, sernum, osernum, product, rel, country, reqtype, req+, customertype, comp, custid, add1, add2, add3, city, state, zip, sal, lname, fname, dept, compkat, phone, fax, email, nomail, appusage, dealer, behav, usage, expdate, prodlang, osname, osversion, systemtype, computername)>
+<!ELEMENT ver (#PCDATA)>
+<!ELEMENT rtcodepage (#PCDATA)>
+<!ELEMENT sernum (#PCDATA)>
+<!ELEMENT osernum (#PCDATA)>
+<!ELEMENT product (#PCDATA)>
+<!ELEMENT rel (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+<!ELEMENT reqtype (#PCDATA)>
+<!ELEMENT req (#PCDATA)>
+<!ELEMENT customertype (#PCDATA)>
+<!ELEMENT comp (#PCDATA)>
+<!ELEMENT custid (#PCDATA)>
+<!ELEMENT add1 (#PCDATA)>
+<!ELEMENT add2 (#PCDATA)>
+<!ELEMENT add3 (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT state (#PCDATA)>
+<!ELEMENT zip (#PCDATA)>
+<!ELEMENT sal (#PCDATA)>
+<!ELEMENT lname (#PCDATA)>
+<!ELEMENT fname (#PCDATA)>
+<!ELEMENT dept (#PCDATA)>
+<!ELEMENT compkat (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT fax (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT nomail (#PCDATA)>
+<!ELEMENT appusage (#PCDATA)>
+<!ELEMENT dealer (#PCDATA)>
+<!ELEMENT behav (#PCDATA)>
+<!ELEMENT usage (#PCDATA)>
+<!ELEMENT expdate (#PCDATA)>
+<!ELEMENT prodlang (#PCDATA)>
+<!ELEMENT osname (#PCDATA)>
+<!ELEMENT osversion (#PCDATA)>
+<!ELEMENT systemtype (#PCDATA)>
+<!ELEMENT computername (#PCDATA)>
+]>
+<registration>
+<ver>rt08</ver>
+<rtcodepage>UTF-8</rtcodepage>
+<sernum>666-67676767</sernum>
+<osernum></osernum>
+<product>3DSMAX</product>
+<rel>2014.0.0</rel>
+<country>select</country>
+<reqtype>4</reqtype>
+<req>6QK0 6KV0 5FGL P5TE UQ0C 5CCJ ETU9 CSPZ</req>
+<customertype>c</customertype>
+<comp></comp>
+<custid></custid>
+<add1></add1>
+<add2></add2>
+<add3></add3>
+<city></city>
+<state></state>
+<zip></zip>
+<sal></sal>
+<lname></lname>
+<fname></fname>
+<dept></dept>
+<compkat></compkat>
+<phone></phone>
+<fax></fax>
+<email></email>
+<nomail>0</nomail>
+<appusage></appusage>
+<dealer></dealer>
+<behav>0</behav>
+<usage>0</usage>
+<expdate>2021/02/06</expdate>
+<prodlang>en-us</prodlang>
+<osname>Undetermined x64 Edition</osname>
+<osversion>6.2.9200</osversion>
+<systemtype>Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz</systemtype>
+<computername>DESKTOP-MCGFUIO</computername>
+</registration>

@@ -1,0 +1,12 @@
+OpenShadingLanguage 1.00
+# Compiled by oslc 1.10.2
+# options: -IC:/Program Files/Autodesk/3ds Max 2020/OSL/
+shader VectorDist	%meta{string,help,"Distance between two points"} %meta{string,label,"Distance (vector)"} %meta{string,category,"Math\\Vector"} 
+param	vector	A	0 0 0		%read{0,0} %write{2147483647,-1}
+param	vector	B	0 0 0		%read{0,0} %write{2147483647,-1}
+oparam	float	Out	0		%read{2147483647,-1} %write{0,0}
+code ___main___
+# OSL\VectorDist.osl:18
+# }
+	distance	Out A B 	%filename{"OSL\VectorDist.osl"} %line{18} %argrw{"wrr"}
+	end

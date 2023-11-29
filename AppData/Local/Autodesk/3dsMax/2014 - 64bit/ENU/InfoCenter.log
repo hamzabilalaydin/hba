@@ -1,0 +1,748 @@
+7.01.2021 12:20:55: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+7.01.2021 12:21:03: Polling:3 threads started
+7.01.2021 12:21:03: SubStatus: Polling...
+7.01.2021 12:21:03: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+7.01.2021 13:41:53: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+7.01.2021 13:42:01: Polling:3 threads started
+7.01.2021 13:42:01: SubStatus: Polling...
+7.01.2021 13:42:01: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+7.01.2021 13:42:01: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+7.01.2021 13:42:01: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+7.01.2021 13:42:01: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+7.01.2021 13:48:51: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+7.01.2021 13:48:58: Polling:3 threads started
+7.01.2021 13:48:58: SubStatus: Polling...
+7.01.2021 13:48:58: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+7.01.2021 13:48:58: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+7.01.2021 13:48:58: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+7.01.2021 13:48:58: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+7.01.2021 14:09:53: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+7.01.2021 14:10:00: Polling:3 threads started
+7.01.2021 14:10:00: SubStatus: Polling...
+7.01.2021 14:10:00: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+7.01.2021 14:10:00: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+7.01.2021 14:10:00: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+7.01.2021 14:10:00: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+7.01.2021 14:41:05: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+7.01.2021 14:41:13: Polling:3 threads started
+7.01.2021 14:41:13: SubStatus: Polling...
+7.01.2021 14:41:13: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+7.01.2021 14:41:13: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+7.01.2021 14:41:13: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+7.01.2021 14:41:13: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+7.01.2021 16:14:58: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+7.01.2021 16:15:05: Polling:3 threads started
+7.01.2021 16:15:05: SubStatus: Polling...
+7.01.2021 16:15:05: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+7.01.2021 16:15:05: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+7.01.2021 16:15:05: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+7.01.2021 16:15:05: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+8.01.2021 09:19:42: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+8.01.2021 09:19:50: Polling:3 threads started
+8.01.2021 09:19:50: SubStatus: Polling...
+8.01.2021 09:24:28: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+8.01.2021 09:24:35: Polling:3 threads started
+8.01.2021 09:24:35: SubStatus: Polling...
+8.01.2021 09:24:35: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+8.01.2021 09:25:16: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+8.01.2021 09:25:23: Polling:3 threads started
+8.01.2021 09:25:23: SubStatus: Polling...
+8.01.2021 09:25:23: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+8.01.2021 14:05:35: Polling:4 threads started
+8.01.2021 14:05:35: SubStatus: Polling...
+8.01.2021 16:42:50: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+8.01.2021 16:42:57: Polling:3 threads started
+8.01.2021 16:42:57: SubStatus: Polling...
+8.01.2021 16:42:57: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+11.01.2021 09:31:57: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+11.01.2021 09:32:06: Polling:3 threads started
+11.01.2021 09:32:06: SubStatus: Polling...
+11.01.2021 09:32:06: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.IWebServiceManager.GetRssFeed(String address, Boolean isOnlyHeader)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+11.01.2021 10:24:11: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+11.01.2021 10:24:18: Polling:3 threads started
+11.01.2021 10:24:18: SubStatus: Polling...
+11.01.2021 11:49:11: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+11.01.2021 11:49:18: Polling:3 threads started
+11.01.2021 11:49:18: SubStatus: Polling...
+11.01.2021 15:22:29: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+11.01.2021 15:22:37: Polling:3 threads started
+11.01.2021 15:22:37: SubStatus: Polling...
+12.01.2021 09:41:57: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+12.01.2021 09:42:47: Polling:3 threads started
+12.01.2021 09:42:47: SubStatus: Polling...
+12.01.2021 09:42:47: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+12.01.2021 09:49:41: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+12.01.2021 09:49:47: Polling:3 threads started
+12.01.2021 09:49:47: SubStatus: Polling...
+12.01.2021 09:49:47: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+12.01.2021 09:49:47: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+12.01.2021 09:49:47: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+12.01.2021 09:49:47: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+12.01.2021 13:49:47: Polling:4 threads started
+12.01.2021 13:49:47: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+12.01.2021 13:49:47: SubStatus: Polling...
+12.01.2021 13:49:47: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+12.01.2021 13:49:47: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+12.01.2021 13:49:47: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+12.01.2021 14:21:12: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+12.01.2021 14:21:20: Polling:3 threads started
+12.01.2021 14:21:20: SubStatus: Polling...
+12.01.2021 14:21:20: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+12.01.2021 14:21:20: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+12.01.2021 14:21:20: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+12.01.2021 14:21:20: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+12.01.2021 15:59:07: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+12.01.2021 15:59:14: Polling:3 threads started
+12.01.2021 15:59:14: SubStatus: Polling...
+12.01.2021 15:59:14: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+12.01.2021 15:59:14: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+12.01.2021 15:59:14: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+12.01.2021 15:59:14: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+12.01.2021 17:30:17: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+12.01.2021 17:30:25: Polling:3 threads started
+12.01.2021 17:30:25: SubStatus: Polling...
+12.01.2021 17:30:25: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+12.01.2021 17:30:25: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+12.01.2021 17:30:25: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+12.01.2021 17:30:25: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+12.01.2021 17:39:22: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+12.01.2021 17:39:28: Polling:3 threads started
+12.01.2021 17:39:28: SubStatus: Polling...
+12.01.2021 17:39:28: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+12.01.2021 17:39:28: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+12.01.2021 17:39:28: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+12.01.2021 17:39:28: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+13.01.2021 09:30:49: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+13.01.2021 09:30:58: Polling:3 threads started
+13.01.2021 09:30:58: SubStatus: Polling...
+13.01.2021 09:30:59: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+13.01.2021 13:31:00: Polling:4 threads started
+13.01.2021 13:31:00: SubStatus: Polling...
+13.01.2021 16:33:48: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+13.01.2021 16:33:54: Polling:3 threads started
+13.01.2021 16:33:54: SubStatus: Polling...
+14.01.2021 09:52:00: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+14.01.2021 09:52:07: Polling:3 threads started
+14.01.2021 09:52:07: SubStatus: Polling...
+14.01.2021 09:52:08: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.IWebServiceManager.GetRssFeed(String address, Boolean isOnlyHeader)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+14.01.2021 13:52:07: Polling:4 threads started
+14.01.2021 13:52:07: SubStatus: Polling...
+15.01.2021 09:58:12: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+15.01.2021 09:58:20: Polling:3 threads started
+15.01.2021 09:58:20: SubStatus: Polling...
+15.01.2021 09:58:21: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.IWebServiceManager.GetRssFeed(String address, Boolean isOnlyHeader)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+15.01.2021 13:58:20: Polling:4 threads started
+15.01.2021 13:58:20: SubStatus: Polling...
+15.01.2021 15:23:07: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+15.01.2021 15:23:15: Polling:3 threads started
+15.01.2021 15:23:15: SubStatus: Polling...
+15.01.2021 15:23:15: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+15.01.2021 15:23:15: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+15.01.2021 15:23:15: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+15.01.2021 15:23:15: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+19.01.2021 10:24:58: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+19.01.2021 10:25:07: Polling:3 threads started
+19.01.2021 10:25:07: SubStatus: Polling...
+19.01.2021 10:25:07: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+19.01.2021 13:16:26: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+19.01.2021 13:16:35: Polling:3 threads started
+19.01.2021 13:16:35: Polling:3 threads started
+19.01.2021 13:16:35: SubStatus: Polling...
+19.01.2021 13:16:35: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+19.01.2021 13:16:35: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+19.01.2021 13:16:35: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+19.01.2021 13:16:35: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+19.01.2021 17:16:35: Polling:4 threads started
+19.01.2021 17:16:35: SubStatus: Polling...
+19.01.2021 17:16:35: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+19.01.2021 17:16:35: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+19.01.2021 17:16:35: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+19.01.2021 17:16:35: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+20.01.2021 09:49:50: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+20.01.2021 09:49:58: Polling:3 threads started
+20.01.2021 09:49:58: SubStatus: Polling...
+20.01.2021 13:49:58: Polling:4 threads started
+20.01.2021 13:49:58: SubStatus: Polling...
+20.01.2021 17:49:58: Polling:4 threads started
+20.01.2021 17:49:58: SubStatus: Polling...
+21.01.2021 09:48:17: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+21.01.2021 09:48:27: Polling:3 threads started
+21.01.2021 09:48:27: Polling:3 threads started
+21.01.2021 09:48:27: SubStatus: Polling...
+21.01.2021 13:55:23: Polling:4 threads started
+21.01.2021 13:55:23: SubStatus: Polling...
+22.01.2021 10:24:21: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+22.01.2021 10:24:30: Polling:3 threads started
+22.01.2021 10:24:30: SubStatus: Polling...
+22.01.2021 10:24:30: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.IWebServiceManager.GetRssFeed(String address, Boolean isOnlyHeader)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+22.01.2021 14:24:30: Polling:4 threads started
+22.01.2021 14:24:30: Polling:4 threads started
+22.01.2021 14:24:30: SubStatus: Polling...
+25.01.2021 09:52:58: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+25.01.2021 09:53:08: Polling:3 threads started
+25.01.2021 09:53:08: SubStatus: Polling...
+25.01.2021 09:53:08: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.IWebServiceManager.GetRssFeed(String address, Boolean isOnlyHeader)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+25.01.2021 11:36:32: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+25.01.2021 11:36:40: Polling:3 threads started
+25.01.2021 11:36:40: SubStatus: Polling...
+25.01.2021 11:36:40: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+25.01.2021 11:36:40: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+25.01.2021 11:36:40: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+25.01.2021 11:36:40: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+25.01.2021 11:45:49: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+25.01.2021 11:45:57: Polling:3 threads started
+25.01.2021 11:45:57: SubStatus: Polling...
+25.01.2021 11:45:57: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+25.01.2021 11:45:57: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+25.01.2021 11:45:57: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+25.01.2021 11:45:57: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+25.01.2021 15:45:57: Polling:4 threads started
+25.01.2021 15:45:57: SubStatus: Polling...
+25.01.2021 15:45:57: Polling:4 threads started
+25.01.2021 15:45:57: SubStatus: Polling...
+25.01.2021 15:45:57: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+25.01.2021 15:45:57: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+25.01.2021 15:45:57: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+25.01.2021 15:45:57: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+25.01.2021 16:26:09: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+25.01.2021 16:26:17: Polling:3 threads started
+25.01.2021 16:26:17: SubStatus: Polling...
+25.01.2021 16:26:17: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+25.01.2021 16:26:17: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+25.01.2021 16:26:17: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+25.01.2021 16:26:17: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+26.01.2021 09:38:18: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+26.01.2021 09:38:29: Polling:3 threads started
+26.01.2021 09:38:29: SubStatus: Polling...
+26.01.2021 09:38:29: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+26.01.2021 13:38:29: Polling:4 threads started
+26.01.2021 13:38:29: SubStatus: Polling...
+26.01.2021 14:50:15: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+26.01.2021 14:50:22: Polling:3 threads started
+26.01.2021 14:50:22: SubStatus: Polling...
+26.01.2021 14:50:22: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.IWebServiceManager.GetRssFeed(String address, Boolean isOnlyHeader)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+27.01.2021 11:14:37: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+27.01.2021 11:14:46: Polling:3 threads started
+27.01.2021 11:14:46: Polling:3 threads started
+27.01.2021 11:14:46: SubStatus: Polling...
+27.01.2021 15:14:46: Polling:4 threads started
+27.01.2021 15:14:46: SubStatus: Polling...
+28.01.2021 09:53:31: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+28.01.2021 09:53:40: Polling:3 threads started
+28.01.2021 09:53:40: SubStatus: Polling...
+29.01.2021 09:52:24: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+29.01.2021 09:52:33: Polling:3 threads started
+29.01.2021 09:52:33: SubStatus: Polling...
+29.01.2021 09:52:33: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.IWebServiceManager.GetRssFeed(String address, Boolean isOnlyHeader)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+29.01.2021 13:52:33: Polling:4 threads started
+29.01.2021 13:52:33: SubStatus: Polling...
+29.01.2021 15:52:35: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+29.01.2021 15:52:44: Polling:3 threads started
+29.01.2021 15:52:44: SubStatus: Polling...
+29.01.2021 15:52:45: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+1.02.2021 09:31:16: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+1.02.2021 09:31:23: Polling:3 threads started
+1.02.2021 09:31:23: SubStatus: Polling...
+1.02.2021 13:31:26: Polling:4 threads started
+1.02.2021 13:31:26: SubStatus: Polling...
+1.02.2021 17:31:27: Polling:4 threads started
+1.02.2021 17:31:27: SubStatus: Polling...
+2.02.2021 11:24:39: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+2.02.2021 11:24:48: Polling:3 threads started
+2.02.2021 11:24:48: SubStatus: Polling...
+2.02.2021 11:24:49: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+2.02.2021 14:28:48: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+2.02.2021 14:28:56: Polling:3 threads started
+2.02.2021 14:28:56: SubStatus: Polling...
+2.02.2021 14:28:56: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.IWebServiceManager.GetRssFeed(String address, Boolean isOnlyHeader)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+2.02.2021 14:54:24: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+2.02.2021 14:54:31: Polling:3 threads started
+2.02.2021 14:54:31: Polling:3 threads started
+2.02.2021 14:54:31: SubStatus: Polling...
+2.02.2021 15:31:08: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+2.02.2021 15:31:15: Polling:3 threads started
+2.02.2021 15:31:15: SubStatus: Polling...
+3.02.2021 09:49:18: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+3.02.2021 09:49:29: Polling:3 threads started
+3.02.2021 09:49:29: SubStatus: Polling...
+3.02.2021 13:49:29: Polling:4 threads started
+3.02.2021 13:49:29: SubStatus: Polling...
+3.02.2021 17:49:31: Polling:4 threads started
+3.02.2021 17:49:31: SubStatus: Polling...
+3.02.2021 19:05:47: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+3.02.2021 19:06:01: Polling:3 threads started
+3.02.2021 19:06:01: SubStatus: Polling...
+3.02.2021 23:06:01: Polling:4 threads started
+3.02.2021 23:06:01: SubStatus: Polling...
+4.02.2021 10:12:12: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+4.02.2021 10:12:20: Polling:3 threads started
+4.02.2021 10:12:20: SubStatus: Polling...
+4.02.2021 10:34:51: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+4.02.2021 10:34:58: Polling:3 threads started
+4.02.2021 10:34:58: Polling:3 threads started
+4.02.2021 10:34:58: SubStatus: Polling...
+4.02.2021 14:34:58: Polling:4 threads started
+4.02.2021 14:34:58: SubStatus: Polling...
+4.02.2021 14:34:58: Polling:4 threads started
+4.02.2021 14:34:58: SubStatus: Polling...
+4.02.2021 14:34:58: Polling:4 threads started
+5.02.2021 09:56:54: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+5.02.2021 09:57:06: SubStatus: Polling...
+ed
+\Users\Hamza\AppData\Local\Autodesk\3dsMax\5.02.2021 09:57:06: SubStatus: Polling...
+ed
+\Users\Hamza\AppData\Local\Autodesk\3dsMax\5.02.2021 09:57:07: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+5.02.2021 12:37:37: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+5.02.2021 12:37:45: Polling:3 threads started
+5.02.2021 12:37:45: Polling:3 threads started
+5.02.2021 12:37:45: SubStatus: Polling...
+5.02.2021 12:38:32: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+5.02.2021 12:38:43: Polling:3 threads started
+5.02.2021 12:38:43: SubStatus: Polling...
+8.02.2021 10:05:45: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+8.02.2021 10:05:54: Polling:3 threads started
+8.02.2021 10:05:54: SubStatus: Polling...
+8.02.2021 14:05:54: Polling:4 threads started
+8.02.2021 14:05:54: Polling:4 threads started
+8.02.2021 14:05:54: SubStatus: Polling...
+8.02.2021 15:39:34: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+8.02.2021 15:39:43: Polling:3 threads started
+8.02.2021 15:39:43: SubStatus: Polling...
+9.02.2021 09:39:54: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+9.02.2021 09:40:03: Polling:3 threads started
+9.02.2021 09:40:03: Polling:3 threads started
+9.02.2021 09:40:03: SubStatus: Polling...
+9.02.2021 09:40:03: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+9.02.2021 13:40:04: Polling:4 threads started
+9.02.2021 13:40:04: SubStatus: Polling...
+10.02.2021 10:31:29: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+10.02.2021 10:31:37: Polling:3 threads started
+10.02.2021 10:31:37: SubStatus: Polling...
+10.02.2021 10:31:38: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+10.02.2021 10:50:25: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+10.02.2021 10:50:33: Polling:3 threads started
+10.02.2021 10:50:33: SubStatus: Polling...
+10.02.2021 10:52:38: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+10.02.2021 10:52:45: Polling:3 threads started
+10.02.2021 10:52:45: SubStatus: Polling...
+10.02.2021 14:52:45: Polling:4 threads started
+10.02.2021 14:52:45: SubStatus: Polling...
+10.02.2021 15:38:19: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+10.02.2021 15:38:27: Polling:3 threads started
+10.02.2021 15:38:27: Polling:3 threads started
+10.02.2021 15:38:27: SubStatus: Polling...
+10.02.2021 15:38:27: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+10.02.2021 15:38:27: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+10.02.2021 15:38:27: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+10.02.2021 15:38:27: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+11.02.2021 09:43:45: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+11.02.2021 09:43:53: Polling:3 threads started
+11.02.2021 09:43:53: Polling:3 threads started
+11.02.2021 09:43:53: SubStatus: Polling...
+11.02.2021 11:40:50: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+11.02.2021 11:40:58: Polling:3 threads started
+11.02.2021 11:40:58: Polling:3 threads started
+11.02.2021 11:40:58: SubStatus: Polling...
+11.02.2021 11:40:58: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+11.02.2021 11:41:53: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+11.02.2021 11:42:01: Polling:3 threads started
+11.02.2021 11:42:01: SubStatus: Polling...
+11.02.2021 11:42:01: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+15.02.2021 10:48:18: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+15.02.2021 10:48:26: Polling:3 threads started
+15.02.2021 10:48:26: SubStatus: Polling...
+15.02.2021 10:48:27: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.IWebServiceManager.GetRssFeed(String address, Boolean isOnlyHeader)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+15.02.2021 15:15:57: Polling:4 threads started
+15.02.2021 15:15:57: SubStatus: Polling...
+17.02.2021 11:54:53: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+17.02.2021 11:55:02: Polling:3 threads started
+17.02.2021 11:55:02: SubStatus: Polling...
+17.02.2021 11:55:02: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.IWebServiceManager.GetRssFeed(String address, Boolean isOnlyHeader)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+17.02.2021 12:59:12: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+17.02.2021 12:59:19: Polling:3 threads started
+17.02.2021 12:59:19: Polling:3 threads started
+17.02.2021 12:59:19: SubStatus: Polling...
+17.02.2021 12:59:19: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+17.02.2021 12:59:19: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+17.02.2021 12:59:19: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+17.02.2021 12:59:19: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+17.02.2021 12:59:34: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+17.02.2021 12:59:41: Polling:3 threads started
+17.02.2021 12:59:41: SubStatus: Polling...
+17.02.2021 12:59:41: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+17.02.2021 12:59:41: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+17.02.2021 12:59:41: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+17.02.2021 12:59:41: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+19.02.2021 12:36:55: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+19.02.2021 12:37:03: Polling:3 threads started
+19.02.2021 12:37:03: Polling:3 threads started
+19.02.2021 12:37:03: SubStatus: Polling...
+19.02.2021 16:37:03: Polling:4 threads started
+19.02.2021 16:37:03: Polling:4 threads started
+19.02.2021 16:37:03: SubStatus: Polling...
+1.03.2021 10:28:54: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+1.03.2021 10:29:03: Polling:3 threads started
+1.03.2021 10:29:03: SubStatus: Polling...
+1.03.2021 14:29:03: Polling:4 threads started
+1.03.2021 14:29:03: SubStatus: Polling...
+2.03.2021 10:35:07: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+2.03.2021 10:35:16: Polling:3 threads started
+2.03.2021 10:35:16: Polling:3 threads started
+2.03.2021 10:35:16: SubStatus: Polling...
+2.03.2021 10:35:16: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.IWebServiceManager.GetRssFeed(String address, Boolean isOnlyHeader)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+2.03.2021 14:35:16: Polling:4 threads started
+2.03.2021 14:35:16: Polling:4 threads started
+2.03.2021 14:35:16: Polling:4 threads started
+2.03.2021 14:35:16: SubStatus: Polling...
+3.03.2021 10:04:27: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+3.03.2021 10:04:35: Polling:3 threads started
+3.03.2021 10:04:35: SubStatus: Polling...
+3.03.2021 10:04:36: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+3.03.2021 14:04:35: Polling:4 threads started
+3.03.2021 14:04:35: SubStatus: Polling...
+4.03.2021 11:31:52: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+4.03.2021 11:32:01: Polling:3 threads started
+4.03.2021 11:32:01: SubStatus: Polling...
+5.03.2021 10:30:11: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+5.03.2021 10:30:19: Polling:3 threads started
+5.03.2021 10:30:19: SubStatus: Polling...
+5.03.2021 10:30:20: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+5.03.2021 14:30:22: Polling:4 threads started
+5.03.2021 14:30:22: Polling:4 threads started
+5.03.2021 14:30:22: SubStatus: Polling...
+6.03.2021 09:43:23: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+6.03.2021 09:43:30: Polling:3 threads started
+6.03.2021 09:43:30: SubStatus: Polling...
+6.03.2021 09:43:31: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+6.03.2021 13:43:32: Polling:4 threads started
+6.03.2021 13:43:32: SubStatus: Polling...
+8.03.2021 16:07:30: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+8.03.2021 16:07:38: Polling:3 threads started
+8.03.2021 16:07:38: SubStatus: Polling...
+9.03.2021 10:14:22: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+9.03.2021 10:14:30: Polling:3 threads started
+9.03.2021 10:14:30: SubStatus: Polling...
+9.03.2021 10:14:31: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.IWebServiceManager.GetRssFeed(String address, Boolean isOnlyHeader)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+9.03.2021 14:14:30: Polling:4 threads started
+9.03.2021 14:14:30: SubStatus: Polling...
+11.03.2021 10:52:57: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+11.03.2021 10:53:06: Polling:3 threads started
+11.03.2021 10:53:06: SubStatus: Polling...
+11.03.2021 12:17:11: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+11.03.2021 12:17:18: Polling:3 threads started
+11.03.2021 12:17:18: Polling:3 threads started
+11.03.2021 12:17:18: SubStatus: Polling...
+14.03.2021 14:41:08: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+14.03.2021 14:41:17: Polling:3 threads started
+14.03.2021 14:41:17: SubStatus: Polling...
+15.03.2021 19:49:04: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+15.03.2021 19:49:14: Polling:3 threads started
+\Users\Hamza\AppData\Local\Autodesk\3dsMax\215.03.2021 19:49:14: Polling:3 threads started
+\Users\Hamza\AppData\Local\Autodesk\3dsMax\215.03.2021 19:49:14: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.IWebServiceManager.GetRssFeed(String address, Boolean isOnlyHeader)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+15.03.2021 23:18:24: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+15.03.2021 23:18:32: Polling:3 threads started
+15.03.2021 23:18:32: SubStatus: Polling...
+15.03.2021 23:18:32: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+16.03.2021 14:34:53: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+16.03.2021 14:35:04: Polling:3 threads started
+16.03.2021 14:35:04: SubStatus: Polling...
+16.03.2021 20:16:39: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+16.03.2021 20:16:50: Polling:3 threads started
+16.03.2021 20:16:50: SubStatus: Polling...
+16.03.2021 20:16:50: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+17.03.2021 22:06:37: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+17.03.2021 22:06:49: Polling:3 threads started
+17.03.2021 22:06:49: SubStatus: Polling...
+17.03.2021 22:06:49: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.IWebServiceManager.GetRssFeed(String address, Boolean isOnlyHeader)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+17.03.2021 23:31:04: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+17.03.2021 23:31:13: Polling:3 threads started
+17.03.2021 23:31:13: SubStatus: Polling...
+17.03.2021 23:31:13: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+17.03.2021 23:31:13: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+17.03.2021 23:31:13: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+17.03.2021 23:31:13: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+18.03.2021 09:43:37: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+18.03.2021 09:43:49: Polling:3 threads started
+18.03.2021 09:43:49: SubStatus: Polling...
+18.03.2021 13:43:49: Polling:4 threads started
+18.03.2021 13:43:49: SubStatus: Polling...
+21.03.2021 01:50:20: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+21.03.2021 01:50:32: Polling:3 threads started
+21.03.2021 01:50:32: SubStatus: Polling...
+24.03.2021 17:35:22: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+24.03.2021 17:35:32: Polling:3 threads started
+24.03.2021 17:35:32: SubStatus: Polling...
+24.03.2021 23:00:41: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+24.03.2021 23:00:48: Polling:3 threads started
+24.03.2021 23:00:48: SubStatus: Polling...
+25.03.2021 10:48:05: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+25.03.2021 10:48:16: Polling:3 threads started
+25.03.2021 10:48:16: SubStatus: Polling...
+27.03.2021 13:38:09: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+27.03.2021 13:38:16: Polling:3 threads started
+27.03.2021 13:38:16: SubStatus: Polling...
+27.03.2021 13:38:17: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.IWebServiceManager.GetRssFeed(String address, Boolean isOnlyHeader)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+27.03.2021 16:15:23: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+27.03.2021 16:15:35: Polling:3 threads started
+27.03.2021 16:15:35: SubStatus: Polling...
+27.03.2021 20:15:37: Polling:4 threads started
+27.03.2021 20:15:37: SubStatus: Polling...
+28.03.2021 00:15:37: Polling:4 threads started
+28.03.2021 00:15:37: Polling:4 threads started
+28.03.2021 00:15:37: SubStatus: Polling...
+28.03.2021 00:42:14: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+28.03.2021 00:42:31: Polling:3 threads started
+28.03.2021 00:42:31: SubStatus: Polling...
+28.03.2021 00:42:31: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+28.03.2021 00:42:31: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+28.03.2021 00:42:31: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+28.03.2021 00:42:31: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+28.03.2021 04:42:31: Polling:4 threads started
+28.03.2021 04:42:31: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+28.03.2021 04:42:31: SubStatus: Polling...
+28.03.2021 04:42:31: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+28.03.2021 04:42:31: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+28.03.2021 04:42:31: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+28.03.2021 08:42:31: Polling:4 threads started
+28.03.2021 08:42:31: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+28.03.2021 08:42:31: SubStatus: Polling...
+28.03.2021 08:42:31: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+28.03.2021 08:42:31: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+28.03.2021 08:42:31: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+28.03.2021 12:42:31: Polling:4 threads started
+28.03.2021 12:42:31: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+28.03.2021 12:42:31: SubStatus: Polling...
+28.03.2021 12:42:31: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+28.03.2021 12:42:31: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+28.03.2021 12:42:31: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+28.03.2021 14:09:11: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+28.03.2021 14:09:28: Polling:3 threads started
+28.03.2021 14:09:28: Polling:3 threads started
+28.03.2021 14:09:28: SubStatus: Polling...
+28.03.2021 14:09:28: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+28.03.2021 14:09:28: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+28.03.2021 14:09:28: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+28.03.2021 14:09:28: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+4.07.2021 18:48:08: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+6.09.2021 15:10:27: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+6.09.2021 15:10:36: Polling:3 threads started
+6.09.2021 15:10:36: SubStatus: Polling...
+6.09.2021 15:10:37: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.IWebServiceManager.GetRssFeed(String address, Boolean isOnlyHeader)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+6.09.2021 16:06:27: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+6.09.2021 16:06:34: Polling:3 threads started
+6.09.2021 16:06:34: SubStatus: Polling...
+6.09.2021 16:06:35: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+6.09.2021 17:16:26: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+6.09.2021 17:16:34: Polling:3 threads started
+6.09.2021 17:16:34: SubStatus: Polling...
+6.09.2021 17:16:34: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+6.09.2021 17:16:34: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+6.09.2021 17:16:34: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+6.09.2021 17:16:34: System.Runtime.InteropServices.COMException (0x80010105): Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+   at Autodesk.Private.InfoCenterLib.ICommCntrController.GetWebServiceManager(Int32 ProcessId)
+   at Autodesk.Private.InfoCenter.RssSource.Retrieve(String Url, Boolean onlyHeader)
+20.09.2021 17:05:19: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+20.09.2021 17:05:28: Polling:3 threads started
+20.09.2021 17:05:28: Polling:3 threads started
+20.09.2021 17:05:28: SubStatus: Polling...
+19.04.2022 14:52:35: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\3dsMax\2014 - 64bit\ENU\infocenter.xml
+19.04.2022 14:52:44: Polling:3 threads started
+19.04.2022 14:52:44: SubStatus: Polling...

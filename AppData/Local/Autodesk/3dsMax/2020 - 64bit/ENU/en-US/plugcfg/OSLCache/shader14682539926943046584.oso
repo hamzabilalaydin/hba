@@ -1,0 +1,11 @@
+OpenShadingLanguage 1.00
+# Compiled by oslc 1.10.2
+# options: -IC:/Program Files/Autodesk/3ds Max 2020/OSL/
+shader SetVector	%meta{string,help,"Just gives a vector value."} %meta{string,label,"Vector"} %meta{string,category,"Values"} 
+param	vector	In	0 0 0		%meta{string,label,"Vector"}  %read{0,0} %write{2147483647,-1}
+oparam	vector	Out	0 0 0		%read{2147483647,-1} %write{0,0}
+code ___main___
+# OSL\SetVector.osl:17
+# }
+	assign		Out In 	%filename{"OSL\SetVector.osl"} %line{17} %argrw{"wr"}
+	end

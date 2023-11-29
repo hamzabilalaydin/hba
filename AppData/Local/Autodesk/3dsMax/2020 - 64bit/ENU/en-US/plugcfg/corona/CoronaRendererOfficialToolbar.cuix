@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ADSK_CUI>
+    <CUIWindows>
+        <Window objectName="Corona Renderer Official Toolbar" name="Corona Renderer Official Toolbar" type="N" cType="1" toolbarRows="1">
+            <Items>
+                <Item typeID="2" type="CTB_MACROBUTTON" width="0" height="0" controlID="0" macroTypeID="4" macroType="MB_TYPE_ACTION_CUSTOM" actionTableID="572340868" iconName="CoronaRenderer0" actionID="0" tip="Add CoronaLight" label="Add CoronaLight" />
+                <Item typeID="2" type="CTB_MACROBUTTON" width="0" height="0" controlID="0" macroTypeID="4" macroType="MB_TYPE_ACTION_CUSTOM" actionTableID="572340868" iconName="CoronaRenderer1" actionID="1" tip="Add CoronaSun" label="Add CoronaSun" />
+                <Item typeID="2" type="CTB_MACROBUTTON" width="0" height="0" controlID="0" macroTypeID="4" macroType="MB_TYPE_ACTION_CUSTOM" actionTableID="572340868" iconName="CoronaRenderer2" actionID="2" tip="Add CoronaCam" label="Add CoronaCam" />
+                <Item typeID="2" type="CTB_MACROBUTTON" width="0" height="0" controlID="0" macroTypeID="4" macroType="MB_TYPE_ACTION_CUSTOM" actionTableID="572340868" iconName="CoronaRenderer3" actionID="3" tip="Add CScatter" label="Add CScatter" />
+                <Item typeID="2" type="CTB_MACROBUTTON" width="0" height="0" controlID="0" macroTypeID="4" macroType="MB_TYPE_ACTION_CUSTOM" actionTableID="572340868" iconName="CoronaRenderer4" actionID="4" tip="Show unified Corona Lister" label="Show unified Corona Lister" />
+                <Item typeID="2" type="CTB_MACROBUTTON" width="0" height="0" controlID="0" macroTypeID="4" macroType="MB_TYPE_ACTION_CUSTOM" actionTableID="572340868" iconName="CoronaRenderer5" actionID="5" tip="Add CProxy" label="Add CProxy" />
+                <Item typeID="2" type="CTB_MACROBUTTON" width="0" height="0" controlID="0" macroTypeID="4" macroType="MB_TYPE_ACTION_CUSTOM" actionTableID="572340868" iconName="CoronaRenderer6" actionID="6" tip="Run Corona Proxy Exporter" label="Run Corona Proxy Exporter" />
+                <Item typeID="2" type="CTB_MACROBUTTON" width="0" height="0" controlID="0" macroTypeID="4" macroType="MB_TYPE_ACTION_CUSTOM" actionTableID="572340868" iconName="CoronaRenderer7" actionID="7" tip="Run Corona Converter" label="Run Corona Converter" />
+                <Item typeID="2" type="CTB_MACROBUTTON" width="0" height="0" controlID="0" macroTypeID="4" macroType="MB_TYPE_ACTION_CUSTOM" actionTableID="572340868" iconName="CoronaRenderer8" actionID="8" tip="Open Corona Material Library" label="Open Corona Material Library" />
+                <Item typeID="2" type="CTB_MACROBUTTON" width="0" height="0" controlID="0" macroTypeID="4" macroType="MB_TYPE_ACTION_CUSTOM" actionTableID="572340868" iconName="CoronaRenderer9" actionID="9" tip="Start interactive rendering in active viewport" label="Start interactive rendering in active viewport" />
+                <Item typeID="2" type="CTB_MACROBUTTON" width="0" height="0" controlID="0" macroTypeID="4" macroType="MB_TYPE_ACTION_CUSTOM" actionTableID="572340868" iconName="CoronaRenderer10" actionID="10" tip="Start interactive rendering in Corona VFB" label="Start interactive rendering in Corona VFB" />
+                <Item typeID="2" type="CTB_MACROBUTTON" width="0" height="0" controlID="0" macroTypeID="4" macroType="MB_TYPE_ACTION_CUSTOM" actionTableID="572340868" iconName="CoronaRenderer11" actionID="11" tip="Create CoronaCam from active perspective view" label="Create CoronaCam from active perspective view" />
+                <Item typeID="2" type="CTB_MACROBUTTON" width="0" height="0" controlID="0" macroTypeID="4" macroType="MB_TYPE_ACTION_CUSTOM" actionTableID="572340868" iconName="CoronaRenderer12" actionID="12" tip="Show Corona VFB" label="Show Corona VFB" />
+                <Item typeID="2" type="CTB_MACROBUTTON" width="0" height="0" controlID="0" macroTypeID="4" macroType="MB_TYPE_ACTION_CUSTOM" actionTableID="572340868" iconName="CoronaRenderer13" actionID="13" tip="Resume last render" label="Resume last render" />
+                <Item typeID="2" type="CTB_MACROBUTTON" width="0" height="0" controlID="0" macroTypeID="4" macroType="MB_TYPE_ACTION_CUSTOM" actionTableID="572340868" iconName="CoronaRenderer14" actionID="14" tip="Setup Corona Interactive LightMix" label="Setup Corona Interactive LightMix" />
+            </Items>
+        </Window>
+    </CUIWindows>
+</ADSK_CUI>

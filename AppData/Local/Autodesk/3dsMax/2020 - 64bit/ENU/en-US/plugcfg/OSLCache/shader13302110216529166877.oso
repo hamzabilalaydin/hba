@@ -1,0 +1,1181 @@
+OpenShadingLanguage 1.00
+# Compiled by oslc 1.10.2
+# options: -IC:/Program Files/Autodesk/3ds Max 2020/OSL/
+shader RandomBitmaps	%meta{string,help,"Randomly place (and alpha blend) a set of bitmaps on top of something else"} %meta{string,label,"Randomized Bitmaps"} 
+param	vector	UVW	0 0 0		%read{3,12} %write{0,0} %derivs %initexpr
+param	color	Input	0 0 0		%meta{string,help,"The input color on top of which everything else is put. Thia allows cascading multiple RandomBitmap on top of each other easily..."}  %read{52,52} %write{2147483647,-1}
+param	float	InputAlpha	1		%meta{string,help,"The input alpha on top of which everything else is put. Thia allows cascading multiple RandomBitmap on top of each other easily..."}  %read{53,53} %write{2147483647,-1}
+param	int	NumFiles	1		%meta{string,label,"Number of Files"} %meta{int,min,1} %meta{int,max,10}  %read{115,115} %write{2147483647,-1}
+param	string	Filename0	"uv-grid.png"		%meta{string,widget,"filename"} %meta{string,label,"File name 0"} %meta{string,help,"The name of the bitmap to place randomly"}  %read{17,269} %write{2147483647,-1} %derivs
+param	string	Filename1	"uv-grid.png"		%meta{string,widget,"filename"} %meta{string,label,"File name 1"} %meta{string,help,"The name of the bitmap to place randomly"}  %read{125,282} %write{2147483647,-1} %derivs
+param	string	Filename2	"uv-grid.png"		%meta{string,widget,"filename"} %meta{string,label,"File name 2"} %meta{string,help,"The name of the bitmap to place randomly"}  %read{128,295} %write{2147483647,-1} %derivs
+param	string	Filename3	"uv-grid.png"		%meta{string,widget,"filename"} %meta{string,label,"File name 3"} %meta{string,help,"The name of the bitmap to place randomly"}  %read{131,308} %write{2147483647,-1} %derivs
+param	string	Filename4	"uv-grid.png"		%meta{string,widget,"filename"} %meta{string,label,"File name 4"} %meta{string,help,"The name of the bitmap to place randomly"}  %read{134,321} %write{2147483647,-1} %derivs
+param	string	Filename5	"uv-grid.png"		%meta{string,widget,"filename"} %meta{string,label,"File name 5"} %meta{string,help,"The name of the bitmap to place randomly"}  %read{137,334} %write{2147483647,-1} %derivs
+param	string	Filename6	"uv-grid.png"		%meta{string,widget,"filename"} %meta{string,label,"File name 6"} %meta{string,help,"The name of the bitmap to place randomly"}  %read{140,347} %write{2147483647,-1} %derivs
+param	string	Filename7	"uv-grid.png"		%meta{string,widget,"filename"} %meta{string,label,"File name 7"} %meta{string,help,"The name of the bitmap to place randomly"}  %read{143,360} %write{2147483647,-1} %derivs
+param	string	Filename8	"uv-grid.png"		%meta{string,widget,"filename"} %meta{string,label,"File name 8"} %meta{string,help,"The name of the bitmap to place randomly"}  %read{146,373} %write{2147483647,-1} %derivs
+param	string	Filename9	"uv-grid.png"		%meta{string,widget,"filename"} %meta{string,label,"File name 9"} %meta{string,help,"The name of the bitmap to place randomly"}  %read{149,386} %write{2147483647,-1} %derivs
+param	int	Seed	39		%meta{string,help,"The random seed"}  %read{64,64} %write{2147483647,-1} %derivs
+param	vector	Probability	1 0 0.1		%meta{string,help,"Three values: The probability a bitmap will show up, the randomness of the variation in the probability, and the scale of said randomness"} %meta{float,min,0} %meta{float,max,1}  %read{101,105} %write{2147483647,-1}
+param	vector	PosRandom	0.5 0.5 0		%meta{string,help,"Position randomness. For large numbers you may have to turn Overlap up, but impacts performance! Note: the Z value is not used."}  %read{91,92} %write{2147483647,-1} %derivs
+param	vector	ScaleMin	1 1 0		%meta{string,help,"The scale randomness. For large scales you may have to turn Overlap up, but impacts performance! Note: the Z value is not used."} %meta{float,min,0} %meta{float,max,10}  %read{156,161} %write{2147483647,-1} %derivs
+param	vector	ScaleMax	1 1 0		%meta{string,help,"The scale randomness. For large scales you may have to turn Overlap up, but impacts performance! Note: the Z value is not used."} %meta{float,min,0} %meta{float,max,10}  %read{157,162} %write{2147483647,-1} %derivs
+param	int	UniformScale	1		%meta{string,widget,"checkBox"} %meta{string,help,"If enabled, U and V scales in sync with each other, if off, they scale independently"}  %read{163,163} %write{2147483647,-1}
+param	float	PixelScale	0		%meta{string,help,"Relates pixels to image size.<ul><li>If zero, each image is considered to be a 1.0 x 1.0 square in UV space.<li>If nonzero, maps that many pixels to a the size of 1.0, so that images are the same size w.r.t. to pixels <i>and</i> retains their aspect ratio.<br/><b>NOTE</b>: Sizes ending up larger than 1.0 will require turning up Overlap, which reduces performance!</li></ul>"}  %read{118,155} %write{2147483647,-1} %derivs
+param	float	RotMin	0		%meta{string,help,"The Rotational randomness."} %meta{float,min,-360} %meta{float,max,360}  %read{180,180} %write{2147483647,-1} %derivs
+param	float	RotMax	0		%meta{string,help,"The Rotational randomness."} %meta{float,min,-360} %meta{float,max,360}  %read{180,180} %write{2147483647,-1} %derivs
+param	int	RotSteps	1		%meta{string,help,"Number of 'steps' of Rotational randomness. 1 means 'no steps'.<br><br>For example, to rotate something only 0, 90, 180 and 270 degrees, set min rotation to 0, max rotation to 270, and RotSteps to 4."} %meta{int,min,1} %meta{int,max,360}  %read{169,175} %write{2147483647,-1} %derivs
+param	vector	HSVMin	0 1 1		%meta{string,help,"Hue/Saturation/Value randomness. Start range of hue shift and saturation/value scaling"} %meta{float,min,-2} %meta{float,max,2}  %read{402,402} %write{2147483647,-1}
+param	vector	HSVMax	0 1 1		%meta{string,help,"Hue/Saturation/Value randomness. End range of hue shift and saturation/value scaling"} %meta{float,min,-2} %meta{float,max,2}  %read{402,402} %write{2147483647,-1}
+param	float	AlphaMin	1		%meta{string,help,"The Alpha randomness. Minimum multiplier of alpha."} %meta{float,min,0} %meta{float,max,1}  %read{404,404} %write{2147483647,-1}
+param	float	AlphaMax	1		%meta{string,help,"The Alpha randomness. Maximum multiplier of alpha."} %meta{float,min,0} %meta{float,max,1}  %read{404,404} %write{2147483647,-1}
+param	float	GammaMin	0		%meta{string,help,"The Gamma randomness. Minimum offset of gamma value."} %meta{float,min,-5} %meta{float,max,5}  %read{396,396} %write{2147483647,-1}
+param	float	GammaMax	0		%meta{string,help,"The Gamma randomness. Maximum offset of gamma value."} %meta{float,min,-5} %meta{float,max,5}  %read{396,396} %write{2147483647,-1}
+param	int	Clamp	1		%meta{string,widget,"checkBox"} %meta{string,help,"Large color tweaks can yield colors outside of the 0-1 range. It's a good idea to clamp those colors to the 0-1 range..."}  %read{421,421} %write{2147483647,-1}
+param	int	AutoGamma	1		%meta{string,widget,"checkBox"}  %read{16,16} %write{2147483647,-1}
+param	float	ManualGamma	1		%meta{string,label,"Manual Gamma"}  %read{51,51} %write{2147483647,-1}
+param	int	OverLap	1		%meta{string,help,"For very large scales or position shifts, you may see cut-off textures. This means the shader may need to look further into more neighbouring cells. Increasing this reduces performance A LOT so ONLY do this if absolutely necessary!"} %meta{int,min,0} %meta{int,max,5}  %read{55,59} %write{2147483647,-1} %derivs
+oparam	color	Out	0 0 0		%read{56,437} %write{52,437}
+oparam	float	Alpha	1		%read{56,437} %write{53,437}
+global	float	u	%read{0,0} %write{2147483647,-1} %derivs
+global	float	v	%read{0,0} %write{2147483647,-1} %derivs
+local	vector	___252_axis	%read{56,437} %write{56,437} %derivs
+local	float	___252_cosang	%read{56,437} %write{56,437} %derivs
+local	float	___252_sinang	%read{56,437} %write{56,437} %derivs
+local	float	___252_cosang1	%read{56,437} %write{56,437} %derivs
+local	float	___252_x	%read{56,437} %write{56,437} %derivs
+local	float	___252_y	%read{56,437} %write{56,437} %derivs
+local	float	___252_z	%read{56,437} %write{56,437} %derivs
+local	matrix	___252_M	%read{56,437} %write{56,437} %derivs
+local	color	___321_rgb	%read{56,437} %write{56,437}
+local	int	___321_channels	%read{56,437} %write{56,437}
+local	int	oslversion	%read{56,437} %write{1,2}
+local	int	ix	%read{10,437} %write{5,5} %derivs
+local	int	iy	%read{13,437} %write{8,8} %derivs
+local	float	fx	%read{56,437} %write{11,11} %derivs
+local	float	fy	%read{56,437} %write{14,14} %derivs
+local	float	gamma	%read{56,437} %write{15,51}
+local	int	___325_xx	%read{56,437} %write{55,437} %derivs
+local	int	___327_yy	%read{56,437} %write{56,437} %derivs
+local	point	___328_rndpoint	%read{56,437} %write{56,437} %derivs
+local	point	___328_pos	%read{56,437} %write{56,437} %derivs
+local	point	___328_lp	%read{56,437} %write{56,437} %derivs
+local	float	___328_prob	%read{56,437} %write{56,437}
+local	point	___330_scr	%read{56,437} %write{56,437} %derivs
+local	int	___330_pic	%read{56,437} %write{56,437}
+local	float	___330_sx	%read{56,437} %write{56,437} %derivs
+local	float	___330_sy	%read{56,437} %write{56,437} %derivs
+local	int[2]	___331_res	%read{56,437} %write{56,437} %derivs
+local	float	___330_scaleX	%read{56,437} %write{56,437} %derivs
+local	float	___330_scaleY	%read{56,437} %write{56,437} %derivs
+local	float	___330_rot	%read{56,437} %write{56,437} %derivs
+local	color	___333_rgb	%read{56,437} %write{56,437}
+local	float	___333_a	%read{56,437} %write{56,437}
+local	point	___334_clr	%read{56,437} %write{56,437}
+local	point	___334_arr	%read{56,437} %write{56,437}
+local	float	___334_gr	%read{56,437} %write{56,437}
+local	vector	___334_hsvTweak	%read{56,437} %write{56,437}
+local	float	___334_ar	%read{56,437} %write{56,437}
+local	color	___334_hsv	%read{56,437} %write{56,437}
+const	int	$const1	0		%read{1,409} %write{2147483647,-1}
+const	float	$const2	0		%read{0,422} %write{2147483647,-1}
+temp	int	$tmp1	%read{2147483647,-1} %write{2,2}
+const	string	$const3	"osl:version"		%read{2,2} %write{2147483647,-1}
+temp	float	$tmp2	%read{5,5} %write{4,4} %derivs
+temp	float	$tmp3	%read{4,4} %write{3,3} %derivs
+temp	float	$tmp4	%read{8,8} %write{7,7} %derivs
+const	int	$const4	1		%read{6,437} %write{2147483647,-1}
+temp	float	$tmp5	%read{7,7} %write{6,6} %derivs
+temp	float	$tmp6	%read{11,11} %write{9,9} %derivs
+temp	float	$tmp7	%read{11,11} %write{10,10} %derivs
+temp	float	$tmp8	%read{14,14} %write{12,12} %derivs
+temp	float	$tmp9	%read{14,14} %write{13,13} %derivs
+const	float	$const5	1		%read{15,431} %write{2147483647,-1}
+temp	int	$tmp10	%read{18,18} %write{17,17}
+const	string	$const6	".exr"		%read{17,17} %write{2147483647,-1}
+temp	int	$tmp11	%read{19,19} %write{18,18}
+temp	int	$tmp12	%read{20,25} %write{19,24}
+temp	int	$tmp13	%read{22,22} %write{21,21}
+const	string	$const7	".EXR"		%read{21,21} %write{2147483647,-1}
+temp	int	$tmp14	%read{23,23} %write{22,22}
+temp	int	$tmp15	%read{24,24} %write{23,23}
+temp	int	$tmp16	%read{26,31} %write{25,30}
+temp	int	$tmp17	%read{28,28} %write{27,27}
+const	string	$const8	".hdr"		%read{27,27} %write{2147483647,-1}
+temp	int	$tmp18	%read{29,29} %write{28,28}
+temp	int	$tmp19	%read{30,30} %write{29,29}
+temp	int	$tmp20	%read{32,37} %write{31,36}
+temp	int	$tmp21	%read{34,34} %write{33,33}
+const	string	$const9	".HDR"		%read{33,33} %write{2147483647,-1}
+temp	int	$tmp22	%read{35,35} %write{34,34}
+temp	int	$tmp23	%read{36,36} %write{35,35}
+temp	int	$tmp24	%read{38,43} %write{37,42}
+temp	int	$tmp25	%read{40,40} %write{39,39}
+const	string	$const10	".tx"		%read{39,39} %write{2147483647,-1}
+temp	int	$tmp26	%read{41,41} %write{40,40}
+temp	int	$tmp27	%read{42,42} %write{41,41}
+temp	int	$tmp28	%read{44,49} %write{43,48}
+temp	int	$tmp29	%read{46,46} %write{45,45}
+const	string	$const11	".TX"		%read{45,45} %write{2147483647,-1}
+temp	int	$tmp30	%read{47,47} %write{46,46}
+temp	int	$tmp31	%read{48,48} %write{47,47}
+const	float	$const12	2.2		%read{50,50} %write{2147483647,-1}
+temp	int	$tmp32	%read{54,437} %write{55,437}
+temp	int	$tmp33	%read{56,437} %write{56,437}
+temp	int	$tmp34	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp35	%read{56,437} %write{56,437} %derivs
+temp	int	$tmp36	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp37	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp38	%read{56,437} %write{56,437} %derivs
+const	int	$const13	11000		%read{66,66} %write{2147483647,-1}
+temp	int	$tmp39	%read{56,437} %write{56,437}
+temp	float	$tmp40	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp41	%read{56,437} %write{56,437}
+temp	int	$tmp42	%read{56,437} %write{56,437}
+temp	float	$tmp43	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp44	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp45	%read{56,437} %write{56,437}
+temp	int	$tmp46	%read{56,437} %write{56,437}
+temp	float	$tmp47	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp48	%read{56,437} %write{56,437} %derivs
+const	int	$const14	2		%read{82,417} %write{2147483647,-1}
+temp	float	$tmp49	%read{56,437} %write{56,437}
+temp	int	$tmp50	%read{56,437} %write{56,437}
+temp	float	$tmp51	%read{56,437} %write{56,437} %derivs
+temp	vector	$tmp52	%read{56,437} %write{56,437} %derivs
+const	string	$const15	"cell"		%read{89,394} %write{2147483647,-1}
+const	vector	$const16	0.5 0.5 0		%read{90,90} %write{2147483647,-1}
+temp	vector	$tmp54	%read{56,437} %write{56,437} %derivs
+temp	vector	$tmp55	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp56	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp57	%read{56,437} %write{56,437} %derivs
+temp	point	$tmp58	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp59	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp60	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp61	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp62	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp63	%read{56,437} %write{56,437}
+temp	float	$tmp64	%read{56,437} %write{56,437}
+const	string	$const17	"perlin"		%read{104,104} %write{2147483647,-1}
+temp	float	$tmp65	%read{56,437} %write{56,437}
+temp	point	$tmp66	%read{56,437} %write{56,437}
+temp	float	$tmp67	%read{56,437} %write{56,437}
+temp	float	$tmp68	%read{56,437} %write{56,437}
+temp	float	$tmp69	%read{56,437} %write{56,437}
+temp	int	$tmp70	%read{56,437} %write{56,437}
+temp	int	$tmp71	%read{56,437} %write{56,437}
+temp	float	$tmp72	%read{56,437} %write{56,437}
+const	float	$const19	15		%read{112,112} %write{2147483647,-1}
+temp	float	$tmp73	%read{56,437} %write{56,437}
+const	float	$const21	100		%read{113,113} %write{2147483647,-1}
+temp	int	$tmp74	%read{56,437} %write{56,437}
+temp	int	$tmp75	%read{56,437} %write{56,437}
+temp	int	$tmp76	%read{2147483647,-1} %write{56,437}
+const	string	$const22	"resolution"		%read{122,149} %write{2147483647,-1}
+temp	int	$tmp77	%read{56,437} %write{56,437}
+temp	int	$tmp78	%read{2147483647,-1} %write{56,437}
+temp	int	$tmp79	%read{56,437} %write{56,437}
+temp	int	$tmp80	%read{2147483647,-1} %write{56,437}
+const	int	$const23	3		%read{129,387} %write{2147483647,-1}
+temp	int	$tmp81	%read{56,437} %write{56,437}
+temp	int	$tmp82	%read{2147483647,-1} %write{56,437}
+const	int	$const24	4		%read{132,313} %write{2147483647,-1}
+temp	int	$tmp83	%read{56,437} %write{56,437}
+temp	int	$tmp84	%read{2147483647,-1} %write{56,437}
+const	int	$const25	5		%read{135,326} %write{2147483647,-1}
+temp	int	$tmp85	%read{56,437} %write{56,437}
+temp	int	$tmp86	%read{2147483647,-1} %write{56,437}
+const	int	$const26	6		%read{138,339} %write{2147483647,-1}
+temp	int	$tmp87	%read{56,437} %write{56,437}
+temp	int	$tmp88	%read{2147483647,-1} %write{56,437}
+const	int	$const27	7		%read{141,352} %write{2147483647,-1}
+temp	int	$tmp89	%read{56,437} %write{56,437}
+temp	int	$tmp90	%read{2147483647,-1} %write{56,437}
+const	int	$const28	8		%read{144,365} %write{2147483647,-1}
+temp	int	$tmp91	%read{56,437} %write{56,437}
+temp	int	$tmp92	%read{2147483647,-1} %write{56,437}
+const	int	$const29	9		%read{147,378} %write{2147483647,-1}
+temp	int	$tmp93	%read{56,437} %write{56,437}
+temp	int	$tmp94	%read{2147483647,-1} %write{56,437}
+temp	int	$tmp95	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp96	%read{56,437} %write{56,437} %derivs
+temp	int	$tmp97	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp98	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp99	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp100	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp101	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp102	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp103	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp104	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp105	%read{56,437} %write{56,437} %derivs
+temp	int	$tmp106	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp107	%read{56,437} %write{56,437} %derivs
+temp	int	$tmp108	%read{56,437} %write{56,437}
+temp	float	$tmp109	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp110	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp111	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp112	%read{56,437} %write{56,437} %derivs
+temp	int	$tmp113	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp114	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp115	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp116	%read{56,437} %write{56,437} %derivs
+const	float	$const30	0.5		%read{181,238} %write{2147483647,-1}
+temp	float	$tmp117	%read{56,437} %write{56,437} %derivs
+const	string	$const31	"radians"		%read{182,182} %write{2147483647,-1}
+const	float	$const32	3.1415927		%read{183,183} %write{2147483647,-1}
+const	float	$const33	180		%read{183,183} %write{2147483647,-1}
+temp	float	$tmp118	%read{56,437} %write{56,437} %derivs
+const	point	$const34	0 0 0		%read{186,235} %write{2147483647,-1}
+const	vector	$const35	0 0 1		%read{186,186} %write{2147483647,-1}
+const	string	$const36	"rotate"		%read{185,185} %write{2147483647,-1}
+temp	vector	$tmp121	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp122	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp123	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp124	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp125	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp126	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp127	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp128	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp129	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp130	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp131	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp132	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp133	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp134	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp135	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp136	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp137	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp138	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp139	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp140	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp141	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp142	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp143	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp144	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp145	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp146	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp147	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp148	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp149	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp150	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp151	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp152	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp153	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp154	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp155	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp156	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp157	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp158	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp159	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp160	%read{56,437} %write{56,437} %derivs
+temp	vector	$tmp161	%read{56,437} %write{56,437} %derivs
+temp	vector	$tmp162	%read{56,437} %write{56,437} %derivs
+temp	vector	$tmp163	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp164	%read{56,437} %write{56,437}
+temp	int	$tmp165	%read{56,437} %write{56,437}
+temp	int	$tmp166	%read{56,437} %write{56,437}
+temp	float	$tmp167	%read{56,437} %write{56,437}
+temp	int	$tmp168	%read{56,437} %write{56,437}
+temp	int	$tmp169	%read{56,437} %write{56,437}
+temp	int	$tmp170	%read{56,437} %write{56,437}
+temp	float	$tmp171	%read{56,437} %write{56,437}
+temp	int	$tmp172	%read{56,437} %write{56,437}
+temp	int	$tmp173	%read{56,437} %write{56,437}
+temp	int	$tmp174	%read{56,437} %write{56,437}
+temp	float	$tmp175	%read{56,437} %write{56,437}
+temp	int	$tmp176	%read{56,437} %write{56,437}
+temp	int	$tmp177	%read{56,437} %write{56,437}
+temp	int	$tmp178	%read{56,437} %write{56,437}
+const	string	$const37	"TextureFetch"		%read{263,380} %write{2147483647,-1}
+temp	float	$tmp179	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp180	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp181	%read{56,437} %write{56,437} %derivs
+const	string	$const38	"alpha"		%read{267,384} %write{2147483647,-1}
+const	string	$const39	"wrap"		%read{267,384} %write{2147483647,-1}
+const	string	$const40	"clamp"		%read{267,424} %write{2147483647,-1}
+temp	int	$tmp182	%read{2147483647,-1} %write{56,437}
+const	string	$const41	"channels"		%read{269,386} %write{2147483647,-1}
+temp	int	$tmp183	%read{56,437} %write{56,437}
+temp	int	$tmp184	%read{56,437} %write{56,437}
+temp	float	$tmp185	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp186	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp187	%read{56,437} %write{56,437} %derivs
+temp	int	$tmp188	%read{2147483647,-1} %write{56,437}
+temp	int	$tmp189	%read{56,437} %write{56,437}
+temp	int	$tmp190	%read{56,437} %write{56,437}
+temp	float	$tmp191	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp192	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp193	%read{56,437} %write{56,437} %derivs
+temp	int	$tmp194	%read{2147483647,-1} %write{56,437}
+temp	int	$tmp195	%read{56,437} %write{56,437}
+temp	int	$tmp196	%read{56,437} %write{56,437}
+temp	float	$tmp197	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp198	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp199	%read{56,437} %write{56,437} %derivs
+temp	int	$tmp200	%read{2147483647,-1} %write{56,437}
+temp	int	$tmp201	%read{56,437} %write{56,437}
+temp	int	$tmp202	%read{56,437} %write{56,437}
+temp	float	$tmp203	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp204	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp205	%read{56,437} %write{56,437} %derivs
+temp	int	$tmp206	%read{2147483647,-1} %write{56,437}
+temp	int	$tmp207	%read{56,437} %write{56,437}
+temp	int	$tmp208	%read{56,437} %write{56,437}
+temp	float	$tmp209	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp210	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp211	%read{56,437} %write{56,437} %derivs
+temp	int	$tmp212	%read{2147483647,-1} %write{56,437}
+temp	int	$tmp213	%read{56,437} %write{56,437}
+temp	int	$tmp214	%read{56,437} %write{56,437}
+temp	float	$tmp215	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp216	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp217	%read{56,437} %write{56,437} %derivs
+temp	int	$tmp218	%read{2147483647,-1} %write{56,437}
+temp	int	$tmp219	%read{56,437} %write{56,437}
+temp	int	$tmp220	%read{56,437} %write{56,437}
+temp	float	$tmp221	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp222	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp223	%read{56,437} %write{56,437} %derivs
+temp	int	$tmp224	%read{2147483647,-1} %write{56,437}
+temp	int	$tmp225	%read{56,437} %write{56,437}
+temp	int	$tmp226	%read{56,437} %write{56,437}
+temp	float	$tmp227	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp228	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp229	%read{56,437} %write{56,437} %derivs
+temp	int	$tmp230	%read{2147483647,-1} %write{56,437}
+temp	int	$tmp231	%read{56,437} %write{56,437}
+temp	int	$tmp232	%read{56,437} %write{56,437}
+temp	float	$tmp233	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp234	%read{56,437} %write{56,437} %derivs
+temp	float	$tmp235	%read{56,437} %write{56,437} %derivs
+temp	int	$tmp236	%read{2147483647,-1} %write{56,437}
+temp	int	$tmp237	%read{56,437} %write{56,437}
+temp	int	$tmp238	%read{56,437} %write{56,437}
+const	float	$const42	2		%read{393,393} %write{2147483647,-1}
+const	float	$const43	3		%read{394,394} %write{2147483647,-1}
+temp	float	$tmp239	%read{56,437} %write{56,437}
+temp	float	$tmp240	%read{56,437} %write{56,437}
+temp	int	$tmp241	%read{56,437} %write{56,437}
+temp	float	$tmp242	%read{56,437} %write{56,437}
+temp	float	$tmp243	%read{56,437} %write{56,437}
+const	string	$const44	"rgb"		%read{405,418} %write{2147483647,-1}
+const	string	$const45	"hsv"		%read{405,418} %write{2147483647,-1}
+temp	float	$tmp244	%read{56,437} %write{56,437}
+temp	float	$tmp245	%read{56,437} %write{56,437}
+temp	float	$tmp246	%read{56,437} %write{56,437}
+temp	float	$tmp247	%read{56,437} %write{56,437}
+temp	float	$tmp248	%read{56,437} %write{56,437}
+temp	float	$tmp249	%read{56,437} %write{56,437}
+temp	float	$tmp250	%read{56,437} %write{56,437}
+temp	float	$tmp251	%read{56,437} %write{56,437}
+temp	float	$tmp252	%read{56,437} %write{56,437}
+temp	color	$tmp253	%read{56,437} %write{56,437}
+temp	color	$tmp254	%read{56,437} %write{56,437}
+temp	color	$tmp255	%read{56,437} %write{56,437}
+temp	float	$tmp256	%read{56,437} %write{56,437}
+temp	float	$tmp257	%read{56,437} %write{56,437}
+temp	float	$tmp258	%read{56,437} %write{56,437}
+temp	float	$tmp259	%read{56,437} %write{56,437}
+temp	color	$tmp260	%read{56,437} %write{56,437}
+temp	int	$tmp261	%read{2147483647,-1} %write{56,437}
+temp	int	$tmp262	%read{2147483647,-1} %write{56,437}
+code UVW
+# OSL\RandomBitmap.osl:24
+# 	color  Input = 0.0
+	vector		UVW u v $const2 	%filename{"OSL\RandomBitmap.osl"} %line{24} %argrw{"wrrr"}
+code ___main___
+# OSL\RandomBitmap.osl:145
+# 	getattribute("osl:version", oslversion);
+	assign		oslversion $const1 	%filename{"OSL\RandomBitmap.osl"} %line{145} %argrw{"wr"}
+# OSL\RandomBitmap.osl:146
+# 	
+	getattribute	$tmp1 $const3 oslversion 	%line{146} %argrw{"wrw"}
+# OSL\RandomBitmap.osl:148
+# 	int   iy = int(floor(UVW[1]));
+	compref		$tmp3 UVW $const1 	%line{148} %argrw{"wrr"}
+	floor		$tmp2 $tmp3 	%argrw{"wr"}
+	assign		ix $tmp2 	%argrw{"wr"}
+# OSL\RandomBitmap.osl:149
+# 	float fx = UVW[0] - ix;
+	compref		$tmp5 UVW $const4 	%line{149} %argrw{"wrr"}
+	floor		$tmp4 $tmp5 	%argrw{"wr"}
+	assign		iy $tmp4 	%argrw{"wr"}
+# OSL\RandomBitmap.osl:150
+# 	float fy = UVW[1] - iy;
+	compref		$tmp6 UVW $const1 	%line{150} %argrw{"wrr"}
+	assign		$tmp7 ix 	%argrw{"wr"}
+	sub		fx $tmp6 $tmp7 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:151
+# 	
+	compref		$tmp8 UVW $const4 	%line{151} %argrw{"wrr"}
+	assign		$tmp9 iy 	%argrw{"wr"}
+	sub		fy $tmp8 $tmp9 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:153
+# 	
+	assign		gamma $const5 	%line{153} %argrw{"wr"}
+# OSL\RandomBitmap.osl:156
+# 	{
+	if		AutoGamma 51 52 	%line{156} %argrw{"r"}
+# OSL\RandomBitmap.osl:158
+# 			!endswith(Filename0, ".EXR") &&
+	endswith	$tmp10 Filename0 $const6 	%line{158} %argrw{"wrr"}
+	eq		$tmp11 $tmp10 $const1 	%argrw{"wrr"}
+	neq		$tmp12 $tmp11 $const1 	%argrw{"wrr"}
+	if		$tmp12 25 25 	%argrw{"r"}
+# OSL\RandomBitmap.osl:159
+# 			!endswith(Filename0, ".hdr") &&
+	endswith	$tmp13 Filename0 $const7 	%line{159} %argrw{"wrr"}
+	eq		$tmp14 $tmp13 $const1 	%argrw{"wrr"}
+	neq		$tmp15 $tmp14 $const1 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:158
+# 			!endswith(Filename0, ".EXR") &&
+	assign		$tmp12 $tmp15 	%line{158} %argrw{"wr"}
+	neq		$tmp16 $tmp12 $const1 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:159
+# 			!endswith(Filename0, ".hdr") &&
+	if		$tmp16 31 31 	%line{159} %argrw{"r"}
+# OSL\RandomBitmap.osl:160
+# 			!endswith(Filename0, ".HDR") &&
+	endswith	$tmp17 Filename0 $const8 	%line{160} %argrw{"wrr"}
+	eq		$tmp18 $tmp17 $const1 	%argrw{"wrr"}
+	neq		$tmp19 $tmp18 $const1 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:159
+# 			!endswith(Filename0, ".hdr") &&
+	assign		$tmp16 $tmp19 	%line{159} %argrw{"wr"}
+	neq		$tmp20 $tmp16 $const1 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:160
+# 			!endswith(Filename0, ".HDR") &&
+	if		$tmp20 37 37 	%line{160} %argrw{"r"}
+# OSL\RandomBitmap.osl:161
+# 			!endswith(Filename0, ".tx")  &&
+	endswith	$tmp21 Filename0 $const9 	%line{161} %argrw{"wrr"}
+	eq		$tmp22 $tmp21 $const1 	%argrw{"wrr"}
+	neq		$tmp23 $tmp22 $const1 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:160
+# 			!endswith(Filename0, ".HDR") &&
+	assign		$tmp20 $tmp23 	%line{160} %argrw{"wr"}
+	neq		$tmp24 $tmp20 $const1 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:161
+# 			!endswith(Filename0, ".tx")  &&
+	if		$tmp24 43 43 	%line{161} %argrw{"r"}
+# OSL\RandomBitmap.osl:162
+# 			!endswith(Filename0, ".TX"))
+	endswith	$tmp25 Filename0 $const10 	%line{162} %argrw{"wrr"}
+	eq		$tmp26 $tmp25 $const1 	%argrw{"wrr"}
+	neq		$tmp27 $tmp26 $const1 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:161
+# 			!endswith(Filename0, ".tx")  &&
+	assign		$tmp24 $tmp27 	%line{161} %argrw{"wr"}
+	neq		$tmp28 $tmp24 $const1 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:162
+# 			!endswith(Filename0, ".TX"))
+	if		$tmp28 49 49 	%line{162} %argrw{"r"}
+# OSL\RandomBitmap.osl:163
+# 		{
+	endswith	$tmp29 Filename0 $const11 	%line{163} %argrw{"wrr"}
+	eq		$tmp30 $tmp29 $const1 	%argrw{"wrr"}
+	neq		$tmp31 $tmp30 $const1 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:162
+# 			!endswith(Filename0, ".TX"))
+	assign		$tmp28 $tmp31 	%line{162} %argrw{"wr"}
+# OSL\RandomBitmap.osl:158
+# 			!endswith(Filename0, ".EXR") &&
+	if		$tmp28 51 51 	%line{158} %argrw{"r"}
+# OSL\RandomBitmap.osl:166
+# 		}
+	assign		gamma $const12 	%line{166} %argrw{"wr"}
+# OSL\RandomBitmap.osl:171
+# 	}
+	assign		gamma ManualGamma 	%line{171} %argrw{"wr"}
+# OSL\RandomBitmap.osl:176
+# 	Alpha = InputAlpha;
+	assign		Out Input 	%line{176} %argrw{"wr"}
+# OSL\RandomBitmap.osl:177
+# 	
+	assign		Alpha InputAlpha 	%line{177} %argrw{"wr"}
+# OSL\RandomBitmap.osl:179
+# 	{
+	for		$tmp32 56 57 436 438 	%line{179} %argrw{"r"}
+	neg		___325_xx OverLap 	%argrw{"wr"}
+	le		$tmp32 ___325_xx OverLap 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:181
+# 		{
+	for		$tmp33 59 60 434 436 	%line{181} %argrw{"r"}
+	neg		___327_yy OverLap 	%argrw{"wr"}
+	le		$tmp33 ___327_yy OverLap 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:184
+# 
+	add		$tmp34 ix ___325_xx 	%line{184} %argrw{"wrr"}
+	assign		$tmp35 $tmp34 	%argrw{"wr"}
+	add		$tmp36 iy ___327_yy 	%argrw{"wrr"}
+	assign		$tmp37 $tmp36 	%argrw{"wr"}
+	assign		$tmp38 Seed 	%argrw{"wr"}
+	point		___328_rndpoint $tmp35 $tmp37 $tmp38 	%argrw{"wrrr"}
+# OSL\RandomBitmap.osl:187
+# 			{
+	ge		$tmp39 oslversion $const13 	%line{187} %argrw{"wrr"}
+	if		$tmp39 89 89 	%argrw{"r"}
+# OSL\RandomBitmap.osl:189
+# 				rndpoint[1] = rndpoint[1] < 0 ? rndpoint[1]-1: rndpoint[1];
+	compref		$tmp41 ___328_rndpoint $const1 	%line{189} %argrw{"wrr"}
+	lt		$tmp42 $tmp41 $const1 	%argrw{"wrr"}
+	if		$tmp42 73 74 	%argrw{"r"}
+	compref		$tmp43 ___328_rndpoint $const1 	%argrw{"wrr"}
+	sub		$tmp40 $tmp43 $const5 	%argrw{"wrr"}
+	compref		$tmp40 ___328_rndpoint $const1 	%argrw{"wrr"}
+	compassign	___328_rndpoint $const1 $tmp40 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:190
+# 				rndpoint[2] = rndpoint[2] < 0 ? rndpoint[2]-1: rndpoint[2];
+	compref		$tmp45 ___328_rndpoint $const4 	%line{190} %argrw{"wrr"}
+	lt		$tmp46 $tmp45 $const1 	%argrw{"wrr"}
+	if		$tmp46 80 81 	%argrw{"r"}
+	compref		$tmp47 ___328_rndpoint $const4 	%argrw{"wrr"}
+	sub		$tmp44 $tmp47 $const5 	%argrw{"wrr"}
+	compref		$tmp44 ___328_rndpoint $const4 	%argrw{"wrr"}
+	compassign	___328_rndpoint $const4 $tmp44 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:191
+# 			}
+	compref		$tmp49 ___328_rndpoint $const14 	%line{191} %argrw{"wrr"}
+	lt		$tmp50 $tmp49 $const1 	%argrw{"wrr"}
+	if		$tmp50 87 88 	%argrw{"r"}
+	compref		$tmp51 ___328_rndpoint $const14 	%argrw{"wrr"}
+	sub		$tmp48 $tmp51 $const5 	%argrw{"wrr"}
+	compref		$tmp48 ___328_rndpoint $const14 	%argrw{"wrr"}
+	compassign	___328_rndpoint $const14 $tmp48 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:195
+# 			
+	noise		$tmp52 $const15 ___328_rndpoint $const2 	%line{195} %argrw{"wrrr"}
+	sub		$tmp54 $tmp52 $const16 	%argrw{"wrr"}
+	compref		$tmp56 PosRandom $const1 	%argrw{"wrr"}
+	compref		$tmp57 PosRandom $const4 	%argrw{"wrr"}
+	vector		$tmp55 $tmp56 $tmp57 $const5 	%argrw{"wrrr"}
+	mul		___328_pos $tmp54 $tmp55 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:198
+# 			
+	assign		$tmp60 ___325_xx 	%line{198} %argrw{"wr"}
+	sub		$tmp59 fx $tmp60 	%argrw{"wrr"}
+	assign		$tmp62 ___327_yy 	%argrw{"wr"}
+	sub		$tmp61 fy $tmp62 	%argrw{"wrr"}
+	point		$tmp58 $tmp59 $tmp61 $const2 	%argrw{"wrrr"}
+	sub		___328_lp $tmp58 ___328_pos 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:200
+# 			
+	compref		$tmp63 Probability $const1 	%line{200} %argrw{"wrr"}
+	compref		$tmp65 Probability $const14 	%argrw{"wrr"}
+	mul		$tmp66 ___328_rndpoint $tmp65 	%argrw{"wrr"}
+	noise		$tmp64 $const17 $tmp66 	%argrw{"wrr"}
+	compref		$tmp67 Probability $const4 	%argrw{"wrr"}
+	mul		$tmp68 $tmp64 $tmp67 	%argrw{"wrr"}
+	add		___328_prob $tmp63 $tmp68 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:203
+# 			{
+	compref		$tmp69 ___328_pos $const14 	%line{203} %argrw{"wrr"}
+	lt		$tmp70 $tmp69 ___328_prob 	%argrw{"wrr"}
+	if		$tmp70 434 434 	%argrw{"r"}
+# OSL\RandomBitmap.osl:206
+# 				int    pic = int((float)noise("cell", rndpoint, 15) * 100) % NumFiles;
+	noise		___330_scr $const15 ___328_rndpoint $const5 	%line{206} %argrw{"wrrr"}
+# OSL\RandomBitmap.osl:207
+# 				
+	noise		$tmp72 $const15 ___328_rndpoint $const19 	%line{207} %argrw{"wrrr"}
+	mul		$tmp73 $tmp72 $const21 	%argrw{"wrr"}
+	assign		$tmp71 $tmp73 	%argrw{"wr"}
+	mod		___330_pic $tmp71 NumFiles 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:210
+# 				
+	assign		___330_sx $const5 	%line{210} %argrw{"wr"}
+	assign		___330_sy $const5 	%argrw{"wr"}
+# OSL\RandomBitmap.osl:212
+# 				{
+	gt		$tmp74 PixelScale $const2 	%line{212} %argrw{"wrr"}
+	if		$tmp74 156 156 	%argrw{"r"}
+# OSL\RandomBitmap.osl:216
+# 					else if (pic == 1) gettextureinfo(Filename1, "resolution", res); 
+	eq		$tmp75 ___330_pic $const1 	%line{216} %argrw{"wrr"}
+	if		$tmp75 123 150 	%argrw{"r"}
+	gettextureinfo	$tmp76 Filename0 $const22 ___331_res 	%argrw{"wrrw"}
+# OSL\RandomBitmap.osl:217
+# 					else if (pic == 2) gettextureinfo(Filename2, "resolution", res); 
+	eq		$tmp77 ___330_pic $const4 	%line{217} %argrw{"wrr"}
+	if		$tmp77 126 150 	%argrw{"r"}
+	gettextureinfo	$tmp78 Filename1 $const22 ___331_res 	%argrw{"wrrw"}
+# OSL\RandomBitmap.osl:218
+# 					else if (pic == 3) gettextureinfo(Filename3, "resolution", res); 				
+	eq		$tmp79 ___330_pic $const14 	%line{218} %argrw{"wrr"}
+	if		$tmp79 129 150 	%argrw{"r"}
+	gettextureinfo	$tmp80 Filename2 $const22 ___331_res 	%argrw{"wrrw"}
+# OSL\RandomBitmap.osl:219
+# 					else if (pic == 4) gettextureinfo(Filename4, "resolution", res); 
+	eq		$tmp81 ___330_pic $const23 	%line{219} %argrw{"wrr"}
+	if		$tmp81 132 150 	%argrw{"r"}
+	gettextureinfo	$tmp82 Filename3 $const22 ___331_res 	%argrw{"wrrw"}
+# OSL\RandomBitmap.osl:220
+# 					else if (pic == 5) gettextureinfo(Filename5, "resolution", res); 
+	eq		$tmp83 ___330_pic $const24 	%line{220} %argrw{"wrr"}
+	if		$tmp83 135 150 	%argrw{"r"}
+	gettextureinfo	$tmp84 Filename4 $const22 ___331_res 	%argrw{"wrrw"}
+# OSL\RandomBitmap.osl:221
+# 					else if (pic == 6) gettextureinfo(Filename6, "resolution", res); 
+	eq		$tmp85 ___330_pic $const25 	%line{221} %argrw{"wrr"}
+	if		$tmp85 138 150 	%argrw{"r"}
+	gettextureinfo	$tmp86 Filename5 $const22 ___331_res 	%argrw{"wrrw"}
+# OSL\RandomBitmap.osl:222
+# 					else if (pic == 7) gettextureinfo(Filename7, "resolution", res); 				
+	eq		$tmp87 ___330_pic $const26 	%line{222} %argrw{"wrr"}
+	if		$tmp87 141 150 	%argrw{"r"}
+	gettextureinfo	$tmp88 Filename6 $const22 ___331_res 	%argrw{"wrrw"}
+# OSL\RandomBitmap.osl:223
+# 					else if (pic == 8) gettextureinfo(Filename8, "resolution", res); 
+	eq		$tmp89 ___330_pic $const27 	%line{223} %argrw{"wrr"}
+	if		$tmp89 144 150 	%argrw{"r"}
+	gettextureinfo	$tmp90 Filename7 $const22 ___331_res 	%argrw{"wrrw"}
+# OSL\RandomBitmap.osl:224
+# 					else if (pic == 9) gettextureinfo(Filename9, "resolution", res);
+	eq		$tmp91 ___330_pic $const28 	%line{224} %argrw{"wrr"}
+	if		$tmp91 147 150 	%argrw{"r"}
+	gettextureinfo	$tmp92 Filename8 $const22 ___331_res 	%argrw{"wrrw"}
+# OSL\RandomBitmap.osl:225
+# 					
+	eq		$tmp93 ___330_pic $const29 	%line{225} %argrw{"wrr"}
+	if		$tmp93 150 150 	%argrw{"r"}
+	gettextureinfo	$tmp94 Filename9 $const22 ___331_res 	%argrw{"wrrw"}
+# OSL\RandomBitmap.osl:227
+# 					sy = res[1] / PixelScale;
+	aref		$tmp95 ___331_res $const1 	%line{227} %argrw{"wrr"}
+	assign		$tmp96 $tmp95 	%argrw{"wr"}
+	div		___330_sx $tmp96 PixelScale 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:228
+# 				}
+	aref		$tmp97 ___331_res $const4 	%line{228} %argrw{"wrr"}
+	assign		$tmp98 $tmp97 	%argrw{"wr"}
+	div		___330_sy $tmp98 PixelScale 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:231
+# 				float scaleY = sy * mix(ScaleMin[1], ScaleMax[1], scr[UniformScale?0:1]);
+	compref		$tmp100 ScaleMin $const1 	%line{231} %argrw{"wrr"}
+	compref		$tmp101 ScaleMax $const1 	%argrw{"wrr"}
+	compref		$tmp102 ___330_scr $const1 	%argrw{"wrr"}
+	mix		$tmp99 $tmp100 $tmp101 $tmp102 	%argrw{"wrrr"}
+	mul		___330_scaleX ___330_sx $tmp99 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:232
+# 				
+	compref		$tmp104 ScaleMin $const4 	%line{232} %argrw{"wrr"}
+	compref		$tmp105 ScaleMax $const4 	%argrw{"wrr"}
+	if		UniformScale 165 166 	%argrw{"r"}
+	assign		$tmp106 $const1 	%argrw{"wr"}
+	assign		$tmp106 $const4 	%argrw{"wr"}
+	compref		$tmp107 ___330_scr $tmp106 	%argrw{"wrr"}
+	mix		$tmp103 $tmp104 $tmp105 $tmp107 	%argrw{"wrrr"}
+	mul		___330_scaleY ___330_sy $tmp103 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:234
+# 				{
+	gt		$tmp108 RotSteps $const4 	%line{234} %argrw{"wrr"}
+	if		$tmp108 179 179 	%argrw{"r"}
+# OSL\RandomBitmap.osl:236
+# 				}
+	compref		$tmp110 ___330_scr $const14 	%line{236} %argrw{"wrr"}
+	assign		$tmp112 RotSteps 	%argrw{"wr"}
+	mul		$tmp111 $tmp110 $tmp112 	%argrw{"wrr"}
+	floor		$tmp109 $tmp111 	%argrw{"wr"}
+	sub		$tmp113 RotSteps $const4 	%argrw{"wrr"}
+	assign		$tmp115 $tmp113 	%argrw{"wr"}
+	div		$tmp114 $tmp109 $tmp115 	%argrw{"wrr"}
+	compassign	___330_scr $const14 $tmp114 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:239
+# 				
+	compref		$tmp116 ___330_scr $const14 	%line{239} %argrw{"wrr"}
+	mix		___330_rot RotMin RotMax $tmp116 	%argrw{"wrrr"}
+# OSL\RandomBitmap.osl:241
+# 				lp  = rotate(lp, radians(rot), point(0,0,0), vector(0,0,1));
+	sub		___328_lp ___328_lp $const30 	%line{241} %argrw{"wrr"}
+# OSL\RandomBitmap.osl:242
+# 				lp /= vector(scaleX, scaleY, 1.0);
+	functioncall	$const31 185 	%line{242} %argrw{"r"}
+# C:/Program Files\Autodesk\3ds Max 2020\OSL\stdosl.h:88
+# float  radians (float x)  { return x*(M_PI/180.0); }
+	div		$tmp118 $const32 $const33 	%filename{"C:/Program Files\Autodesk\3ds Max 2020\OSL\stdosl.h"} %line{88} %argrw{"wrr"}
+	mul		$tmp117 ___330_rot $tmp118 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:242
+# 				lp /= vector(scaleX, scaleY, 1.0);
+	functioncall	$const36 236 	%filename{"OSL\RandomBitmap.osl"} %line{242} %argrw{"r"}
+# C:/Program Files\Autodesk\3ds Max 2020\OSL\stdosl.h:292
+#     vector axis = normalize (b - a);
+	sub		$tmp121 $const35 $const34 	%filename{"C:/Program Files\Autodesk\3ds Max 2020\OSL\stdosl.h"} %line{292} %argrw{"wrr"}
+	normalize	___252_axis $tmp121 	%argrw{"wr"}
+# C:/Program Files\Autodesk\3ds Max 2020\OSL\stdosl.h:294
+#     sincos (angle, sinang, cosang);
+	sincos		$tmp117 ___252_sinang ___252_cosang 	%line{294} %argrw{"rww"}
+# C:/Program Files\Autodesk\3ds Max 2020\OSL\stdosl.h:295
+#     float cosang1 = 1.0 - cosang;
+	sub		___252_cosang1 $const5 ___252_cosang 	%line{295} %argrw{"wrr"}
+# C:/Program Files\Autodesk\3ds Max 2020\OSL\stdosl.h:296
+#     float x = axis[0], y = axis[1], z = axis[2];
+	compref		___252_x ___252_axis $const1 	%line{296} %argrw{"wrr"}
+	compref		___252_y ___252_axis $const4 	%argrw{"wrr"}
+	compref		___252_z ___252_axis $const14 	%argrw{"wrr"}
+# C:/Program Files\Autodesk\3ds Max 2020\OSL\stdosl.h:297
+#     matrix M = matrix (x * x + (1.0 - x * x) * cosang,
+	mul		$tmp122 ___252_x ___252_x 	%line{297} %argrw{"wrr"}
+	mul		$tmp123 ___252_x ___252_x 	%argrw{"wrr"}
+	sub		$tmp124 $const5 $tmp123 	%argrw{"wrr"}
+	mul		$tmp125 $tmp124 ___252_cosang 	%argrw{"wrr"}
+	add		$tmp126 $tmp122 $tmp125 	%argrw{"wrr"}
+# C:/Program Files\Autodesk\3ds Max 2020\OSL\stdosl.h:298
+#                        x * y * cosang1 + z * sinang,
+	mul		$tmp127 ___252_x ___252_y 	%line{298} %argrw{"wrr"}
+	mul		$tmp128 $tmp127 ___252_cosang1 	%argrw{"wrr"}
+	mul		$tmp129 ___252_z ___252_sinang 	%argrw{"wrr"}
+	add		$tmp130 $tmp128 $tmp129 	%argrw{"wrr"}
+# C:/Program Files\Autodesk\3ds Max 2020\OSL\stdosl.h:299
+#                        x * z * cosang1 - y * sinang,
+	mul		$tmp131 ___252_x ___252_z 	%line{299} %argrw{"wrr"}
+	mul		$tmp132 $tmp131 ___252_cosang1 	%argrw{"wrr"}
+	mul		$tmp133 ___252_y ___252_sinang 	%argrw{"wrr"}
+	sub		$tmp134 $tmp132 $tmp133 	%argrw{"wrr"}
+# C:/Program Files\Autodesk\3ds Max 2020\OSL\stdosl.h:301
+#                        x * y * cosang1 - z * sinang,
+	mul		$tmp135 ___252_x ___252_y 	%line{301} %argrw{"wrr"}
+	mul		$tmp136 $tmp135 ___252_cosang1 	%argrw{"wrr"}
+	mul		$tmp137 ___252_z ___252_sinang 	%argrw{"wrr"}
+	sub		$tmp138 $tmp136 $tmp137 	%argrw{"wrr"}
+# C:/Program Files\Autodesk\3ds Max 2020\OSL\stdosl.h:302
+#                        y * y + (1.0 - y * y) * cosang,
+	mul		$tmp139 ___252_y ___252_y 	%line{302} %argrw{"wrr"}
+	mul		$tmp140 ___252_y ___252_y 	%argrw{"wrr"}
+	sub		$tmp141 $const5 $tmp140 	%argrw{"wrr"}
+	mul		$tmp142 $tmp141 ___252_cosang 	%argrw{"wrr"}
+	add		$tmp143 $tmp139 $tmp142 	%argrw{"wrr"}
+# C:/Program Files\Autodesk\3ds Max 2020\OSL\stdosl.h:303
+#                        y * z * cosang1 + x * sinang,
+	mul		$tmp144 ___252_y ___252_z 	%line{303} %argrw{"wrr"}
+	mul		$tmp145 $tmp144 ___252_cosang1 	%argrw{"wrr"}
+	mul		$tmp146 ___252_x ___252_sinang 	%argrw{"wrr"}
+	add		$tmp147 $tmp145 $tmp146 	%argrw{"wrr"}
+# C:/Program Files\Autodesk\3ds Max 2020\OSL\stdosl.h:305
+#                        x * z * cosang1 + y * sinang,
+	mul		$tmp148 ___252_x ___252_z 	%line{305} %argrw{"wrr"}
+	mul		$tmp149 $tmp148 ___252_cosang1 	%argrw{"wrr"}
+	mul		$tmp150 ___252_y ___252_sinang 	%argrw{"wrr"}
+	add		$tmp151 $tmp149 $tmp150 	%argrw{"wrr"}
+# C:/Program Files\Autodesk\3ds Max 2020\OSL\stdosl.h:306
+#                        y * z * cosang1 - x * sinang,
+	mul		$tmp152 ___252_y ___252_z 	%line{306} %argrw{"wrr"}
+	mul		$tmp153 $tmp152 ___252_cosang1 	%argrw{"wrr"}
+	mul		$tmp154 ___252_x ___252_sinang 	%argrw{"wrr"}
+	sub		$tmp155 $tmp153 $tmp154 	%argrw{"wrr"}
+# C:/Program Files\Autodesk\3ds Max 2020\OSL\stdosl.h:307
+#                        z * z + (1.0 - z * z) * cosang,
+	mul		$tmp156 ___252_z ___252_z 	%line{307} %argrw{"wrr"}
+	mul		$tmp157 ___252_z ___252_z 	%argrw{"wrr"}
+	sub		$tmp158 $const5 $tmp157 	%argrw{"wrr"}
+	mul		$tmp159 $tmp158 ___252_cosang 	%argrw{"wrr"}
+	add		$tmp160 $tmp156 $tmp159 	%argrw{"wrr"}
+# C:/Program Files\Autodesk\3ds Max 2020\OSL\stdosl.h:297
+#     matrix M = matrix (x * x + (1.0 - x * x) * cosang,
+	matrix		___252_M $tmp126 $tmp130 $tmp134 $const2 $tmp138 $tmp143 $tmp147 $const2 $tmp151 $tmp155 $tmp160 $const2 $const2 $const2 $const2 $const5 	%line{297} %argrw{"wrrrrrrrrrrrrrrrr"}
+# C:/Program Files\Autodesk\3ds Max 2020\OSL\stdosl.h:310
+#     return transform (M, p-a) + a;
+	sub		$tmp162 ___328_lp $const34 	%line{310} %argrw{"wrr"}
+	transformv	$tmp161 ___252_M $tmp162 	%argrw{"wrr"}
+	add		___328_lp $tmp161 $const34 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:243
+# 				lp += 0.5;
+	vector		$tmp163 ___330_scaleX ___330_scaleY $const5 	%filename{"OSL\RandomBitmap.osl"} %line{243} %argrw{"wrrr"}
+	div		___328_lp ___328_lp $tmp163 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:244
+# 								
+	add		___328_lp ___328_lp $const30 	%line{244} %argrw{"wrr"}
+# OSL\RandomBitmap.osl:246
+# 				    lp[1] >= 0.0 && lp[1] < 1.0)
+	compref		$tmp164 ___328_lp $const1 	%line{246} %argrw{"wrr"}
+	ge		$tmp165 $tmp164 $const2 	%argrw{"wrr"}
+	neq		$tmp166 $tmp165 $const1 	%argrw{"wrr"}
+	if		$tmp166 247 247 	%argrw{"r"}
+	compref		$tmp167 ___328_lp $const1 	%argrw{"wrr"}
+	lt		$tmp168 $tmp167 $const5 	%argrw{"wrr"}
+	neq		$tmp169 $tmp168 $const1 	%argrw{"wrr"}
+	assign		$tmp166 $tmp169 	%argrw{"wr"}
+	neq		$tmp170 $tmp166 $const1 	%argrw{"wrr"}
+	if		$tmp170 253 253 	%argrw{"r"}
+# OSL\RandomBitmap.osl:247
+# 				{																			
+	compref		$tmp171 ___328_lp $const4 	%line{247} %argrw{"wrr"}
+	ge		$tmp172 $tmp171 $const2 	%argrw{"wrr"}
+	neq		$tmp173 $tmp172 $const1 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:246
+# 				    lp[1] >= 0.0 && lp[1] < 1.0)
+	assign		$tmp170 $tmp173 	%line{246} %argrw{"wr"}
+	neq		$tmp174 $tmp170 $const1 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:247
+# 				{																			
+	if		$tmp174 259 259 	%line{247} %argrw{"r"}
+	compref		$tmp175 ___328_lp $const4 	%argrw{"wrr"}
+	lt		$tmp176 $tmp175 $const5 	%argrw{"wrr"}
+	neq		$tmp177 $tmp176 $const1 	%argrw{"wrr"}
+	assign		$tmp174 $tmp177 	%argrw{"wr"}
+# OSL\RandomBitmap.osl:246
+# 				    lp[1] >= 0.0 && lp[1] < 1.0)
+	if		$tmp174 434 434 	%line{246} %argrw{"r"}
+# OSL\RandomBitmap.osl:250
+# 					
+	assign		___333_a $const5 	%line{250} %argrw{"wr"}
+# OSL\RandomBitmap.osl:252
+# 					else if (pic == 1) rgb = TextureFetch(Filename1, lp, a); 
+	eq		$tmp178 ___330_pic $const1 	%line{252} %argrw{"wrr"}
+	if		$tmp178 274 391 	%argrw{"r"}
+	functioncall	$const37 274 	%argrw{"r"}
+# OSL\RandomBitmap.osl:10
+# 
+	compref		$tmp179 ___328_lp $const1 	%line{10} %argrw{"wrr"}
+	compref		$tmp180 ___328_lp $const4 	%argrw{"wrr"}
+	sub		$tmp181 $const5 $tmp180 	%argrw{"wrr"}
+	texture		___321_rgb Filename0 $tmp179 $tmp181 $const38 ___333_a $const39 $const40 	%argrw{"wrrrrwrr"} %argderivs{2,3}
+# OSL\RandomBitmap.osl:12
+# 	gettextureinfo(filename, "channels", channels);
+	assign		___321_channels $const23 	%line{12} %argrw{"wr"}
+# OSL\RandomBitmap.osl:13
+# 	if (channels <= 3)  // If there is no alpha...
+	gettextureinfo	$tmp182 Filename0 $const41 ___321_channels 	%line{13} %argrw{"wrrw"}
+# OSL\RandomBitmap.osl:14
+# 		a = 1.0;        // ...use 1.0
+	le		$tmp183 ___321_channels $const23 	%line{14} %argrw{"wrr"}
+	if		$tmp183 273 273 	%argrw{"r"}
+# OSL\RandomBitmap.osl:15
+# 		
+	assign		___333_a $const5 	%line{15} %argrw{"wr"}
+# OSL\RandomBitmap.osl:17
+# }
+	assign		___333_rgb ___321_rgb 	%line{17} %argrw{"wr"}
+# OSL\RandomBitmap.osl:253
+# 					else if (pic == 2) rgb = TextureFetch(Filename2, lp, a); 
+	eq		$tmp184 ___330_pic $const4 	%line{253} %argrw{"wrr"}
+	if		$tmp184 287 391 	%argrw{"r"}
+	functioncall	$const37 287 	%argrw{"r"}
+# OSL\RandomBitmap.osl:10
+# 
+	compref		$tmp185 ___328_lp $const1 	%line{10} %argrw{"wrr"}
+	compref		$tmp186 ___328_lp $const4 	%argrw{"wrr"}
+	sub		$tmp187 $const5 $tmp186 	%argrw{"wrr"}
+	texture		___321_rgb Filename1 $tmp185 $tmp187 $const38 ___333_a $const39 $const40 	%argrw{"wrrrrwrr"} %argderivs{2,3}
+# OSL\RandomBitmap.osl:12
+# 	gettextureinfo(filename, "channels", channels);
+	assign		___321_channels $const23 	%line{12} %argrw{"wr"}
+# OSL\RandomBitmap.osl:13
+# 	if (channels <= 3)  // If there is no alpha...
+	gettextureinfo	$tmp188 Filename1 $const41 ___321_channels 	%line{13} %argrw{"wrrw"}
+# OSL\RandomBitmap.osl:14
+# 		a = 1.0;        // ...use 1.0
+	le		$tmp189 ___321_channels $const23 	%line{14} %argrw{"wrr"}
+	if		$tmp189 286 286 	%argrw{"r"}
+# OSL\RandomBitmap.osl:15
+# 		
+	assign		___333_a $const5 	%line{15} %argrw{"wr"}
+# OSL\RandomBitmap.osl:17
+# }
+	assign		___333_rgb ___321_rgb 	%line{17} %argrw{"wr"}
+# OSL\RandomBitmap.osl:254
+# 					else if (pic == 3) rgb = TextureFetch(Filename3, lp, a); 			
+	eq		$tmp190 ___330_pic $const14 	%line{254} %argrw{"wrr"}
+	if		$tmp190 300 391 	%argrw{"r"}
+	functioncall	$const37 300 	%argrw{"r"}
+# OSL\RandomBitmap.osl:10
+# 
+	compref		$tmp191 ___328_lp $const1 	%line{10} %argrw{"wrr"}
+	compref		$tmp192 ___328_lp $const4 	%argrw{"wrr"}
+	sub		$tmp193 $const5 $tmp192 	%argrw{"wrr"}
+	texture		___321_rgb Filename2 $tmp191 $tmp193 $const38 ___333_a $const39 $const40 	%argrw{"wrrrrwrr"} %argderivs{2,3}
+# OSL\RandomBitmap.osl:12
+# 	gettextureinfo(filename, "channels", channels);
+	assign		___321_channels $const23 	%line{12} %argrw{"wr"}
+# OSL\RandomBitmap.osl:13
+# 	if (channels <= 3)  // If there is no alpha...
+	gettextureinfo	$tmp194 Filename2 $const41 ___321_channels 	%line{13} %argrw{"wrrw"}
+# OSL\RandomBitmap.osl:14
+# 		a = 1.0;        // ...use 1.0
+	le		$tmp195 ___321_channels $const23 	%line{14} %argrw{"wrr"}
+	if		$tmp195 299 299 	%argrw{"r"}
+# OSL\RandomBitmap.osl:15
+# 		
+	assign		___333_a $const5 	%line{15} %argrw{"wr"}
+# OSL\RandomBitmap.osl:17
+# }
+	assign		___333_rgb ___321_rgb 	%line{17} %argrw{"wr"}
+# OSL\RandomBitmap.osl:255
+# 					else if (pic == 4) rgb = TextureFetch(Filename4, lp, a); 
+	eq		$tmp196 ___330_pic $const23 	%line{255} %argrw{"wrr"}
+	if		$tmp196 313 391 	%argrw{"r"}
+	functioncall	$const37 313 	%argrw{"r"}
+# OSL\RandomBitmap.osl:10
+# 
+	compref		$tmp197 ___328_lp $const1 	%line{10} %argrw{"wrr"}
+	compref		$tmp198 ___328_lp $const4 	%argrw{"wrr"}
+	sub		$tmp199 $const5 $tmp198 	%argrw{"wrr"}
+	texture		___321_rgb Filename3 $tmp197 $tmp199 $const38 ___333_a $const39 $const40 	%argrw{"wrrrrwrr"} %argderivs{2,3}
+# OSL\RandomBitmap.osl:12
+# 	gettextureinfo(filename, "channels", channels);
+	assign		___321_channels $const23 	%line{12} %argrw{"wr"}
+# OSL\RandomBitmap.osl:13
+# 	if (channels <= 3)  // If there is no alpha...
+	gettextureinfo	$tmp200 Filename3 $const41 ___321_channels 	%line{13} %argrw{"wrrw"}
+# OSL\RandomBitmap.osl:14
+# 		a = 1.0;        // ...use 1.0
+	le		$tmp201 ___321_channels $const23 	%line{14} %argrw{"wrr"}
+	if		$tmp201 312 312 	%argrw{"r"}
+# OSL\RandomBitmap.osl:15
+# 		
+	assign		___333_a $const5 	%line{15} %argrw{"wr"}
+# OSL\RandomBitmap.osl:17
+# }
+	assign		___333_rgb ___321_rgb 	%line{17} %argrw{"wr"}
+# OSL\RandomBitmap.osl:256
+# 					else if (pic == 5) rgb = TextureFetch(Filename5, lp, a); 
+	eq		$tmp202 ___330_pic $const24 	%line{256} %argrw{"wrr"}
+	if		$tmp202 326 391 	%argrw{"r"}
+	functioncall	$const37 326 	%argrw{"r"}
+# OSL\RandomBitmap.osl:10
+# 
+	compref		$tmp203 ___328_lp $const1 	%line{10} %argrw{"wrr"}
+	compref		$tmp204 ___328_lp $const4 	%argrw{"wrr"}
+	sub		$tmp205 $const5 $tmp204 	%argrw{"wrr"}
+	texture		___321_rgb Filename4 $tmp203 $tmp205 $const38 ___333_a $const39 $const40 	%argrw{"wrrrrwrr"} %argderivs{2,3}
+# OSL\RandomBitmap.osl:12
+# 	gettextureinfo(filename, "channels", channels);
+	assign		___321_channels $const23 	%line{12} %argrw{"wr"}
+# OSL\RandomBitmap.osl:13
+# 	if (channels <= 3)  // If there is no alpha...
+	gettextureinfo	$tmp206 Filename4 $const41 ___321_channels 	%line{13} %argrw{"wrrw"}
+# OSL\RandomBitmap.osl:14
+# 		a = 1.0;        // ...use 1.0
+	le		$tmp207 ___321_channels $const23 	%line{14} %argrw{"wrr"}
+	if		$tmp207 325 325 	%argrw{"r"}
+# OSL\RandomBitmap.osl:15
+# 		
+	assign		___333_a $const5 	%line{15} %argrw{"wr"}
+# OSL\RandomBitmap.osl:17
+# }
+	assign		___333_rgb ___321_rgb 	%line{17} %argrw{"wr"}
+# OSL\RandomBitmap.osl:257
+# 					else if (pic == 6) rgb = TextureFetch(Filename6, lp, a); 
+	eq		$tmp208 ___330_pic $const25 	%line{257} %argrw{"wrr"}
+	if		$tmp208 339 391 	%argrw{"r"}
+	functioncall	$const37 339 	%argrw{"r"}
+# OSL\RandomBitmap.osl:10
+# 
+	compref		$tmp209 ___328_lp $const1 	%line{10} %argrw{"wrr"}
+	compref		$tmp210 ___328_lp $const4 	%argrw{"wrr"}
+	sub		$tmp211 $const5 $tmp210 	%argrw{"wrr"}
+	texture		___321_rgb Filename5 $tmp209 $tmp211 $const38 ___333_a $const39 $const40 	%argrw{"wrrrrwrr"} %argderivs{2,3}
+# OSL\RandomBitmap.osl:12
+# 	gettextureinfo(filename, "channels", channels);
+	assign		___321_channels $const23 	%line{12} %argrw{"wr"}
+# OSL\RandomBitmap.osl:13
+# 	if (channels <= 3)  // If there is no alpha...
+	gettextureinfo	$tmp212 Filename5 $const41 ___321_channels 	%line{13} %argrw{"wrrw"}
+# OSL\RandomBitmap.osl:14
+# 		a = 1.0;        // ...use 1.0
+	le		$tmp213 ___321_channels $const23 	%line{14} %argrw{"wrr"}
+	if		$tmp213 338 338 	%argrw{"r"}
+# OSL\RandomBitmap.osl:15
+# 		
+	assign		___333_a $const5 	%line{15} %argrw{"wr"}
+# OSL\RandomBitmap.osl:17
+# }
+	assign		___333_rgb ___321_rgb 	%line{17} %argrw{"wr"}
+# OSL\RandomBitmap.osl:258
+# 					else if (pic == 7) rgb = TextureFetch(Filename7, lp, a); 			
+	eq		$tmp214 ___330_pic $const26 	%line{258} %argrw{"wrr"}
+	if		$tmp214 352 391 	%argrw{"r"}
+	functioncall	$const37 352 	%argrw{"r"}
+# OSL\RandomBitmap.osl:10
+# 
+	compref		$tmp215 ___328_lp $const1 	%line{10} %argrw{"wrr"}
+	compref		$tmp216 ___328_lp $const4 	%argrw{"wrr"}
+	sub		$tmp217 $const5 $tmp216 	%argrw{"wrr"}
+	texture		___321_rgb Filename6 $tmp215 $tmp217 $const38 ___333_a $const39 $const40 	%argrw{"wrrrrwrr"} %argderivs{2,3}
+# OSL\RandomBitmap.osl:12
+# 	gettextureinfo(filename, "channels", channels);
+	assign		___321_channels $const23 	%line{12} %argrw{"wr"}
+# OSL\RandomBitmap.osl:13
+# 	if (channels <= 3)  // If there is no alpha...
+	gettextureinfo	$tmp218 Filename6 $const41 ___321_channels 	%line{13} %argrw{"wrrw"}
+# OSL\RandomBitmap.osl:14
+# 		a = 1.0;        // ...use 1.0
+	le		$tmp219 ___321_channels $const23 	%line{14} %argrw{"wrr"}
+	if		$tmp219 351 351 	%argrw{"r"}
+# OSL\RandomBitmap.osl:15
+# 		
+	assign		___333_a $const5 	%line{15} %argrw{"wr"}
+# OSL\RandomBitmap.osl:17
+# }
+	assign		___333_rgb ___321_rgb 	%line{17} %argrw{"wr"}
+# OSL\RandomBitmap.osl:259
+# 					else if (pic == 8) rgb = TextureFetch(Filename8, lp, a); 
+	eq		$tmp220 ___330_pic $const27 	%line{259} %argrw{"wrr"}
+	if		$tmp220 365 391 	%argrw{"r"}
+	functioncall	$const37 365 	%argrw{"r"}
+# OSL\RandomBitmap.osl:10
+# 
+	compref		$tmp221 ___328_lp $const1 	%line{10} %argrw{"wrr"}
+	compref		$tmp222 ___328_lp $const4 	%argrw{"wrr"}
+	sub		$tmp223 $const5 $tmp222 	%argrw{"wrr"}
+	texture		___321_rgb Filename7 $tmp221 $tmp223 $const38 ___333_a $const39 $const40 	%argrw{"wrrrrwrr"} %argderivs{2,3}
+# OSL\RandomBitmap.osl:12
+# 	gettextureinfo(filename, "channels", channels);
+	assign		___321_channels $const23 	%line{12} %argrw{"wr"}
+# OSL\RandomBitmap.osl:13
+# 	if (channels <= 3)  // If there is no alpha...
+	gettextureinfo	$tmp224 Filename7 $const41 ___321_channels 	%line{13} %argrw{"wrrw"}
+# OSL\RandomBitmap.osl:14
+# 		a = 1.0;        // ...use 1.0
+	le		$tmp225 ___321_channels $const23 	%line{14} %argrw{"wrr"}
+	if		$tmp225 364 364 	%argrw{"r"}
+# OSL\RandomBitmap.osl:15
+# 		
+	assign		___333_a $const5 	%line{15} %argrw{"wr"}
+# OSL\RandomBitmap.osl:17
+# }
+	assign		___333_rgb ___321_rgb 	%line{17} %argrw{"wr"}
+# OSL\RandomBitmap.osl:260
+# 					else if (pic == 9) rgb = TextureFetch(Filename9, lp, a); 
+	eq		$tmp226 ___330_pic $const28 	%line{260} %argrw{"wrr"}
+	if		$tmp226 378 391 	%argrw{"r"}
+	functioncall	$const37 378 	%argrw{"r"}
+# OSL\RandomBitmap.osl:10
+# 
+	compref		$tmp227 ___328_lp $const1 	%line{10} %argrw{"wrr"}
+	compref		$tmp228 ___328_lp $const4 	%argrw{"wrr"}
+	sub		$tmp229 $const5 $tmp228 	%argrw{"wrr"}
+	texture		___321_rgb Filename8 $tmp227 $tmp229 $const38 ___333_a $const39 $const40 	%argrw{"wrrrrwrr"} %argderivs{2,3}
+# OSL\RandomBitmap.osl:12
+# 	gettextureinfo(filename, "channels", channels);
+	assign		___321_channels $const23 	%line{12} %argrw{"wr"}
+# OSL\RandomBitmap.osl:13
+# 	if (channels <= 3)  // If there is no alpha...
+	gettextureinfo	$tmp230 Filename8 $const41 ___321_channels 	%line{13} %argrw{"wrrw"}
+# OSL\RandomBitmap.osl:14
+# 		a = 1.0;        // ...use 1.0
+	le		$tmp231 ___321_channels $const23 	%line{14} %argrw{"wrr"}
+	if		$tmp231 377 377 	%argrw{"r"}
+# OSL\RandomBitmap.osl:15
+# 		
+	assign		___333_a $const5 	%line{15} %argrw{"wr"}
+# OSL\RandomBitmap.osl:17
+# }
+	assign		___333_rgb ___321_rgb 	%line{17} %argrw{"wr"}
+# OSL\RandomBitmap.osl:261
+# 					
+	eq		$tmp232 ___330_pic $const29 	%line{261} %argrw{"wrr"}
+	if		$tmp232 391 391 	%argrw{"r"}
+	functioncall	$const37 391 	%argrw{"r"}
+# OSL\RandomBitmap.osl:10
+# 
+	compref		$tmp233 ___328_lp $const1 	%line{10} %argrw{"wrr"}
+	compref		$tmp234 ___328_lp $const4 	%argrw{"wrr"}
+	sub		$tmp235 $const5 $tmp234 	%argrw{"wrr"}
+	texture		___321_rgb Filename9 $tmp233 $tmp235 $const38 ___333_a $const39 $const40 	%argrw{"wrrrrwrr"} %argderivs{2,3}
+# OSL\RandomBitmap.osl:12
+# 	gettextureinfo(filename, "channels", channels);
+	assign		___321_channels $const23 	%line{12} %argrw{"wr"}
+# OSL\RandomBitmap.osl:13
+# 	if (channels <= 3)  // If there is no alpha...
+	gettextureinfo	$tmp236 Filename9 $const41 ___321_channels 	%line{13} %argrw{"wrrw"}
+# OSL\RandomBitmap.osl:14
+# 		a = 1.0;        // ...use 1.0
+	le		$tmp237 ___321_channels $const23 	%line{14} %argrw{"wrr"}
+	if		$tmp237 390 390 	%argrw{"r"}
+# OSL\RandomBitmap.osl:15
+# 		
+	assign		___333_a $const5 	%line{15} %argrw{"wr"}
+# OSL\RandomBitmap.osl:17
+# }
+	assign		___333_rgb ___321_rgb 	%line{17} %argrw{"wr"}
+# OSL\RandomBitmap.osl:263
+# 					{
+	gt		$tmp238 ___333_a $const2 	%line{263} %argrw{"wrr"}
+	if		$tmp238 427 427 	%argrw{"r"}
+# OSL\RandomBitmap.osl:266
+# 						// Alpha and Gamma randomness
+	noise		___334_clr $const15 ___328_rndpoint $const42 	%line{266} %argrw{"wrrr"}
+# OSL\RandomBitmap.osl:268
+# 					
+	noise		___334_arr $const15 ___328_rndpoint $const43 	%line{268} %argrw{"wrrr"}
+# OSL\RandomBitmap.osl:270
+# 						
+	compref		$tmp239 ___334_arr $const4 	%line{270} %argrw{"wrr"}
+	mix		___334_gr GammaMin GammaMax $tmp239 	%argrw{"wrrr"}
+# OSL\RandomBitmap.osl:272
+# 							rgb = pow(rgb, gamma + gr);				
+	add		$tmp240 gamma ___334_gr 	%line{272} %argrw{"wrr"}
+	neq		$tmp241 $tmp240 $const5 	%argrw{"wrr"}
+	if		$tmp241 402 402 	%argrw{"r"}
+# OSL\RandomBitmap.osl:273
+# 						
+	add		$tmp242 gamma ___334_gr 	%line{273} %argrw{"wrr"}
+	pow		___333_rgb ___333_rgb $tmp242 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:275
+# 						float       ar  = mix(AlphaMin, AlphaMax, arr[0]);
+	mix		___334_hsvTweak HSVMin HSVMax ___334_clr 	%line{275} %argrw{"wrrr"}
+# OSL\RandomBitmap.osl:276
+# 						
+	compref		$tmp243 ___334_arr $const1 	%line{276} %argrw{"wrr"}
+	mix		___334_ar AlphaMin AlphaMax $tmp243 	%argrw{"wrrr"}
+# OSL\RandomBitmap.osl:278
+# 						hsv[0] += hsvTweak[0]; // Offset the hue
+	transformc	___334_hsv $const44 $const45 ___333_rgb 	%line{278} %argrw{"wrrr"}
+# OSL\RandomBitmap.osl:279
+# 						hsv[1] *= hsvTweak[1]; // Scale the saturation
+	compref		$tmp244 ___334_hsv $const1 	%line{279} %argrw{"wrr"}
+	compref		$tmp245 ___334_hsvTweak $const1 	%argrw{"wrr"}
+	add		$tmp246 $tmp244 $tmp245 	%argrw{"wrr"}
+	compassign	___334_hsv $const1 $tmp246 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:280
+# 						hsv[2] *= hsvTweak[2]; // Scale the value
+	compref		$tmp247 ___334_hsv $const4 	%line{280} %argrw{"wrr"}
+	compref		$tmp248 ___334_hsvTweak $const4 	%argrw{"wrr"}
+	mul		$tmp249 $tmp247 $tmp248 	%argrw{"wrr"}
+	compassign	___334_hsv $const4 $tmp249 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:281
+# 						rgb = transformc("hsv", "rgb", hsv);					
+	compref		$tmp250 ___334_hsv $const14 	%line{281} %argrw{"wrr"}
+	compref		$tmp251 ___334_hsvTweak $const14 	%argrw{"wrr"}
+	mul		$tmp252 $tmp250 $tmp251 	%argrw{"wrr"}
+	compassign	___334_hsv $const14 $tmp252 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:282
+# 											
+	transformc	___333_rgb $const45 $const44 ___334_hsv 	%line{282} %argrw{"wrrr"}
+# OSL\RandomBitmap.osl:285
+# 						
+	mul		___333_rgb ___333_rgb ___334_ar 	%line{285} %argrw{"wrr"}
+	mul		___333_a ___333_a ___334_ar 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:287
+# 							rgb = clamp(rgb, 0.0, 1.0);
+	if		Clamp 427 427 	%line{287} %argrw{"r"}
+# OSL\RandomBitmap.osl:288
+# 					}
+	assign		$tmp253 $const2 	%line{288} %argrw{"wr"}
+	assign		$tmp254 $const5 	%argrw{"wr"}
+	functioncall	$const40 427 	%argrw{"r"}
+# C:/Program Files\Autodesk\3ds Max 2020\OSL\stdosl.h:162
+# color  clamp (color x, color minval, color maxval) { return max(min(x,maxval),minval); }
+	min		$tmp255 ___333_rgb $tmp254 	%filename{"C:/Program Files\Autodesk\3ds Max 2020\OSL\stdosl.h"} %line{162} %argrw{"wrr"}
+	max		___333_rgb $tmp255 $tmp253 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:290
+# 					Out = Out * (1.0-a) + rgb;
+	sub		$tmp256 $const5 Alpha 	%filename{"OSL\RandomBitmap.osl"} %line{290} %argrw{"wrr"}
+	sub		$tmp257 $const5 ___333_a 	%argrw{"wrr"}
+	mul		$tmp258 $tmp256 $tmp257 	%argrw{"wrr"}
+	sub		Alpha $const5 $tmp258 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:291
+# 				}			
+	sub		$tmp259 $const5 ___333_a 	%line{291} %argrw{"wrr"}
+	mul		$tmp260 Out $tmp259 	%argrw{"wrr"}
+	add		Out $tmp260 ___333_rgb 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:181
+# 		{
+	assign		$tmp261 ___327_yy 	%line{181} %argrw{"wr"}
+	add		___327_yy ___327_yy $const4 	%argrw{"wrr"}
+# OSL\RandomBitmap.osl:179
+# 	{
+	assign		$tmp262 ___325_xx 	%line{179} %argrw{"wr"}
+	add		___325_xx ___325_xx $const4 	%argrw{"wrr"}
+	end

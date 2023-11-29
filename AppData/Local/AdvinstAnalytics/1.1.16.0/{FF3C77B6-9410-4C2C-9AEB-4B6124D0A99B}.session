@@ -1,0 +1,139 @@
+[Hit {F04ED88F-FE9C-45C9-B0D1-00148BE1D403}]
+Queue Time = 0
+Hit Type = property
+Label = VersionNT
+Value = 1000
+Protocol Version = 3
+Application Version = 1.1.16.0
+Client ID = 3B3F0A264E37A45E470D29B12230392CAF30A70D
+Session ID = {FF3C77B6-9410-4C2C-9AEB-4B6124D0A99B}
+
+[Hit {36A1AAF5-D28C-4629-852E-3C099DE96E21}]
+Queue Time = 0
+Hit Type = property
+Label = VersionNT64
+Value = 1000
+Protocol Version = 3
+Application Version = 1.1.16.0
+Client ID = 3B3F0A264E37A45E470D29B12230392CAF30A70D
+Session ID = {FF3C77B6-9410-4C2C-9AEB-4B6124D0A99B}
+
+[Hit {19119292-167C-4112-BBCD-39410AA740F8}]
+Queue Time = 0
+Hit Type = property
+Label = PhysicalMemory
+Value = 7935
+Protocol Version = 3
+Application Version = 1.1.16.0
+Client ID = 3B3F0A264E37A45E470D29B12230392CAF30A70D
+Session ID = {FF3C77B6-9410-4C2C-9AEB-4B6124D0A99B}
+
+[Hit {953BA045-50A3-4A93-967F-86B3514A2CB6}]
+Queue Time = 0
+Hit Type = property
+Label = VersionMsi
+Value = 5.00
+Protocol Version = 3
+Application Version = 1.1.16.0
+Client ID = 3B3F0A264E37A45E470D29B12230392CAF30A70D
+Session ID = {FF3C77B6-9410-4C2C-9AEB-4B6124D0A99B}
+
+[Hit {63D0EE77-5DBF-4F11-9D0E-888CE1CFE58D}]
+Queue Time = 0
+Hit Type = property
+Label = UILevel
+Value = 2
+Protocol Version = 3
+Application Version = 1.1.16.0
+Client ID = 3B3F0A264E37A45E470D29B12230392CAF30A70D
+Session ID = {FF3C77B6-9410-4C2C-9AEB-4B6124D0A99B}
+
+[Hit {EE5D96D6-64DA-4137-826F-27EB53C2C383}]
+Queue Time = 0
+Hit Type = property
+Label = VirtualMemory
+Value = 14586
+Protocol Version = 3
+Application Version = 1.1.16.0
+Client ID = 3B3F0A264E37A45E470D29B12230392CAF30A70D
+Session ID = {FF3C77B6-9410-4C2C-9AEB-4B6124D0A99B}
+
+[Hit {DC675E0A-6BEF-487A-99D0-8A759A311E65}]
+Queue Time = 0
+Hit Type = property
+Label = MsiNTProductType
+Value = 1
+Protocol Version = 3
+Application Version = 1.1.16.0
+Client ID = 3B3F0A264E37A45E470D29B12230392CAF30A70D
+Session ID = {FF3C77B6-9410-4C2C-9AEB-4B6124D0A99B}
+
+[Hit {FCE81326-9D0F-4028-A643-073DF799B7CE}]
+Queue Time = 0
+Hit Type = property
+Label = ServicePackLevel
+Value = 0
+Protocol Version = 3
+Application Version = 1.1.16.0
+Client ID = 3B3F0A264E37A45E470D29B12230392CAF30A70D
+Session ID = {FF3C77B6-9410-4C2C-9AEB-4B6124D0A99B}
+
+[Hit {EE8F25B9-67E1-4D85-93A2-99B898F5EC96}]
+Queue Time = 0
+Hit Type = property
+Label = ProductLanguage
+Value = 1033
+Protocol Version = 3
+Application Version = 1.1.16.0
+Client ID = 3B3F0A264E37A45E470D29B12230392CAF30A70D
+Session ID = {FF3C77B6-9410-4C2C-9AEB-4B6124D0A99B}
+
+[Hit {A3183E0C-36C1-425E-AD59-4374FD0D8AC3}]
+Queue Time = 0
+Hit Type = property
+Label = ScreenResolution
+Value = 1920x1080
+Protocol Version = 3
+Application Version = 1.1.16.0
+Client ID = 3B3F0A264E37A45E470D29B12230392CAF30A70D
+Session ID = {FF3C77B6-9410-4C2C-9AEB-4B6124D0A99B}
+
+[Hit {F2AE6EA6-A1FE-4C03-AC98-C8E97F92F9C8}]
+Queue Time = 0
+Hit Type = property
+Label = UserLanguage
+Value = tr-TR
+Protocol Version = 3
+Application Version = 1.1.16.0
+Client ID = 3B3F0A264E37A45E470D29B12230392CAF30A70D
+Session ID = {FF3C77B6-9410-4C2C-9AEB-4B6124D0A99B}
+
+[Hit {1B73F10D-C097-4A57-9677-A887A15CF6E9}]
+Queue Time = 0
+Hit Type = property
+Label = DpiScale
+Value = 120
+Protocol Version = 3
+Application Version = 1.1.16.0
+Client ID = 3B3F0A264E37A45E470D29B12230392CAF30A70D
+Session ID = {FF3C77B6-9410-4C2C-9AEB-4B6124D0A99B}
+
+[Hit {6ACD47C9-6101-4F74-AE19-9F30968E9B8B}]
+Queue Time = 0
+Hit Type = property
+Label = Win10Ver
+Value = 10.0.19044
+Protocol Version = 3
+Application Version = 1.1.16.0
+Client ID = 3B3F0A264E37A45E470D29B12230392CAF30A70D
+Session ID = {FF3C77B6-9410-4C2C-9AEB-4B6124D0A99B}
+
+[Hit {F813BD2B-6D63-4FA7-B861-7EFCF7816E0E}]
+Queue Time = 0
+Hit Type = property
+Label = Win10ReleaseId
+Value = 2009
+Protocol Version = 3
+Application Version = 1.1.16.0
+Client ID = 3B3F0A264E37A45E470D29B12230392CAF30A70D
+Session ID = {FF3C77B6-9410-4C2C-9AEB-4B6124D0A99B}

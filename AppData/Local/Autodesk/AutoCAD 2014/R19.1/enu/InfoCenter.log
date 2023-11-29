@@ -1,0 +1,293 @@
+26.01.2023 13:31:32: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\AutoCAD 2014\R19.1\enu\Support\infocenter.xml
+26.01.2023 13:31:36: ICommunicationCenterConnector.SubAwareServiceUrl does not contain valid URL.
+ Attempting to load from registry
+26.01.2023 13:31:36: SubStatus: No or Bad URL defined in registry - Using default: http://cadservices.autodesk.com/subscriptionservice/subservice
+26.01.2023 13:31:36: Polling:2 threads started
+26.01.2023 13:31:36: SubStatus: Polling...
+26.01.2023 13:31:37: Polling: All threads finished
+26.01.2023 13:31:38: System.Runtime.InteropServices.COMException (0x80004005): Bir COM bileşenine yapılan çağrıdan HRESULT E_FAIL hatası döndürüldü.
+   konum: Autodesk.Private.InfoCenterLib.ICommCntrManager.GetChannelsAndContents(Boolean bWithContents, Boolean bSignedUpChannelsOnly)
+   konum: Autodesk.Private.InfoCenter.CommunicationCenter.GetChannels(ConfigurationUnitCollection& channelCollection)
+26.01.2023 16:40:11: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\AutoCAD 2014\R19.1\enu\Support\infocenter.xml
+26.01.2023 16:40:14: ICommunicationCenterConnector.SubAwareServiceUrl does not contain valid URL.
+ Attempting to load from registry
+26.01.2023 16:40:14: SubStatus: No or Bad URL defined in registry - Using default: http://cadservices.autodesk.com/subscriptionservice/subservice
+26.01.2023 16:40:14: Polling:2 threads started
+26.01.2023 16:40:14: SubStatus: Polling...
+26.01.2023 16:40:15: System.Runtime.InteropServices.COMException (0x80004005): Bir COM bileşenine yapılan çağrıdan HRESULT E_FAIL hatası döndürüldü.
+   konum: Autodesk.Private.InfoCenterLib.ICommCntrManager.GetChannelsAndContents(Boolean bWithContents, Boolean bSignedUpChannelsOnly)
+   konum: Autodesk.Private.InfoCenter.CommunicationCenter.GetChannels(ConfigurationUnitCollection& channelCollection)
+26.01.2023 16:40:15: Polling: All threads finished
+26.01.2023 16:40:18: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\AutoCAD 2014\R19.1\enu\Support\infocenter.xml
+26.01.2023 16:40:21: ICommunicationCenterConnector.SubAwareServiceUrl does not contain valid URL.
+ Attempting to load from registry
+26.01.2023 16:40:21: SubStatus: No or Bad URL defined in registry - Using default: http://cadservices.autodesk.com/subscriptionservice/subservice
+26.01.2023 16:40:21: Polling:2 threads started
+26.01.2023 16:40:21: SubStatus: Polling...
+26.01.2023 16:40:21: System.Runtime.InteropServices.COMException (0x80004005): Bir COM bileşenine yapılan çağrıdan HRESULT E_FAIL hatası döndürüldü.
+   konum: Autodesk.Private.InfoCenterLib.ICommCntrManager.GetChannelsAndContents(Boolean bWithContents, Boolean bSignedUpChannelsOnly)
+   konum: Autodesk.Private.InfoCenter.CommunicationCenter.GetChannels(ConfigurationUnitCollection& channelCollection)
+26.01.2023 16:40:21: Polling: All threads finished
+26.01.2023 16:40:38: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\AutoCAD 2014\R19.1\enu\Support\infocenter.xml
+26.01.2023 16:40:40: ICommunicationCenterConnector.SubAwareServiceUrl does not contain valid URL.
+ Attempting to load from registry
+26.01.2023 16:40:40: SubStatus: No or Bad URL defined in registry - Using default: http://cadservices.autodesk.com/subscriptionservice/subservice
+26.01.2023 16:40:40: Polling:2 threads started
+26.01.2023 16:40:40: Polling:2 threads started
+26.01.2023 16:40:40: SubStatus: Polling...
+26.01.2023 16:40:41: System.Runtime.InteropServices.COMException (0x80004005): Bir COM bileşenine yapılan çağrıdan HRESULT E_FAIL hatası döndürüldü.
+   konum: Autodesk.Private.InfoCenterLib.ICommCntrManager.GetChannelsAndContents(Boolean bWithContents, Boolean bSignedUpChannelsOnly)
+   konum: Autodesk.Private.InfoCenter.CommunicationCenter.GetChannels(ConfigurationUnitCollection& channelCollection)
+26.01.2023 16:40:41: Polling: All threads finished
+28.01.2023 00:22:06: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\AutoCAD 2014\R19.1\enu\Support\infocenter.xml
+28.01.2023 00:22:09: ICommunicationCenterConnector.SubAwareServiceUrl does not contain valid URL.
+ Attempting to load from registry
+28.01.2023 00:22:09: SubStatus: No or Bad URL defined in registry - Using default: http://cadservices.autodesk.com/subscriptionservice/subservice
+28.01.2023 00:22:09: Polling:2 threads started
+28.01.2023 00:22:09: SubStatus: Polling...
+28.01.2023 00:22:11: Polling: All threads finished
+28.01.2023 00:22:11: System.Runtime.InteropServices.COMException (0x80004005): Bir COM bileşenine yapılan çağrıdan HRESULT E_FAIL hatası döndürüldü.
+   konum: Autodesk.Private.InfoCenterLib.ICommCntrManager.GetChannelsAndContents(Boolean bWithContents, Boolean bSignedUpChannelsOnly)
+   konum: Autodesk.Private.InfoCenter.CommunicationCenter.GetChannels(ConfigurationUnitCollection& channelCollection)
+28.01.2023 03:11:17: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\AutoCAD 2014\R19.1\enu\Support\infocenter.xml
+28.01.2023 03:11:20: ICommunicationCenterConnector.SubAwareServiceUrl does not contain valid URL.
+ Attempting to load from registry
+28.01.2023 03:11:20: SubStatus: No or Bad URL defined in registry - Using default: http://cadservices.autodesk.com/subscriptionservice/subservice
+28.01.2023 03:11:20: Polling:2 threads started
+28.01.2023 03:11:20: SubStatus: Polling...
+28.01.2023 03:11:20: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+28.01.2023 03:11:20: Polling: All threads finished
+28.01.2023 03:11:21: System.Runtime.InteropServices.COMException (0x80004005): Bir COM bileşenine yapılan çağrıdan HRESULT E_FAIL hatası döndürüldü.
+   konum: Autodesk.Private.InfoCenterLib.ICommCntrManager.GetChannelsAndContents(Boolean bWithContents, Boolean bSignedUpChannelsOnly)
+   konum: Autodesk.Private.InfoCenter.CommunicationCenter.GetChannels(ConfigurationUnitCollection& channelCollection)
+28.01.2023 03:11:31: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\AutoCAD 2014\R19.1\enu\Support\infocenter.xml
+28.01.2023 03:11:33: ICommunicationCenterConnector.SubAwareServiceUrl does not contain valid URL.
+ Attempting to load from registry
+28.01.2023 03:11:33: SubStatus: No or Bad URL defined in registry - Using default: http://cadservices.autodesk.com/subscriptionservice/subservice
+28.01.2023 03:11:33: Polling:2 threads started
+28.01.2023 03:11:33: SubStatus: Polling...
+28.01.2023 03:11:33: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+28.01.2023 03:11:33: System.Runtime.InteropServices.COMException (0x80004005): Bir COM bileşenine yapılan çağrıdan HRESULT E_FAIL hatası döndürüldü.
+   konum: Autodesk.Private.InfoCenterLib.ICommCntrManager.GetChannelsAndContents(Boolean bWithContents, Boolean bSignedUpChannelsOnly)
+   konum: Autodesk.Private.InfoCenter.CommunicationCenter.GetChannels(ConfigurationUnitCollection& channelCollection)
+28.01.2023 03:11:34: Polling: All threads finished
+28.01.2023 03:11:58: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\AutoCAD 2014\R19.1\enu\Support\infocenter.xml
+28.01.2023 03:12:00: ICommunicationCenterConnector.SubAwareServiceUrl does not contain valid URL.
+ Attempting to load from registry
+28.01.2023 03:12:00: SubStatus: No or Bad URL defined in registry - Using default: http://cadservices.autodesk.com/subscriptionservice/subservice
+28.01.2023 03:12:00: Polling:2 threads started
+28.01.2023 03:12:00: SubStatus: Polling...
+28.01.2023 03:12:00: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+28.01.2023 03:12:00: Polling: All threads finished
+28.01.2023 03:12:00: System.Runtime.InteropServices.COMException (0x80004005): Bir COM bileşenine yapılan çağrıdan HRESULT E_FAIL hatası döndürüldü.
+   konum: Autodesk.Private.InfoCenterLib.ICommCntrManager.GetChannelsAndContents(Boolean bWithContents, Boolean bSignedUpChannelsOnly)
+   konum: Autodesk.Private.InfoCenter.CommunicationCenter.GetChannels(ConfigurationUnitCollection& channelCollection)
+28.01.2023 05:24:03: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\AutoCAD 2014\R19.1\enu\Support\infocenter.xml
+28.01.2023 05:24:05: ICommunicationCenterConnector.SubAwareServiceUrl does not contain valid URL.
+ Attempting to load from registry
+28.01.2023 05:24:05: SubStatus: No or Bad URL defined in registry - Using default: http://cadservices.autodesk.com/subscriptionservice/subservice
+28.01.2023 05:24:05: Polling:2 threads started
+28.01.2023 05:24:05: SubStatus: Polling...
+28.01.2023 05:24:05: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+28.01.2023 05:24:06: System.Runtime.InteropServices.COMException (0x80004005): Bir COM bileşenine yapılan çağrıdan HRESULT E_FAIL hatası döndürüldü.
+   konum: Autodesk.Private.InfoCenterLib.ICommCntrManager.GetChannelsAndContents(Boolean bWithContents, Boolean bSignedUpChannelsOnly)
+   konum: Autodesk.Private.InfoCenter.CommunicationCenter.GetChannels(ConfigurationUnitCollection& channelCollection)
+28.01.2023 05:24:07: Polling: All threads finished
+28.01.2023 05:24:17: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\AutoCAD 2014\R19.1\enu\Support\infocenter.xml
+28.01.2023 05:24:20: ICommunicationCenterConnector.SubAwareServiceUrl does not contain valid URL.
+ Attempting to load from registry
+28.01.2023 05:24:20: SubStatus: No or Bad URL defined in registry - Using default: http://cadservices.autodesk.com/subscriptionservice/subservice
+28.01.2023 05:24:20: Polling:2 threads started
+28.01.2023 05:24:20: SubStatus: Polling...
+28.01.2023 05:24:20: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+28.01.2023 05:24:20: Polling: All threads finished
+28.01.2023 05:24:20: System.Runtime.InteropServices.COMException (0x80004005): Bir COM bileşenine yapılan çağrıdan HRESULT E_FAIL hatası döndürüldü.
+   konum: Autodesk.Private.InfoCenterLib.ICommCntrManager.GetChannelsAndContents(Boolean bWithContents, Boolean bSignedUpChannelsOnly)
+   konum: Autodesk.Private.InfoCenter.CommunicationCenter.GetChannels(ConfigurationUnitCollection& channelCollection)
+28.01.2023 05:24:32: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\AutoCAD 2014\R19.1\enu\Support\infocenter.xml
+28.01.2023 05:24:34: ICommunicationCenterConnector.SubAwareServiceUrl does not contain valid URL.
+ Attempting to load from registry
+28.01.2023 05:24:34: SubStatus: No or Bad URL defined in registry - Using default: http://cadservices.autodesk.com/subscriptionservice/subservice
+28.01.2023 05:24:34: Polling:2 threads started
+28.01.2023 05:24:34: SubStatus: Polling...
+28.01.2023 05:24:34: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+28.01.2023 05:24:34: Polling: All threads finished
+28.01.2023 05:24:35: System.Runtime.InteropServices.COMException (0x80004005): Bir COM bileşenine yapılan çağrıdan HRESULT E_FAIL hatası döndürüldü.
+   konum: Autodesk.Private.InfoCenterLib.ICommCntrManager.GetChannelsAndContents(Boolean bWithContents, Boolean bSignedUpChannelsOnly)
+   konum: Autodesk.Private.InfoCenter.CommunicationCenter.GetChannels(ConfigurationUnitCollection& channelCollection)
+28.01.2023 06:20:03: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\AutoCAD 2014\R19.1\enu\Support\infocenter.xml
+28.01.2023 06:20:06: ICommunicationCenterConnector.SubAwareServiceUrl does not contain valid URL.
+ Attempting to load from registry
+28.01.2023 06:20:06: SubStatus: No or Bad URL defined in registry - Using default: http://cadservices.autodesk.com/subscriptionservice/subservice
+28.01.2023 06:20:06: Polling:2 threads started
+28.01.2023 06:20:06: SubStatus: Polling...
+28.01.2023 06:20:06: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+28.01.2023 06:20:08: Polling: All threads finished
+28.01.2023 06:20:10: System.Runtime.InteropServices.COMException (0x80004005): Bir COM bileşenine yapılan çağrıdan HRESULT E_FAIL hatası döndürüldü.
+   konum: Autodesk.Private.InfoCenterLib.ICommCntrManager.GetChannelsAndContents(Boolean bWithContents, Boolean bSignedUpChannelsOnly)
+   konum: Autodesk.Private.InfoCenter.CommunicationCenter.GetChannels(ConfigurationUnitCollection& channelCollection)
+28.01.2023 18:42:58: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\AutoCAD 2014\R19.1\enu\Support\infocenter.xml
+28.01.2023 18:43:02: ICommunicationCenterConnector.SubAwareServiceUrl does not contain valid URL.
+ Attempting to load from registry
+28.01.2023 18:43:02: SubStatus: No or Bad URL defined in registry - Using default: http://cadservices.autodesk.com/subscriptionservice/subservice
+28.01.2023 18:43:02: Polling:2 threads started
+28.01.2023 18:43:02: Polling:2 threads started
+28.01.2023 18:43:02: SubStatus: Polling...
+28.01.2023 18:43:03: System.Runtime.InteropServices.COMException (0x80004005): Bir COM bileşenine yapılan çağrıdan HRESULT E_FAIL hatası döndürüldü.
+   konum: Autodesk.Private.InfoCenterLib.ICommCntrManager.GetChannelsAndContents(Boolean bWithContents, Boolean bSignedUpChannelsOnly)
+   konum: Autodesk.Private.InfoCenter.CommunicationCenter.GetChannels(ConfigurationUnitCollection& channelCollection)
+28.01.2023 18:43:04: Polling: All threads finished
+28.01.2023 18:44:53: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\AutoCAD 2014\R19.1\enu\Support\infocenter.xml
+28.01.2023 18:44:56: ICommunicationCenterConnector.SubAwareServiceUrl does not contain valid URL.
+ Attempting to load from registry
+28.01.2023 18:44:56: SubStatus: No or Bad URL defined in registry - Using default: http://cadservices.autodesk.com/subscriptionservice/subservice
+28.01.2023 18:44:56: Polling:2 threads started
+28.01.2023 18:44:56: SubStatus: Polling...
+28.01.2023 18:44:57: Polling: All threads finished
+28.01.2023 18:44:58: System.Runtime.InteropServices.COMException (0x80004005): Bir COM bileşenine yapılan çağrıdan HRESULT E_FAIL hatası döndürüldü.
+   konum: Autodesk.Private.InfoCenterLib.ICommCntrManager.GetChannelsAndContents(Boolean bWithContents, Boolean bSignedUpChannelsOnly)
+   konum: Autodesk.Private.InfoCenter.CommunicationCenter.GetChannels(ConfigurationUnitCollection& channelCollection)
+28.01.2023 18:44:59: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\AutoCAD 2014\R19.1\enu\Support\infocenter.xml
+28.01.2023 18:45:02: ICommunicationCenterConnector.SubAwareServiceUrl does not contain valid URL.
+ Attempting to load from registry
+28.01.2023 18:45:02: SubStatus: No or Bad URL defined in registry - Using default: http://cadservices.autodesk.com/subscriptionservice/subservice
+28.01.2023 18:45:02: SubStatus: Polling...
+ed
+fined in registry - Using default: http://ca28.01.2023 18:45:02: SubStatus: Polling...
+ed
+fined in registry - Using default: http://ca28.01.2023 18:45:03: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+28.01.2023 18:45:03: Polling: All threads finished
+28.01.2023 18:45:04: System.Runtime.InteropServices.COMException (0x80004005): Bir COM bileşenine yapılan çağrıdan HRESULT E_FAIL hatası döndürüldü.
+   konum: Autodesk.Private.InfoCenterLib.ICommCntrManager.GetChannelsAndContents(Boolean bWithContents, Boolean bSignedUpChannelsOnly)
+   konum: Autodesk.Private.InfoCenter.CommunicationCenter.GetChannels(ConfigurationUnitCollection& channelCollection)
+28.01.2023 18:45:23: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\AutoCAD 2014\R19.1\enu\Support\infocenter.xml
+28.01.2023 18:45:25: ICommunicationCenterConnector.SubAwareServiceUrl does not contain valid URL.
+ Attempting to load from registry
+28.01.2023 18:45:25: SubStatus: No or Bad URL defined in registry - Using default: http://cadservices.autodesk.com/subscriptionservice/subservice
+28.01.2023 18:45:25: Polling:2 threads started
+28.01.2023 18:45:25: SubStatus: Polling...
+28.01.2023 18:45:25: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+28.01.2023 18:45:26: Polling: All threads finished
+28.01.2023 18:45:27: System.Runtime.InteropServices.COMException (0x80004005): Bir COM bileşenine yapılan çağrıdan HRESULT E_FAIL hatası döndürüldü.
+   konum: Autodesk.Private.InfoCenterLib.ICommCntrManager.GetChannelsAndContents(Boolean bWithContents, Boolean bSignedUpChannelsOnly)
+   konum: Autodesk.Private.InfoCenter.CommunicationCenter.GetChannels(ConfigurationUnitCollection& channelCollection)
+28.01.2023 18:50:37: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\AutoCAD 2014\R19.1\enu\Support\infocenter.xml
+28.01.2023 18:50:39: ICommunicationCenterConnector.SubAwareServiceUrl does not contain valid URL.
+ Attempting to load from registry
+28.01.2023 18:50:39: SubStatus: No or Bad URL defined in registry - Using default: http://cadservices.autodesk.com/subscriptionservice/subservice
+28.01.2023 18:50:39: Polling:2 threads started
+28.01.2023 18:50:39: SubStatus: Polling...
+28.01.2023 18:50:39: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+28.01.2023 18:50:41: Polling: All threads finished
+28.01.2023 18:50:43: System.Runtime.InteropServices.COMException (0x80004005): Bir COM bileşenine yapılan çağrıdan HRESULT E_FAIL hatası döndürüldü.
+   konum: Autodesk.Private.InfoCenterLib.ICommCntrManager.GetChannelsAndContents(Boolean bWithContents, Boolean bSignedUpChannelsOnly)
+   konum: Autodesk.Private.InfoCenter.CommunicationCenter.GetChannels(ConfigurationUnitCollection& channelCollection)
+28.01.2023 20:56:23: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\AutoCAD 2014\R19.1\enu\Support\infocenter.xml
+28.01.2023 20:56:25: ICommunicationCenterConnector.SubAwareServiceUrl does not contain valid URL.
+ Attempting to load from registry
+28.01.2023 20:56:25: SubStatus: No or Bad URL defined in registry - Using default: http://cadservices.autodesk.com/subscriptionservice/subservice
+28.01.2023 20:56:25: Polling:2 threads started
+28.01.2023 20:56:25: SubStatus: Polling...
+28.01.2023 20:56:25: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+28.01.2023 20:56:26: Polling: All threads finished
+28.01.2023 20:56:26: System.Runtime.InteropServices.COMException (0x80004005): Bir COM bileşenine yapılan çağrıdan HRESULT E_FAIL hatası döndürüldü.
+   konum: Autodesk.Private.InfoCenterLib.ICommCntrManager.GetChannelsAndContents(Boolean bWithContents, Boolean bSignedUpChannelsOnly)
+   konum: Autodesk.Private.InfoCenter.CommunicationCenter.GetChannels(ConfigurationUnitCollection& channelCollection)
+29.01.2023 17:42:53: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\AutoCAD 2014\R19.1\enu\Support\infocenter.xml
+29.01.2023 17:42:57: ICommunicationCenterConnector.SubAwareServiceUrl does not contain valid URL.
+ Attempting to load from registry
+29.01.2023 17:42:57: SubStatus: No or Bad URL defined in registry - Using default: http://cadservices.autodesk.com/subscriptionservice/subservice
+29.01.2023 17:42:57: Polling:2 threads started
+29.01.2023 17:42:57: SubStatus: Polling...
+29.01.2023 17:42:57: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+29.01.2023 17:42:57: System.Runtime.InteropServices.COMException (0x80004005): Bir COM bileşenine yapılan çağrıdan HRESULT E_FAIL hatası döndürüldü.
+   konum: Autodesk.Private.InfoCenterLib.ICommCntrManager.GetChannelsAndContents(Boolean bWithContents, Boolean bSignedUpChannelsOnly)
+   konum: Autodesk.Private.InfoCenter.CommunicationCenter.GetChannels(ConfigurationUnitCollection& channelCollection)
+29.01.2023 17:42:58: Polling: All threads finished
+29.01.2023 17:43:07: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\AutoCAD 2014\R19.1\enu\Support\infocenter.xml
+29.01.2023 17:43:09: ICommunicationCenterConnector.SubAwareServiceUrl does not contain valid URL.
+ Attempting to load from registry
+29.01.2023 17:43:09: SubStatus: No or Bad URL defined in registry - Using default: http://cadservices.autodesk.com/subscriptionservice/subservice
+29.01.2023 17:43:09: Polling:2 threads started
+29.01.2023 17:43:09: SubStatus: Polling...
+29.01.2023 17:43:09: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+29.01.2023 17:43:10: System.Runtime.InteropServices.COMException (0x80004005): Bir COM bileşenine yapılan çağrıdan HRESULT E_FAIL hatası döndürüldü.
+   konum: Autodesk.Private.InfoCenterLib.ICommCntrManager.GetChannelsAndContents(Boolean bWithContents, Boolean bSignedUpChannelsOnly)
+   konum: Autodesk.Private.InfoCenter.CommunicationCenter.GetChannels(ConfigurationUnitCollection& channelCollection)
+29.01.2023 17:43:10: Polling: All threads finished
+29.01.2023 18:52:04: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\AutoCAD 2014\R19.1\enu\Support\infocenter.xml
+29.01.2023 18:52:07: ICommunicationCenterConnector.SubAwareServiceUrl does not contain valid URL.
+ Attempting to load from registry
+29.01.2023 18:52:07: SubStatus: No or Bad URL defined in registry - Using default: http://cadservices.autodesk.com/subscriptionservice/subservice
+29.01.2023 18:52:07: Polling:2 threads started
+29.01.2023 18:52:07: SubStatus: Polling...
+29.01.2023 18:52:07: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+29.01.2023 18:52:07: System.Runtime.InteropServices.COMException (0x80004005): Bir COM bileşenine yapılan çağrıdan HRESULT E_FAIL hatası döndürüldü.
+   konum: Autodesk.Private.InfoCenterLib.ICommCntrManager.GetChannelsAndContents(Boolean bWithContents, Boolean bSignedUpChannelsOnly)
+   konum: Autodesk.Private.InfoCenter.CommunicationCenter.GetChannels(ConfigurationUnitCollection& channelCollection)
+29.01.2023 18:52:08: Polling: All threads finished
+29.01.2023 18:53:12: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\AutoCAD 2014\R19.1\enu\Support\infocenter.xml
+29.01.2023 18:53:15: ICommunicationCenterConnector.SubAwareServiceUrl does not contain valid URL.
+ Attempting to load from registry
+29.01.2023 18:53:15: SubStatus: No or Bad URL defined in registry - Using default: http://cadservices.autodesk.com/subscriptionservice/subservice
+29.01.2023 18:53:15: Polling:2 threads started
+29.01.2023 18:53:15: SubStatus: Polling...
+29.01.2023 18:53:15: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+29.01.2023 18:53:15: Polling: All threads finished
+29.01.2023 18:53:15: System.Runtime.InteropServices.COMException (0x80004005): Bir COM bileşenine yapılan çağrıdan HRESULT E_FAIL hatası döndürüldü.
+   konum: Autodesk.Private.InfoCenterLib.ICommCntrManager.GetChannelsAndContents(Boolean bWithContents, Boolean bSignedUpChannelsOnly)
+   konum: Autodesk.Private.InfoCenter.CommunicationCenter.GetChannels(ConfigurationUnitCollection& channelCollection)
+29.01.2023 18:56:58: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\AutoCAD 2014\R19.1\enu\Support\infocenter.xml
+29.01.2023 18:57:00: ICommunicationCenterConnector.SubAwareServiceUrl does not contain valid URL.
+ Attempting to load from registry
+29.01.2023 18:57:00: SubStatus: No or Bad URL defined in registry - Using default: http://cadservices.autodesk.com/subscriptionservice/subservice
+29.01.2023 18:57:00: Polling:2 threads started
+29.01.2023 18:57:00: SubStatus: Polling...
+29.01.2023 18:57:00: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+29.01.2023 18:57:01: Polling: All threads finished
+29.01.2023 18:57:01: System.Runtime.InteropServices.COMException (0x80004005): Bir COM bileşenine yapılan çağrıdan HRESULT E_FAIL hatası döndürüldü.
+   konum: Autodesk.Private.InfoCenterLib.ICommCntrManager.GetChannelsAndContents(Boolean bWithContents, Boolean bSignedUpChannelsOnly)
+   konum: Autodesk.Private.InfoCenter.CommunicationCenter.GetChannels(ConfigurationUnitCollection& channelCollection)
+29.01.2023 19:01:54: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\AutoCAD 2014\R19.1\enu\Support\infocenter.xml
+29.01.2023 19:01:56: ICommunicationCenterConnector.SubAwareServiceUrl does not contain valid URL.
+ Attempting to load from registry
+29.01.2023 19:01:56: SubStatus: No or Bad URL defined in registry - Using default: http://cadservices.autodesk.com/subscriptionservice/subservice
+29.01.2023 19:01:56: Polling:2 threads started
+29.01.2023 19:01:56: SubStatus: Polling...
+29.01.2023 19:01:56: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+29.01.2023 19:01:56: System.Runtime.InteropServices.COMException (0x80004005): Bir COM bileşenine yapılan çağrıdan HRESULT E_FAIL hatası döndürüldü.
+   konum: Autodesk.Private.InfoCenterLib.ICommCntrManager.GetChannelsAndContents(Boolean bWithContents, Boolean bSignedUpChannelsOnly)
+   konum: Autodesk.Private.InfoCenter.CommunicationCenter.GetChannels(ConfigurationUnitCollection& channelCollection)
+29.01.2023 19:01:56: Polling: All threads finished
+29.01.2023 19:04:10: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\AutoCAD 2014\R19.1\enu\Support\infocenter.xml
+29.01.2023 19:04:12: ICommunicationCenterConnector.SubAwareServiceUrl does not contain valid URL.
+ Attempting to load from registry
+29.01.2023 19:04:12: SubStatus: No or Bad URL defined in registry - Using default: http://cadservices.autodesk.com/subscriptionservice/subservice
+29.01.2023 19:04:12: Polling:2 threads started
+29.01.2023 19:04:12: SubStatus: Polling...
+29.01.2023 19:04:12: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+29.01.2023 19:04:13: Polling: All threads finished
+29.01.2023 19:04:13: System.Runtime.InteropServices.COMException (0x80004005): Bir COM bileşenine yapılan çağrıdan HRESULT E_FAIL hatası döndürüldü.
+   konum: Autodesk.Private.InfoCenterLib.ICommCntrManager.GetChannelsAndContents(Boolean bWithContents, Boolean bSignedUpChannelsOnly)
+   konum: Autodesk.Private.InfoCenter.CommunicationCenter.GetChannels(ConfigurationUnitCollection& channelCollection)
+29.01.2023 19:05:13: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\AutoCAD 2014\R19.1\enu\Support\infocenter.xml
+29.01.2023 19:05:15: ICommunicationCenterConnector.SubAwareServiceUrl does not contain valid URL.
+ Attempting to load from registry
+29.01.2023 19:05:15: SubStatus: No or Bad URL defined in registry - Using default: http://cadservices.autodesk.com/subscriptionservice/subservice
+29.01.2023 19:05:15: Polling:2 threads started
+29.01.2023 19:05:15: SubStatus: Polling...
+29.01.2023 19:05:15: SubStatus: Sunucu bir istisna attı. (Exception from HRESULT: 0x80010105 (RPC_E_SERVERFAULT))
+29.01.2023 19:05:16: Polling: All threads finished
+29.01.2023 19:05:16: System.Runtime.InteropServices.COMException (0x80004005): Bir COM bileşenine yapılan çağrıdan HRESULT E_FAIL hatası döndürüldü.
+   konum: Autodesk.Private.InfoCenterLib.ICommCntrManager.GetChannelsAndContents(Boolean bWithContents, Boolean bSignedUpChannelsOnly)
+   konum: Autodesk.Private.InfoCenter.CommunicationCenter.GetChannels(ConfigurationUnitCollection& channelCollection)
+31.01.2023 06:45:20: Configuration Read from: C:\Users\Hamza\AppData\Local\Autodesk\AutoCAD 2014\R19.1\enu\Support\infocenter.xml
+31.01.2023 06:45:24: ICommunicationCenterConnector.SubAwareServiceUrl does not contain valid URL.
+ Attempting to load from registry
+31.01.2023 06:45:24: SubStatus: No or Bad URL defined in registry - Using default: http://cadservices.autodesk.com/subscriptionservice/subservice
+31.01.2023 06:45:24: Polling:2 threads started
+31.01.2023 06:45:24: SubStatus: Polling...
+31.01.2023 06:45:26: Polling: All threads finished
+31.01.2023 06:45:27: System.Runtime.InteropServices.COMException (0x80004005): Bir COM bileşenine yapılan çağrıdan HRESULT E_FAIL hatası döndürüldü.
+   konum: Autodesk.Private.InfoCenterLib.ICommCntrManager.GetChannelsAndContents(Boolean bWithContents, Boolean bSignedUpChannelsOnly)
+   konum: Autodesk.Private.InfoCenter.CommunicationCenter.GetChannels(ConfigurationUnitCollection& channelCollection)

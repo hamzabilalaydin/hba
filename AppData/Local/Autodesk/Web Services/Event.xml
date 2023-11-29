@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<WebServicesEvent>
+    <Event RaisedByProcess="11028" Id="8">
+        <Params>
+            <Param Type="String" Value="PPl4tnQdqNWxnsz7U0qxNnweSP57yazL3cvuU9YItUWDDoFycUeK1TXX7Il6c8vZAvEUQIh11+5lq9C4P/lYqDIrJGsGTBif2R632fzrCCa16IM3ZEv0YhTBsCbQ2VVGFXthv+FzEsaaFbiyOxsSCx1/1I5ZLM3USwJ9uafRw8g=" Name="ConsumerKey"/>
+            <Param Type="String" Value="data:read" Name="OAuth2TokenScope"/>
+            <Param Type="Int" Value="2" Name="OAuth2TokenType"/>
+        </Params>
+    </Event>
+</WebServicesEvent>

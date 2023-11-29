@@ -1,0 +1,11 @@
+OpenShadingLanguage 1.00
+# Compiled by oslc 1.10.2
+# options: -IC:/Program Files/Autodesk/3ds Max 2020/OSL/
+shader SetFloat	%meta{string,help,"Just gives a float value."} %meta{string,label,"Float"} %meta{string,category,"Values"} 
+param	float	In	0		%meta{string,label,"Float"}  %read{0,0} %write{2147483647,-1}
+oparam	float	Out	0		%read{2147483647,-1} %write{0,0}
+code ___main___
+# OSL\SetFloat.osl:17
+# }
+	assign		Out In 	%filename{"OSL\SetFloat.osl"} %line{17} %argrw{"wr"}
+	end

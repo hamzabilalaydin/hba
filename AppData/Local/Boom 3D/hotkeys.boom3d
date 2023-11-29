@@ -1,0 +1,50 @@
+[
+  {
+    "Index": 0,
+    "IsActive": true,
+    "IsDefault": true,
+    "ServiceName": "ShowMainWindow",
+    "Key": "O",
+    "Modifiers": "Ctrl, Shift"
+  },
+  {
+    "Index": 1,
+    "IsActive": true,
+    "IsDefault": true,
+    "ServiceName": "ToggleBoom",
+    "Key": "B",
+    "Modifiers": "Ctrl, Shift"
+  },
+  {
+    "Index": 2,
+    "IsActive": true,
+    "IsDefault": true,
+    "ServiceName": "ToggleSurround",
+    "Key": "A",
+    "Modifiers": "Ctrl, Shift"
+  },
+  {
+    "Index": 3,
+    "IsActive": true,
+    "IsDefault": true,
+    "ServiceName": "ToggleEqualizer",
+    "Key": "C",
+    "Modifiers": "Ctrl, Shift"
+  },
+  {
+    "Index": 4,
+    "IsActive": true,
+    "IsDefault": true,
+    "ServiceName": "SwitchEqualizer",
+    "Key": "E",
+    "Modifiers": "Ctrl, Shift"
+  },
+  {
+    "Index": 5,
+    "IsActive": true,
+    "IsDefault": true,
+    "ServiceName": "SwitchDevice",
+    "Key": "D",
+    "Modifiers": "Ctrl, Shift"
+  }
+]

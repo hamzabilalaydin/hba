@@ -1,0 +1,12 @@
+OpenShadingLanguage 1.00
+# Compiled by oslc 1.10.2
+# options: -IC:/Program Files/Autodesk/3ds Max 2020/OSL/
+shader FloatMod	%meta{string,help,"Modulo (remainder of division) between two floats"} %meta{string,label,"Modulo"} %meta{string,category,"Math\\Float"} 
+param	float	A	0		%read{0,0} %write{2147483647,-1}
+param	float	B	1		%read{0,0} %write{2147483647,-1}
+oparam	float	Out	0		%read{2147483647,-1} %write{0,0}
+code ___main___
+# OSL\FloatMod.osl:18
+# }
+	fmod		Out A B 	%filename{"OSL\FloatMod.osl"} %line{18} %argrw{"wrr"}
+	end

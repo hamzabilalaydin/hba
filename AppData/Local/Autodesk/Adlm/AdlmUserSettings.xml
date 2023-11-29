@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<AdlmSettings>
+    <Section Name="PrivacyPolicyConsent">
+        <Data Key="128F1:2014.0.0.F">1</Data>
+        <Data Key="001F1:2014.0.0.F">1</Data>
+    </Section>
+</AdlmSettings>

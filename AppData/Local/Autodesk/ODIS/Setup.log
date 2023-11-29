@@ -1,0 +1,97 @@
+2022-12-11T22:22:08.785 [Bootstrap: 5208, single] [Bootstrap INFO] ======================== Start Bootstrap ========================
+2022-12-11T22:22:08.786 [Bootstrap: 5208, single] [Bootstrap INFO] [ Autodesk::Bootstrap::SetupApp::Init ]   ====================================== 
+2022-12-11T22:22:08.787 [Bootstrap: 5208, single] [Bootstrap INFO] [ Autodesk::Bootstrap::SetupApp::Init ]    
+2022-12-11T22:22:08.787 [Bootstrap: 5208, single] [Bootstrap INFO] [ Autodesk::Bootstrap::SetupApp::Init ]   Autodesk ODIS Bootstrap 
+2022-12-11T22:22:08.787 [Bootstrap: 5208, single] [Bootstrap INFO] [ Autodesk::Bootstrap::SetupApp::Init ]   version:  1.35.0.3 
+2022-12-11T22:22:08.787 [Bootstrap: 5208, single] [Bootstrap INFO] [ Autodesk::Bootstrap::SetupApp::Init ]    
+2022-12-11T22:22:08.787 [Bootstrap: 5208, single] [Bootstrap INFO] [ Autodesk::Bootstrap::SetupApp::Init ]   ====================================== 
+2022-12-11T22:22:08.787 [Bootstrap: 5208, single] [Bootstrap DEBUG] [ Autodesk::Bootstrap::SetupApp::Init ]   Autodesk::Bootstrap::SetupApp::Init 
+2022-12-11T22:22:08.788 [Bootstrap: 5208, single] [Bootstrap DEBUG] [ Autodesk::Bootstrap::SetupGuiApp::PreInit ]   Autodesk::Bootstrap::SetupGuiApp::PreInit 
+2022-12-11T22:22:08.821 [Bootstrap: 5208, single] [Bootstrap INFO] [ Autodesk::Bootstrap::SetupApp::Init ]   Setup starting... 
+2022-12-11T22:22:08.821 [Bootstrap: 5208, single] [Bootstrap INFO] [ Autodesk::Bootstrap::SetupApp::Init ]   silent mode: off 
+2022-12-11T22:22:08.830 [Bootstrap: 5208, single] [Bootstrap INFO] [ BSStrings::loadStrings ]   ==> OS Language found is [ tr-TR ]. 
+2022-12-11T22:22:08.831 [Bootstrap: 5208, single] [Bootstrap WARN] [ BS_Setup::OpenXmlFile ]   OpenXmlFile: C:\Users\Hamza\Downloads\Autodesk\DWG TrueView 2023 - English - (EN)\ODIS\strings.xml 
+2022-12-11T22:22:08.842 [Bootstrap: 5208, single] [Bootstrap INFO] [ BSStrings::loadStrings ]   Loading tr-TR strings. 
+2022-12-11T22:22:08.842 [Bootstrap: 5208, single] [Bootstrap INFO] [ BSStrings::loadStrings ]   Language not found in string.xml 
+2022-12-11T22:22:08.842 [Bootstrap: 5208, single] [Bootstrap INFO] [ BSStrings::loadStrings ]   Default to en-US strings. 
+2022-12-11T22:22:08.842 [Bootstrap: 5208, single] [Bootstrap INFO] [ BSData::initdata ]   Initialize data 
+2022-12-11T22:22:08.842 [Bootstrap: 5208, single] [Bootstrap INFO] [ BSData::initJson ]   ==> Load and parse bootstrap.json 
+2022-12-11T22:22:08.853 [Bootstrap: 5208, single] [Bootstrap INFO] [ BSData::initOVer ]   ==> Load and parse odisver.xml 
+2022-12-11T22:22:08.853 [Bootstrap: 5208, single] [Bootstrap DEBUG] [ BS_Setup::DetectFile ]   Detecting [ C:\Users\Hamza\Downloads\Autodesk\DWG TrueView 2023 - English - (EN)\ODIS\odisver.xml ]. 
+2022-12-11T22:22:08.854 [Bootstrap: 5208, single] [Bootstrap DEBUG] [ BS_Setup::DetectFile ]   File, [ C:\Users\Hamza\Downloads\Autodesk\DWG TrueView 2023 - English - (EN)\ODIS\odisver.xml ] exists. 
+2022-12-11T22:22:08.854 [Bootstrap: 5208, single] [Bootstrap DEBUG] [ BS_Setup::ReadDdaverXmlFile ]   ReadDdaverXmlFile C:\Users\Hamza\Downloads\Autodesk\DWG TrueView 2023 - English - (EN)\ODIS\odisver.xml 
+2022-12-11T22:22:08.854 [Bootstrap: 5208, single] [Bootstrap WARN] [ BS_Setup::OpenXmlFile ]   OpenXmlFile: C:\Users\Hamza\Downloads\Autodesk\DWG TrueView 2023 - English - (EN)\ODIS\odisver.xml 
+2022-12-11T22:22:08.854 [Bootstrap: 5208, single] [Bootstrap INFO] [ BSData::initCmdL ]   ==> Load and parse command line 
+2022-12-11T22:22:08.854 [Bootstrap: 5208, single] [Bootstrap INFO] [ BSData::initEnvV ]   ==> Load and parse environment 
+2022-12-11T22:22:08.854 [Bootstrap: 5208, single] [Bootstrap INFO] [ BSData::initEnvV ]   ==> ODIS_ALLOWUPDATE:  undefined 
+2022-12-11T22:22:08.854 [Bootstrap: 5208, single] [Bootstrap INFO] [ BSData::validate ]   ==> Validate data 
+2022-12-11T22:22:08.854 [Bootstrap: 5208, single] [Bootstrap INFO] [ BSData::validate ]     ==> Data 
+2022-12-11T22:22:08.854 [Bootstrap: 5208, single] [Bootstrap INFO] [ BSData::validate ]         - UPI2 id:              {530BA89C-90A7-30BF-A36E-DFD00B7311E7} 
+2022-12-11T22:22:08.854 [Bootstrap: 5208, single] [Bootstrap INFO] [ BSData::validate ]         - Environment:          prd 
+2022-12-11T22:22:08.855 [Bootstrap: 5208, single] [Bootstrap INFO] [ BSData::validate ]         - State:                live 
+2022-12-11T22:22:08.855 [Bootstrap: 5208, single] [Bootstrap INFO] [ BSData::validate ]         - Serial Number:         
+2022-12-11T22:22:08.855 [Bootstrap: 5208, single] [Bootstrap INFO] [ BSData::validate ]         - Product Key:           
+2022-12-11T22:22:08.855 [Bootstrap: 5208, single] [Bootstrap INFO] [ BSData::validate ]         - Static ODIS version:  1.35.0.9 
+2022-12-11T22:22:08.855 [Bootstrap: 5208, single] [Bootstrap INFO] [ BSData::validate ]         - Path to odisver.xml:  C:\ProgramData\Autodesk\ODIS\ 
+2022-12-11T22:22:08.855 [Bootstrap: 5208, single] [Bootstrap INFO] [ BSData::validate ]         - Hide EULA:            false 
+2022-12-11T22:22:08.855 [Bootstrap: 5208, single] [Bootstrap INFO] [ BSData::validate ]         - Trial:                false 
+2022-12-11T22:22:08.855 [Bootstrap: 5208, single] [Bootstrap DEBUG] [ BS_Setup::DetectFile ]   Detecting [ C:\Users\Hamza\Downloads\Autodesk\DWG TrueView 2023 - English - (EN)\setup.xml ]. 
+2022-12-11T22:22:08.855 [Bootstrap: 5208, single] [Bootstrap DEBUG] [ BS_Setup::DetectFile ]   File, [ C:\Users\Hamza\Downloads\Autodesk\DWG TrueView 2023 - English - (EN)\setup.xml ] exists. 
+2022-12-11T22:22:08.855 [Bootstrap: 5208, single] [Bootstrap DEBUG] [ BS_Setup::DetectFile ]   Detecting [ C:\Users\Hamza\Downloads\Autodesk\DWG TrueView 2023 - English - (EN)\ODIS\AdODIS-installer.exe ]. 
+2022-12-11T22:22:08.855 [Bootstrap: 5208, single] [Bootstrap DEBUG] [ BS_Setup::DetectFile ]   File, [ C:\Users\Hamza\Downloads\Autodesk\DWG TrueView 2023 - English - (EN)\ODIS\AdODIS-installer.exe ] exists. 
+2022-12-11T22:22:08.855 [Bootstrap: 5208, single] [Bootstrap DEBUG] [ BS_Setup::DetectFile ]   Detecting [ C:\Users\Hamza\Downloads\Autodesk\DWG TrueView 2023 - English - (EN)\ODIS\odisver.xml ]. 
+2022-12-11T22:22:08.856 [Bootstrap: 5208, single] [Bootstrap DEBUG] [ BS_Setup::DetectFile ]   File, [ C:\Users\Hamza\Downloads\Autodesk\DWG TrueView 2023 - English - (EN)\ODIS\odisver.xml ] exists. 
+2022-12-11T22:22:08.856 [Bootstrap: 5208, single] [Bootstrap INFO] [ Autodesk::Setup::setLocalMediaInstallMode ]    -- 
+2022-12-11T22:22:08.856 [Bootstrap: 5208, single] [Bootstrap INFO] [ Autodesk::Setup::setLocalMediaInstallMode ]    -- Executing local media installation 
+2022-12-11T22:22:08.856 [Bootstrap: 5208, single] [Bootstrap INFO] [ Autodesk::Setup::setLocalMediaInstallMode ]    -- 
+2022-12-11T22:22:08.856 [Bootstrap: 5208, single] [Bootstrap DEBUG] [ Autodesk::Setup::selectODIS ]   selectODIS 
+2022-12-11T22:22:08.856 [Bootstrap: 5208, single] [Bootstrap DEBUG] [ Autodesk::Setup::selectODIS ]   prodEnv: 1 , noUpdate flag: 0 , NoUpdateBypass flag: 0 
+2022-12-11T22:22:08.856 [Bootstrap: 5208, single] [Bootstrap DEBUG] [ Autodesk::Setup::selectODIS ]   ==> bEnableODISUpdate:  1 
+2022-12-11T22:22:08.856 [Bootstrap: 5208, single] [Bootstrap DEBUG] [ Autodesk::Setup::tryInstalledODIS ]   Check for installed version of ODIS. 
+2022-12-11T22:22:08.856 [Bootstrap: 5208, single] [Bootstrap DEBUG] [ Autodesk::Setup::tryInstalledODIS ]   ==> installedOdisVerFile=[ C:\ProgramData\Autodesk\ODIS\odisver.xml ] 
+2022-12-11T22:22:08.856 [Bootstrap: 5208, single] [Bootstrap DEBUG] [ BS_Setup::DetectFile ]   Detecting [ C:\ProgramData\Autodesk\ODIS\odisver.xml ]. 
+2022-12-11T22:22:08.856 [Bootstrap: 5208, single] [Bootstrap WARN] [ BS_Setup::DetectFile ]   File, [ C:\ProgramData\Autodesk\ODIS\odisver.xml ] does not exist. 
+2022-12-11T22:22:08.856 [Bootstrap: 5208, single] [Bootstrap DEBUG] [ Autodesk::Setup::tryMediaODIS ]   Check if ODIS can be launched by local media. 
+2022-12-11T22:22:08.856 [Bootstrap: 5208, single] [Bootstrap DEBUG] [ BS_Setup::DetectFile ]   Detecting [ C:\Users\Hamza\Downloads\Autodesk\DWG TrueView 2023 - English - (EN)\ODIS\AdODIS-installer.exe ]. 
+2022-12-11T22:22:08.857 [Bootstrap: 5208, single] [Bootstrap DEBUG] [ BS_Setup::DetectFile ]   File, [ C:\Users\Hamza\Downloads\Autodesk\DWG TrueView 2023 - English - (EN)\ODIS\AdODIS-installer.exe ] exists. 
+2022-12-11T22:22:08.857 [Bootstrap: 5208, single] [Bootstrap INFO] [ Autodesk::Setup::tryMediaODIS ]   ==> Local Media ODIS version is  1.35.0.9 
+2022-12-11T22:22:08.857 [Bootstrap: 5208, single] [Bootstrap INFO] [ Autodesk::Setup::tryMediaODIS ]   ==> Update ODIS with local media version:  1.35.0.9 
+2022-12-11T22:22:08.857 [Bootstrap: 5208, single] [Bootstrap INFO] [ Autodesk::Setup::tryMediaODIS ]   ODIS is to be launched from local media: C:\Users\Hamza\Downloads\Autodesk\DWG TrueView 2023 - English - (EN)\ODIS\ 
+2022-12-11T22:22:08.857 [Bootstrap: 5208, single] [Bootstrap INFO] [ Autodesk::Setup::tryMediaODIS ]   ==> ODIS can be launched by local media. 
+2022-12-11T22:22:08.857 [Bootstrap: 5208, single] [Bootstrap DEBUG] [ Autodesk::Setup::tryOnlineODIS ]   Check online for latest version of ODIS ( Environment: prd , State: live ) 
+2022-12-11T22:22:08.857 [Bootstrap: 5208, single] [Bootstrap INFO] [ RestClient::AdHttpLibLogHandler ]   [AdHttpLib]  Sending a HTTP POST request to url: https://compsvc.delivery.autodesk.com/compsvc/componentService/component/latest/v1 
+2022-12-11T22:22:08.857 [Bootstrap: 5208, single] [Bootstrap INFO] [ RestClient::AdHttpLibLogHandler ]   [AdHttpLib]  Generating headers for POST request. 
+2022-12-11T22:22:09.557 [Bootstrap: 5208, single] [Bootstrap INFO] [ RestClient::AdHttpLibLogHandler ]   [AdHttpLib]  Response Code Received: 200 
+2022-12-11T22:22:09.560 [Bootstrap: 5208, single] [Bootstrap DEBUG] [ RestClient::GetUpi2 ]   component service response: {"upi2":"{F3AB4BA3-EE8F-31EC-B8B0-39AE8248F9EA}","buildNumber":"1.35.0.9"}M 
+2022-12-11T22:22:09.560 [Bootstrap: 5208, single] [Bootstrap INFO] [ Autodesk::Setup::tryOnlineODIS ]   ==> Online ODIS version is  1.35.0.9 
+2022-12-11T22:22:09.561 [Bootstrap: 5208, single] [Bootstrap DEBUG] [ Autodesk::Setup::resolveManifest ]   resolveManifest 
+2022-12-11T22:22:09.561 [Bootstrap: 5208, single] [Bootstrap DEBUG] [ BS_Setup::DetectFile ]   Detecting [ C:\Users\Hamza\Downloads\Autodesk\DWG TrueView 2023 - English - (EN)\setup.xml ]. 
+2022-12-11T22:22:09.562 [Bootstrap: 5208, single] [Bootstrap DEBUG] [ BS_Setup::DetectFile ]   File, [ C:\Users\Hamza\Downloads\Autodesk\DWG TrueView 2023 - English - (EN)\setup.xml ] exists. 
+2022-12-11T22:22:09.563 [Bootstrap: 5208, single] [Bootstrap WARN] [ BS_Setup::OpenXmlFile ]   OpenXmlFile: C:\Users\Hamza\Downloads\Autodesk\DWG TrueView 2023 - English - (EN)\setup.xml 
+2022-12-11T22:22:09.602 [Bootstrap: 5208, single] [Bootstrap INFO] [ Autodesk::Bootstrap::AnalyticsManager::CheckAnalyticsDisabled ]   CONFIG JSON: File not found:  C:\Users\Hamza\Downloads\Autodesk\DWG TrueView 2023 - English - (EN)\SetupRes\configuration.json 
+2022-12-11T22:22:09.684 [Bootstrap: 5208, single] [Bootstrap INFO] [ Autodesk::Bootstrap::AnalyticsManager::TrackAdpEvent ]   TrackEvent data:  {"operationId":"fd19b88f-1cec-48df-97be-a02433ba6e5f","operationStage":"BOOTSTRAP","operationStatus":"OP_ENDED","operationType":"install","operation_meta":{"bootstrap_json":"upi2:{530BA89C-90A7-30BF-A36E-DFD00B7311E7}"###"signature:iayWGr02O66EA1EUDca6rdhU3CT9IQnLp/VatwAztRo="###"state:live"###"env:prd"###"prodLang:en-US"###"url:https://dds.autodesk.com"###"odisver:1.35.0.9"},"product_meta":{"odis_session_id":"fd19b88f-1cec-48df-97be-a02433ba6e5f","odis_events_category":"Bootstrap","installation_id":"b93788ad-2034-4c1e-9c53-6f8b147353a3","target_product_name":"Autodesk DWG TrueView 2023 - English","target_product_line_name":"PLC0000037","target_product_id":"{530BA89C-90A7-30BF-A36E-DFD00B7311E7}","target_product_release_id":"2023"}} 
+2022-12-11T22:22:09.685 [Bootstrap: 5208, single] [Bootstrap DEBUG] [ Autodesk::Bootstrap::SetupGuiApp::PostInit ]   Autodesk::Bootstrap::SetupGuiApp::PostInit 
+2022-12-11T22:22:09.719 [Bootstrap: 5208, single] [Bootstrap DEBUG] [ Autodesk::Setup::extractDDA ]   extractDDA 
+2022-12-11T22:22:09.720 [Bootstrap: 5208, single] [Bootstrap DEBUG] [ Autodesk::Bootstrap::SetupGuiApp::OnRun ]   Autodesk::Bootstrap::SetupGuiApp::OnRun 
+2022-12-11T22:22:09.720 [Bootstrap: 5208, single] [Bootstrap DEBUG] [ BS_Setup::createTempFolder ]   creating folder C:\Users\Hamza\AppData\Local\Temp\odis_download_dest 
+2022-12-11T22:22:09.720 [Bootstrap: 5208, single] [Bootstrap DEBUG] [ BS_Setup::createTempFolder ]   creating folder C:\Users\Hamza\AppData\Local\Temp\odis_download_dest\2446797726807765669 
+2022-12-11T22:22:09.721 [Bootstrap: 5208, single] [Bootstrap INFO] [ Autodesk::Setup::extractDDA ]   Extracting DDA 
+2022-12-11T22:22:10.824 [Bootstrap: 5208, single] [Bootstrap WARN] [ Autodesk::DDAUtils::SignatureUtils::IsSignedBySubjectName ]   CertQuery::File Name:[ C:\Users\Hamza\Downloads\Autodesk\DWG TrueView 2023 - English - (EN)\ODIS\AdODIS-installer.exe ] Subject:[ Autodesk, Inc ] Success 
+2022-12-11T22:22:10.824 [Bootstrap: 5208, single] [Bootstrap DEBUG] [ BS_Setup::ExecuteCommand ]   Signature validated successfully for [ C:\Users\Hamza\Downloads\Autodesk\DWG TrueView 2023 - English - (EN)\ODIS\AdODIS-installer.exe ] 
+2022-12-11T22:22:10.825 [Bootstrap: 5208, single] [Bootstrap INFO] [ BS_Setup::ExecuteCommand ]   Launching process:  "C:\Users\Hamza\Downloads\Autodesk\DWG TrueView 2023 - English - (EN)\ODIS\AdODIS-installer.exe"  --mode unattended --prefix "C:\Users\Hamza\AppData\Local\Temp\odis_download_dest\2446797726807765669" --xmlFilePath "C:\Users\Hamza\AppData\Local\Temp\odis_download_dest\2446797726807765669" --useService 0 
+2022-12-11T22:23:14.062 [Bootstrap: 5208, single] [Bootstrap INFO] [ BS_Setup::ExecuteCommand ]     => Process completed. System exit code  0 Process exit code 0 
+2022-12-11T22:23:14.062 [Bootstrap: 5208, single] [Bootstrap INFO] [ BS_Setup::ExecuteCommand ]     => Success 
+2022-12-11T22:23:14.078 [Bootstrap: 5208, single] [Bootstrap INFO] [ Autodesk::Setup::runDDA ]   DDA will be launched by local media. 
+2022-12-11T22:23:14.078 [Bootstrap: 5208, single] [Bootstrap INFO] [ Autodesk::Bootstrap::AnalyticsManager::TrackAdpEvent ]   TrackEvent data:  {"operationId":"fd19b88f-1cec-48df-97be-a02433ba6e5f","operationStage":"BOOTSTRAP","operationStatus":"OP_ENDED","operationType":"install","operation_meta":{"bootstrap_chosen_odis_version":"1.35.0.9","bootstrap_install_source":"media","bootstrap_media_odis_version":"1.35.0.9","bootstrap_online_odis_version":"1.35.0.9"},"product_meta":{"odis_session_id":"fd19b88f-1cec-48df-97be-a02433ba6e5f","odis_events_category":"Bootstrap","installation_id":"b93788ad-2034-4c1e-9c53-6f8b147353a3","target_product_name":"Autodesk DWG TrueView 2023 - English","target_product_line_name":"PLC0000037","target_product_id":"{530BA89C-90A7-30BF-A36E-DFD00B7311E7}","target_product_release_id":"2023"}} 
+2022-12-11T22:23:14.081 [Bootstrap: 5208, single] [Bootstrap INFO] [ Autodesk::Setup::runDDA ]   Launching DDA 
+2022-12-11T22:23:14.159 [Bootstrap: 5208, single] [Bootstrap WARN] [ Autodesk::DDAUtils::SignatureUtils::IsSignedBySubjectName ]   CertQuery::File Name:[ C:\Users\Hamza\AppData\Local\Temp\odis_download_dest\2446797726807765669\Installer.exe ] Subject:[ Autodesk, Inc ] Success 
+2022-12-11T22:23:14.159 [Bootstrap: 5208, single] [Bootstrap DEBUG] [ BS_Setup::ExecuteCommandHelper ]   Signature validated successfully for [ C:\Users\Hamza\AppData\Local\Temp\odis_download_dest\2446797726807765669\Installer.exe ] 
+2022-12-11T22:23:14.159 [Bootstrap: 5208, single] [Bootstrap INFO] [ BS_Setup::ExecuteCommandHelper ]   Set working directory: C:\Users\Hamza\AppData\Local\Temp\odis_download_dest\2446797726807765669 
+2022-12-11T22:23:14.161 [Bootstrap: 5208, single] [Bootstrap INFO] [ Autodesk::Bootstrap::AnalyticsManager::TrackAdpEvent ]   TrackEvent data:  {"operationId":"fd19b88f-1cec-48df-97be-a02433ba6e5f","operationStage":"BOOTSTRAP","operationStatus":"OP_ENDED","operationType":"install","operation_meta":{"bootstrap_props":"--install_mode install --manifest %HOME%\Downloads\Autodesk\DWG TrueView 2023 - English - (EN)\setup.xml --manifest_xsd %TEMP%\odis_download_dest\2446797726807765669\SetupRes\manifest.xsd --url_root https://dds.autodesk.com --installation_id b93788ad-2034-4c1e-9c53-6f8b147353a3 --download_id {D219EE91-5223-4F49-89DB-48FF8164F2E6} --install_type DMC --install_source "%HOME%\Downloads\Autodesk\DWG TrueView 2023 - English - (EN)" --offline_mode --trigger_point local --installer_version 1.35.0.9"},"product_meta":{"odis_session_id":"fd19b88f-1cec-48df-97be-a02433ba6e5f","odis_events_category":"Bootstrap","installation_id":"b93788ad-2034-4c1e-9c53-6f8b147353a3","target_product_name":"Autodesk DWG TrueView 2023 - English","target_product_line_name":"PLC0000037","target_product_id":"{530BA89C-90A7-30BF-A36E-DFD00B7311E7}","target_product_release_id":"2023"}} 
+2022-12-11T22:23:14.162 [Bootstrap: 5208, single] [Bootstrap INFO] [ BS_Setup::ExecuteCommand ]   Launching process:  C:\Users\Hamza\AppData\Local\Temp\odis_download_dest\2446797726807765669\Installer.exe --install_mode install --manifest C:\Users\Hamza\Downloads\Autodesk\DWG TrueView 2023 - English - (EN)\setup.xml --manifest_xsd C:\Users\Hamza\AppData\Local\Temp\odis_download_dest\2446797726807765669\SetupRes\manifest.xsd --url_root https://dds.autodesk.com --installation_id b93788ad-2034-4c1e-9c53-6f8b147353a3 --download_id {D219EE91-5223-4F49-89DB-48FF8164F2E6} --install_type DMC --install_source "C:\Users\Hamza\Downloads\Autodesk\DWG TrueView 2023 - English - (EN)" --offline_mode --trigger_point local --installer_version 1.35.0.9 
+2022-12-11T22:28:38.778 [Bootstrap: 5208, single] [Bootstrap INFO] [ BS_Setup::ExecuteCommand ]     => Process completed. System exit code  0 Process exit code 1073807364 
+2022-12-11T22:28:38.780 [Bootstrap: 5208, single] [Bootstrap INFO] [ BS_Setup::ExecuteCommand ]   Restore working directory: C:\Users\Hamza\Downloads\Autodesk\DWG TrueView 2023 - English - (EN) 
+2022-12-11T22:28:38.780 [Bootstrap: 5208, single] [Bootstrap INFO] [ BS_Setup::ExecuteCommand ]     => Success 
+2022-12-11T22:28:38.780 [Bootstrap: 5208, single] [Bootstrap DEBUG] [ Autodesk::Bootstrap::SetupGuiApp::OnExit ]   Autodesk::Bootstrap::SetupGuiApp::OnExit 
+2022-12-11T22:28:38.780 [Bootstrap: 5208, single] [Bootstrap DEBUG] [ Autodesk::Bootstrap::SetupApp::Exit ]   Autodesk::Bootstrap::SetupApp::Exit 
+2022-12-11T22:28:38.787 [Bootstrap: 5208, single] [Bootstrap INFO] [ Autodesk::Bootstrap::AnalyticsManager::TrackAdpEvent ]   TrackEvent data:  {"operationId":"fd19b88f-1cec-48df-97be-a02433ba6e5f","operationStage":"BOOTSTRAP","operationStatus":"OP_ENDED","operationType":"install","operation_errors":{"BS_ERROR_311","BS_ERROR_706"},"operation_meta":{"bootstrap_error_code":"BS_ERROR_311, BS_ERROR_706","bootstrap_error_context":"odisver xml path does not exist###process completed with non-zero exit code: 1073807364","bootstrap_execution":"fail","bootstrap_execution_time":"65.293376"},"product_meta":{"odis_session_id":"fd19b88f-1cec-48df-97be-a02433ba6e5f","odis_events_category":"Bootstrap","installation_id":"b93788ad-2034-4c1e-9c53-6f8b147353a3","target_product_name":"Autodesk DWG TrueView 2023 - English","target_product_line_name":"PLC0000037","target_product_id":"{530BA89C-90A7-30BF-A36E-DFD00B7311E7}","target_product_release_id":"2023"}} 

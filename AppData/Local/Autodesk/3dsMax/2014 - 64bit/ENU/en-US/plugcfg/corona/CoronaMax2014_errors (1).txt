@@ -1,0 +1,155 @@
+﻿2021-02-17 13:01:32  Texture map plugin is missing
+Offending map: Map #2138275542
+2021-02-17 13:01:32  Required asset file(s) could not be located:
+13882377_995816583871569_4127086006441082117_n=.jpg
+
+2021-02-17 13:01:45  Texture map plugin is missing
+Offending map: Map #2138275542
+2021-02-17 13:01:45  Required asset file(s) could not be located:
+13882377_995816583871569_4127086006441082117_n=.jpg
+
+2021-02-17 13:02:00  Texture map plugin is missing
+Offending map: Map #2138275542
+2021-02-17 13:02:01  Texture map plugin is missing
+Offending map: Map #2138275542
+2021-02-17 13:02:02  Texture map plugin is missing
+Offending map: Map #2138275542
+2021-02-17 13:02:54  Texture map plugin is missing
+Offending map: Map #2138275542
+2021-02-17 13:02:54  Texture map plugin is missing
+Offending map: Map #2138275542
+2021-02-17 13:02:54  Texture map plugin is missing
+Offending map: Map #2138275542
+2021-02-17 13:02:54  Texture map plugin is missing
+Offending map: Map #2138275542
+2021-02-17 13:02:54  Texture map plugin is missing
+Offending map: Map #2138275542
+2021-02-17 13:02:55  Texture map plugin is missing
+Offending map: Map #2138275542
+2021-02-17 13:02:55  Texture map plugin is missing
+Offending map: Map #2138275542
+2021-02-17 13:02:55  Texture map plugin is missing
+Offending map: Map #2138275542
+2021-02-17 13:02:55  Texture map plugin is missing
+Offending map: Map #2138275542
+2021-02-17 13:07:57  Texture map plugin is missing
+Offending map: Map #2138275542
+2021-02-17 13:08:10  Texture map plugin is missing
+Offending map: Map #2138275542
+2021-02-17 13:08:10  Texture map plugin is missing
+Offending map: Map #2138275542
+2021-02-17 13:08:10  Texture map plugin is missing
+Offending map: Map #2138275542
+2021-02-17 13:08:10  Texture map plugin is missing
+Offending map: Map #2138275542
+2021-02-17 13:08:10  Texture map plugin is missing
+Offending map: Map #2138275542
+2021-02-17 13:08:10  Texture map plugin is missing
+Offending map: Map #2138275542
+2021-02-17 13:08:10  Texture map plugin is missing
+Offending map: Map #2138275542
+2021-02-17 13:08:52  Texture map plugin is missing
+Offending map: Map #2138275542
+2021-02-17 14:51:24  Texture map plugin is missing
+Offending map: Map #2138275542
+2021-02-17 14:51:28  Texture map plugin is missing
+Offending map: Map #2138275542
+2021-03-28 14:37:08  Required asset file(s) could not be located:
+C:\final\blinnica\Perforated sheets-03 inverted.png
+C:\final\blinnica\panel22.jpg
+C:\final\blinnica\panel23.jpg
+C:\final\blinnica\uvrap_klaw_up.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff.jpg
+
+2021-03-28 14:38:43  Required asset file(s) could not be located:
+C:\final\blinnica\Perforated sheets-03 inverted.png
+C:\final\blinnica\panel22.jpg
+C:\final\blinnica\panel23.jpg
+C:\final\blinnica\uvrap_klaw_up.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff.jpg
+
+2021-03-28 14:40:15  Required asset file(s) could not be located:
+C:\final\blinnica\Perforated sheets-03 inverted.png
+C:\final\blinnica\panel22.jpg
+C:\final\blinnica\panel23.jpg
+C:\final\blinnica\uvrap_klaw_up.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff.jpg
+
+2021-03-28 14:46:39  Required asset file(s) could not be located:
+C:\final\blinnica\Perforated sheets-03 inverted.png
+C:\final\blinnica\panel22.jpg
+C:\final\blinnica\panel23.jpg
+C:\final\blinnica\uvrap_klaw_up.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff.jpg
+
+2021-03-28 14:47:14  Required asset file(s) could not be located:
+C:\final\blinnica\Perforated sheets-03 inverted.png
+C:\final\blinnica\panel22.jpg
+C:\final\blinnica\panel23.jpg
+C:\final\blinnica\uvrap_klaw_up.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff.jpg
+
+2021-03-28 14:50:35  Required asset file(s) could not be located:
+C:\final\blinnica\Perforated sheets-03 inverted.png
+C:\final\blinnica\panel22.jpg
+C:\final\blinnica\panel23.jpg
+C:\final\blinnica\uvrap_klaw_up.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff.jpg
+
+2021-03-28 14:54:14  Required asset file(s) could not be located:
+C:\final\blinnica\Perforated sheets-03 inverted.png
+C:\final\blinnica\panel22.jpg
+C:\final\blinnica\panel23.jpg
+C:\final\blinnica\uvrap_klaw_up.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff.jpg
+
+2021-03-28 14:55:15  Required asset file(s) could not be located:
+C:\final\blinnica\Perforated sheets-03 inverted.png
+C:\final\blinnica\panel22.jpg
+C:\final\blinnica\panel23.jpg
+C:\final\blinnica\uvrap_klaw_up.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff.jpg
+
+2021-03-28 14:55:46  Required asset file(s) could not be located:
+C:\final\blinnica\Perforated sheets-03 inverted.png
+C:\final\blinnica\panel22.jpg
+C:\final\blinnica\panel23.jpg
+C:\final\blinnica\uvrap_klaw_up.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff.jpg
+
+2021-03-28 15:49:21  Required asset file(s) could not be located:
+C:\final\blinnica\Perforated sheets-03 inverted.png
+C:\final\blinnica\panel22.jpg
+C:\final\blinnica\panel23.jpg
+C:\final\blinnica\uvrap_klaw_up.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff.jpg
+
+2021-03-28 15:49:23  Required asset file(s) could not be located:
+C:\final\blinnica\Perforated sheets-03 inverted.png
+C:\final\blinnica\panel22.jpg
+C:\final\blinnica\panel23.jpg
+C:\final\blinnica\uvrap_klaw_up.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_bump.jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff(1).jpg
+\\FILE-SERVER\designconnected\3d models NEW\1.1. seating\1.1.1. chairs\willisau_riale\maps\renamed\dcmap_willisau_riale_diff.jpg
+

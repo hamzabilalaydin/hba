@@ -1,0 +1,18 @@
+2022-12-11T22:23:36.158 [Log Analyzer: 23792, single] [LogAnalyzer INFO] ======================== Start LogAnalyzer ========================
+2022-12-11T22:23:36.159 [Log Analyzer: 23792, single] [LogAnalyzer INFO] Version : 1.35.0.1
+2022-12-11T22:23:36.159 [Log Analyzer: 23792, single] [LogAnalyzer INFO] OS-Name : Windows
+2022-12-11T22:23:36.159 [Log Analyzer: 23792, single] [LogAnalyzer INFO] OS-Version : 10.0
+2022-12-11T22:23:36.159 [Log Analyzer: 23792, single] [LogAnalyzer INFO] OS-Locale : tr-TR
+2022-12-11T22:23:36.160 [Log Analyzer: 23792, single] [LogAnalyzer INFO] Running-Mode : root
+2022-12-11T22:23:36.160 [Log Analyzer: 23792, single] [LogAnalyzer INFO] Build-Mode : Release
+2022-12-11T22:23:36.160 [Log Analyzer: 23792, single] [LogAnalyzer INFO] ==================================================================
+2022-12-11T22:23:36.160 [Log Analyzer: 23792, single] [LogAnalyzer DEBUG] [ Autodesk::LogAnalyzerClient::Initialize ]   Autodesk::LogAnalyzerClient::Initialize 
+2022-12-11T22:23:36.160 [Log Analyzer: 23792, single] [LogAnalyzer DEBUG] [ Autodesk::LogAnalyzerClient::Initialize ]   connecting to IPC channel... 
+2022-12-11T22:23:36.162 [Log Analyzer: 23792, single] [LogAnalyzer DEBUG] [ Autodesk::LogAnalyzerClient::Connected ]   Autodesk::LogAnalyzerClient::Connected 
+2022-12-11T22:23:36.162 [Log Analyzer: 23792, single] [LogAnalyzer DEBUG] [ Autodesk::LogAnalyzerClient::WaitForConnection ]   waiting for connection... 
+2022-12-11T22:28:38.462 [Log Analyzer: 23792, single] [LogAnalyzer DEBUG] [ Autodesk::LogAnalyzerClient::NewMessageAvailable ]   NewMessageAvailable: {"command":"EXIT_REQUEST","request":{"eventSource":7,"eventTarget":5},"source":"DDA_CORE","target":"DDA_LA","version":"DDA_V1"} 
+2022-12-11T22:28:38.462 [Log Analyzer: 23792, single] [LogAnalyzer INFO] [ Autodesk::LogAnalyzerClient::HandleIPCMessage ]   Exit command received. Stop LogAnalyzer 
+2022-12-11T22:28:38.462 [Log Analyzer: 23792, single] [LogAnalyzer DEBUG] [ Autodesk::LogAnalyzerClient::BreakConnection ]   Autodesk::LogAnalyzerClient::BreakConnection 
+2022-12-11T22:28:38.462 [Log Analyzer: 23792, single] [LogAnalyzer DEBUG] [ Autodesk::LogAnalyzerClient::BreakConnection ]   destroying IPC channel... 
+2022-12-11T22:28:38.463 [Log Analyzer: 23792, single] [LogAnalyzer INFO] [ Autodesk::LogAnalyzerClient::WaitForConnection ]   Finish waiting for connection... 
+2022-12-11T22:28:38.463 [Log Analyzer: 23792, single] [LogAnalyzer INFO] [ main ]   Log Analyzer exited 

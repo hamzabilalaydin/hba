@@ -1,0 +1,132 @@
+{
+   "checksum": "e71429aecf800b45243ca5d1ca629b0c",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13244905709393147",
+            "date_last_used": "0",
+            "guid": "a0fc4964-146e-4267-9bc7-4c723d656c7c",
+            "id": "8",
+            "name": "Learn French Online - Free Online French Lessons",
+            "type": "url",
+            "url": "https://www.thefrenchexperiment.com/"
+         }, {
+            "date_added": "13246044535680521",
+            "date_last_used": "0",
+            "guid": "5e7e504f-8a3f-48da-bca9-6d07c30d3eb9",
+            "id": "20",
+            "name": "Duolingo - The world's best way to learn Spanish",
+            "type": "url",
+            "url": "https://www.duolingo.com/learn"
+         }, {
+            "date_added": "13244905893545931",
+            "date_last_used": "0",
+            "guid": "bbc22ac1-676c-4635-a232-cbf582b60591",
+            "id": "10",
+            "name": "Coursera Online Course Catalog by Topic and Skill | Coursera",
+            "type": "url",
+            "url": "https://www.coursera.org/browse"
+         }, {
+            "date_added": "13244906061745645",
+            "date_last_used": "0",
+            "guid": "9341d8ef-eef0-47ca-af5a-bb07d2422f79",
+            "id": "11",
+            "name": "MIT OpenCourseWare | Free Online Course Materials",
+            "type": "url",
+            "url": "https://ocw.mit.edu/"
+         }, {
+            "date_added": "13244229011089395",
+            "date_last_used": "13315096843472121",
+            "guid": "9f2c67c6-e8d4-45a7-b367-d066e64345e3",
+            "id": "5",
+            "name": "YouTube",
+            "type": "url",
+            "url": "https://www.youtube.com/"
+         }, {
+            "date_added": "13245760967643626",
+            "date_last_used": "0",
+            "guid": "e419c748-efd4-4844-b984-e0d576b9677e",
+            "id": "18",
+            "name": "Tureng - Türkçe İngilizce Sözlük",
+            "type": "url",
+            "url": "https://tureng.com/tr/turkce-ingilizce"
+         }, {
+            "date_added": "13244906633417849",
+            "date_last_used": "0",
+            "guid": "14dabce7-3d7c-4f14-bf9e-c9c1359b75e2",
+            "id": "13",
+            "name": "edX | Free Online Courses by Harvard, MIT, & more | edX",
+            "type": "url",
+            "url": "https://www.edx.org/?source=aw&awc=6798_1600428465_1f7089a3106a3ecbe8d293a60d55396e&utm_source=aw&utm_medium=affiliate_partner&utm_content=text-link&utm_term=264419_FlexOffers.com%2C+LLC"
+         }, {
+            "date_added": "13247524937695467",
+            "date_last_used": "0",
+            "guid": "23d676d8-6e25-4dc9-8fb6-f2bf6ef53cd8",
+            "id": "22",
+            "name": "Learn to code at home | freeCodeCamp.org",
+            "type": "url",
+            "url": "https://www.freecodecamp.org/"
+         }, {
+            "date_added": "13249153943564699",
+            "date_last_used": "0",
+            "guid": "5b50c463-5dc8-487a-9124-d06ca60c7f42",
+            "id": "24",
+            "name": "Introduction to HTML",
+            "type": "url",
+            "url": "https://www.w3schools.com/html/html_intro.asp"
+         }, {
+            "date_added": "13253034639315465",
+            "date_last_used": "0",
+            "guid": "1bb9fc42-fa11-4e10-9579-3e32bd4cbb02",
+            "id": "28",
+            "name": "Wikipedia, the free encyclopedia",
+            "type": "url",
+            "url": "https://en.wikipedia.org/wiki/Main_Page"
+         }, {
+            "date_added": "13253656525572989",
+            "date_last_used": "0",
+            "guid": "8ca6ef4b-4e2a-4f8c-8208-4dcfe96bf4bd",
+            "id": "30",
+            "name": "Table of keyboard shortcuts - Wikipedia",
+            "type": "url",
+            "url": "https://en.wikipedia.org/wiki/Table_of_keyboard_shortcuts"
+         }, {
+            "date_added": "13261590222507826",
+            "date_last_used": "0",
+            "guid": "596b0651-6b05-4ca0-a739-2ff35237677f",
+            "id": "32",
+            "name": "Improve your Spanish pronunciation using YouTube",
+            "type": "url",
+            "url": "https://youglish.com/spanish"
+         } ],
+         "date_added": "13244228087263266",
+         "date_last_used": "0",
+         "date_modified": "13261590222507826",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Yer imleri",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13244228087263275",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Diğer yer işaretleri",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13244228087263277",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobil yer işaretleri",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

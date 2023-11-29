@@ -1,0 +1,22 @@
+OpenShadingLanguage 1.00
+# Compiled by oslc 1.10.2
+# options: -IC:/Program Files/Autodesk/3ds Max 2020/OSL/
+shader GetCoordSpace	%meta{string,help,"Convert to a named coordinate system"} %meta{string,label,"Named Coord Space"} %meta{string,category,"UVW"} 
+param	point	Input	0 0 0		%read{2,2} %write{0,0} %initexpr
+param	string	Coordspace	"object"		%meta{string,widget,"popup"} %meta{string,help,"world, object, screen, NDC, raster, or an explicitly named coordinate system"} %meta{string,options,"world|object|screen|NDC|raster"} %meta{int,editable,1}  %read{2,2} %write{2147483647,-1}
+oparam	point	UVW	0 0 0		%read{2147483647,-1} %write{2,2}
+global	point	P	%read{0,0} %write{2147483647,-1}
+const	string	$const1	"transform"		%read{1,1} %write{2147483647,-1}
+const	string	$const2	"common"		%read{2,2} %write{2147483647,-1}
+code Input
+# OSL\GetCoordSpace.osl:14
+# 	string Coordspace = "object" 
+	assign		Input P 	%filename{"OSL\GetCoordSpace.osl"} %line{14} %argrw{"wr"}
+code ___main___
+# OSL\GetCoordSpace.osl:23
+# }
+	functioncall	$const1 3 	%filename{"OSL\GetCoordSpace.osl"} %line{23} %argrw{"r"}
+# C:/Program Files\Autodesk\3ds Max 2020\OSL\stdosl.h:285
+# point  transform (string to, point p)  { return transform("common",to,p); }
+	transform	UVW $const2 Coordspace Input 	%filename{"C:/Program Files\Autodesk\3ds Max 2020\OSL\stdosl.h"} %line{285} %argrw{"wrrr"}
+	end
